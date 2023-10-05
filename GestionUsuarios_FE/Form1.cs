@@ -9,11 +9,15 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GestionUsuarios_BE;
 
-namespace Gestion_Usuarios
+
+
+namespace GestionUsuarios_FE
 {
     public partial class Form1 : Form
     {
+
         Usuario myUsuario = new Usuario();
         int valor;
         public Form1()
@@ -114,8 +118,9 @@ namespace Gestion_Usuarios
                     myUsuario.Correo = txtCorreo.Text;
                     myUsuario.Contraseña = txtContraseña.Text;
                     MessageBox.Show("Registro Completado");
-                    Form formulario = new Form2();
-                    formulario.Show();
+                    Form2 formulario = new Form2();
+                    
+                    formulario.ShowDialog();
                 }
                 else
                 {
@@ -132,6 +137,11 @@ namespace Gestion_Usuarios
         {
             
            
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

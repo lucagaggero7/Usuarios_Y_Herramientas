@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Gestion_Usuarios
+namespace GestionUsuarios_BE
 {
     public class Usuario
     {
-
         private string nombre;
         private string apellido;
         private string nombredeusuario;
@@ -20,6 +19,5 @@ namespace Gestion_Usuarios
         public string Nombredeusuario { get; set; }
         public string Correo { get; set; }
         public string Contraseña { get; set; }
-
     }
 }

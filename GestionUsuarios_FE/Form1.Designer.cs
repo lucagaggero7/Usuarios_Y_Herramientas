@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gestion_Usuarios
+namespace GestionUsuarios_FE
 {
     partial class Form1
     {
@@ -126,35 +126,36 @@ namespace Gestion_Usuarios
             this.txtNombre.Location = new System.Drawing.Point(299, 112);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(218, 20);
-            this.txtNombre.TabIndex = 6;
+            this.txtNombre.TabIndex = 0;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(299, 158);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(218, 20);
-            this.txtApellido.TabIndex = 7;
+            this.txtApellido.TabIndex = 1;
             // 
             // txtNombredeusuario
             // 
             this.txtNombredeusuario.Location = new System.Drawing.Point(299, 207);
             this.txtNombredeusuario.Name = "txtNombredeusuario";
             this.txtNombredeusuario.Size = new System.Drawing.Size(218, 20);
-            this.txtNombredeusuario.TabIndex = 8;
+            this.txtNombredeusuario.TabIndex = 2;
             // 
             // txtCorreo
             // 
             this.txtCorreo.Location = new System.Drawing.Point(299, 258);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(218, 20);
-            this.txtCorreo.TabIndex = 9;
+            this.txtCorreo.TabIndex = 3;
             // 
             // txtContraseña
             // 
             this.txtContraseña.Location = new System.Drawing.Point(299, 309);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(218, 20);
-            this.txtContraseña.TabIndex = 10;
+            this.txtContraseña.TabIndex = 4;
             // 
             // btnCrear
             // 
@@ -162,7 +163,7 @@ namespace Gestion_Usuarios
             this.btnCrear.Location = new System.Drawing.Point(617, 384);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(96, 36);
-            this.btnCrear.TabIndex = 12;
+            this.btnCrear.TabIndex = 6;
             this.btnCrear.Text = "Crear";
             this.btnCrear.UseVisualStyleBackColor = true;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
@@ -192,7 +193,7 @@ namespace Gestion_Usuarios
             this.txtVerificacion.Location = new System.Drawing.Point(299, 366);
             this.txtVerificacion.Name = "txtVerificacion";
             this.txtVerificacion.Size = new System.Drawing.Size(218, 20);
-            this.txtVerificacion.TabIndex = 13;
+            this.txtVerificacion.TabIndex = 5;
             this.txtVerificacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVerificacion_KeyPress);
             // 
             // labelVerificacion
