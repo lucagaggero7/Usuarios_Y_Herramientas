@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 
 namespace GestionUsuarios_FE
 {
@@ -34,8 +35,8 @@ namespace GestionUsuarios_FE
             this.label1 = new System.Windows.Forms.Label();
             this.labelNombre = new System.Windows.Forms.Label();
             this.labelApellido = new System.Windows.Forms.Label();
-            this.labelPass = new System.Windows.Forms.Label();
-            this.labelUserName = new System.Windows.Forms.Label();
+            this.labelContraseña = new System.Windows.Forms.Label();
+            this.labelNombredeusuario = new System.Windows.Forms.Label();
             this.labelCorreo = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
@@ -51,6 +52,7 @@ namespace GestionUsuarios_FE
             this.txtVerificacion = new System.Windows.Forms.TextBox();
             this.labelVerificacion = new System.Windows.Forms.Label();
             this.errorVerificacion = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnModo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorNombre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorApellido)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorNombredeusuario)).BeginInit();
@@ -68,7 +70,6 @@ namespace GestionUsuarios_FE
             this.label1.Size = new System.Drawing.Size(198, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "CREAR USUARIO";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelNombre
             // 
@@ -79,7 +80,6 @@ namespace GestionUsuarios_FE
             this.labelNombre.Size = new System.Drawing.Size(62, 25);
             this.labelNombre.TabIndex = 1;
             this.labelNombre.Text = "Nombre";
-            this.labelNombre.Click += new System.EventHandler(this.label2_Click);
             // 
             // labelApellido
             // 
@@ -91,25 +91,25 @@ namespace GestionUsuarios_FE
             this.labelApellido.TabIndex = 2;
             this.labelApellido.Text = "Apellido";
             // 
-            // labelPass
+            // labelContraseña
             // 
-            this.labelPass.AutoSize = true;
-            this.labelPass.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPass.Location = new System.Drawing.Point(127, 309);
-            this.labelPass.Name = "labelPass";
-            this.labelPass.Size = new System.Drawing.Size(82, 25);
-            this.labelPass.TabIndex = 3;
-            this.labelPass.Text = "Contraseña";
+            this.labelContraseña.AutoSize = true;
+            this.labelContraseña.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelContraseña.Location = new System.Drawing.Point(127, 309);
+            this.labelContraseña.Name = "labelContraseña";
+            this.labelContraseña.Size = new System.Drawing.Size(82, 25);
+            this.labelContraseña.TabIndex = 3;
+            this.labelContraseña.Text = "Contraseña";
             // 
-            // labelUserName
+            // labelNombredeusuario
             // 
-            this.labelUserName.AutoSize = true;
-            this.labelUserName.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUserName.Location = new System.Drawing.Point(127, 206);
-            this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(132, 25);
-            this.labelUserName.TabIndex = 4;
-            this.labelUserName.Text = "Nombre de Usuario";
+            this.labelNombredeusuario.AutoSize = true;
+            this.labelNombredeusuario.Font = new System.Drawing.Font("Dubai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNombredeusuario.Location = new System.Drawing.Point(127, 206);
+            this.labelNombredeusuario.Name = "labelNombredeusuario";
+            this.labelNombredeusuario.Size = new System.Drawing.Size(132, 25);
+            this.labelNombredeusuario.TabIndex = 4;
+            this.labelNombredeusuario.Text = "Nombre de Usuario";
             // 
             // labelCorreo
             // 
@@ -127,7 +127,6 @@ namespace GestionUsuarios_FE
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(218, 20);
             this.txtNombre.TabIndex = 0;
-            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtApellido
             // 
@@ -194,7 +193,6 @@ namespace GestionUsuarios_FE
             this.txtVerificacion.Name = "txtVerificacion";
             this.txtVerificacion.Size = new System.Drawing.Size(218, 20);
             this.txtVerificacion.TabIndex = 5;
-            this.txtVerificacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVerificacion_KeyPress);
             // 
             // labelVerificacion
             // 
@@ -210,11 +208,27 @@ namespace GestionUsuarios_FE
             // 
             this.errorVerificacion.ContainerControl = this;
             // 
+            // btnModo
+            // 
+            this.btnModo.BackColor = System.Drawing.Color.White;
+            this.btnModo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModo.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnModo.Location = new System.Drawing.Point(27, 38);
+            this.btnModo.Name = "btnModo";
+            this.btnModo.Size = new System.Drawing.Size(182, 33);
+            this.btnModo.TabIndex = 31;
+            this.btnModo.Text = "Modo Claro Activado";
+            this.btnModo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnModo.UseVisualStyleBackColor = false;
+            this.btnModo.Click += new System.EventHandler(this.buttonModo_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnModo);
             this.Controls.Add(this.labelVerificacion);
             this.Controls.Add(this.txtVerificacion);
             this.Controls.Add(this.btnCrear);
@@ -224,14 +238,13 @@ namespace GestionUsuarios_FE
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.labelCorreo);
-            this.Controls.Add(this.labelUserName);
-            this.Controls.Add(this.labelPass);
+            this.Controls.Add(this.labelNombredeusuario);
+            this.Controls.Add(this.labelContraseña);
             this.Controls.Add(this.labelApellido);
             this.Controls.Add(this.labelNombre);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorNombre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorApellido)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorNombredeusuario)).EndInit();
@@ -253,8 +266,8 @@ namespace GestionUsuarios_FE
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelNombre;
         private System.Windows.Forms.Label labelApellido;
-        private System.Windows.Forms.Label labelPass;
-        private System.Windows.Forms.Label labelUserName;
+        private System.Windows.Forms.Label labelContraseña;
+        private System.Windows.Forms.Label labelNombredeusuario;
         private System.Windows.Forms.Label labelCorreo;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtApellido;
@@ -270,6 +283,7 @@ namespace GestionUsuarios_FE
         private System.Windows.Forms.Label labelVerificacion;
         private System.Windows.Forms.TextBox txtVerificacion;
         private System.Windows.Forms.ErrorProvider errorVerificacion;
+        private System.Windows.Forms.Button btnModo;
     }
 }
 

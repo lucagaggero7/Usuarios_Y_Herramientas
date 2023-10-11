@@ -20,31 +20,11 @@ namespace GestionUsuarios_FE
 
         Usuario myUsuario = new Usuario();
         int valor;
+        int contador = 0;
         public Form1()
         {
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
@@ -132,16 +112,68 @@ namespace GestionUsuarios_FE
 
         }
 
-
-        private void txtVerificacion_KeyPress(object sender, KeyPressEventArgs e)
+        private void buttonModo_Click(object sender, EventArgs e)
         {
-            
-           
-        }
+            // FUNCIOM DE MODO OSCURO
+            contador++;
+            if ((contador % 2) == 0)
+            {
+                btnModo.Text = "Modo Claro Activado";
+                this.BackColor = Color.LightBlue;
+                btnCrear.BackColor = Color.White;
+                btnModo.BackColor = Color.White;
+                txtNombre.BackColor = Color.White;
+                txtApellido.BackColor = Color.White;
+                txtNombredeusuario.BackColor = Color.White;
+                txtCorreo.BackColor = Color.White;
+                txtContraseña.BackColor = Color.White;
+                txtVerificacion.BackColor = Color.White;
+                labelNombre.ForeColor = Color.Black;
+                labelApellido.ForeColor = Color.Black;
+                labelNombredeusuario.ForeColor = Color.Black;
+                labelCorreo.ForeColor = Color.Black;
+                labelContraseña.ForeColor = Color.Black;
+                labelVerificacion.ForeColor = Color.Black;
+                btnModo.ForeColor = Color.Black;
+                label1.ForeColor = Color.Black;
+                btnCrear.ForeColor = Color.Black;
+                txtNombre.ForeColor = Color.Black;
+                txtApellido.ForeColor = Color.Black;
+                txtNombredeusuario.ForeColor = Color.Black;
+                txtCorreo.ForeColor = Color.Black;
+                txtContraseña.ForeColor = Color.Black;
+                txtVerificacion.ForeColor = Color.Black;
 
-        private void txtNombre_TextChanged(object sender, EventArgs e)
-        {
+            }
+            else
+            {
+                btnModo.Text = "Modo Oscuro Activado";
+                this.BackColor = Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(73)))));
+                btnCrear.BackColor = Color.LightGray;
+                btnModo.BackColor = Color.LightGray;
+                txtNombre.BackColor = Color.LightGray;
+                txtApellido.BackColor = Color.LightGray;
+                txtNombredeusuario.BackColor = Color.LightGray;
+                txtCorreo.BackColor = Color.LightGray;
+                txtContraseña.BackColor = Color.LightGray;
+                txtVerificacion.BackColor = Color.LightGray;
+                labelNombre.ForeColor = Color.White;
+                labelApellido.ForeColor = Color.White;
+                labelNombredeusuario.ForeColor = Color.White;
+                labelCorreo.ForeColor = Color.White;
+                labelContraseña.ForeColor = Color.White;
+                labelVerificacion.ForeColor = Color.White;
+                btnModo.ForeColor = Color.Black;
+                label1.ForeColor = Color.White;
+                btnCrear.ForeColor = Color.Black;
+                txtNombre.ForeColor = Color.Black;
+                txtApellido.ForeColor = Color.Black;
+                txtNombredeusuario.ForeColor = Color.Black;
+                txtCorreo.ForeColor = Color.Black;
+                txtContraseña.ForeColor = Color.Black;
+                txtVerificacion.ForeColor = Color.Black;
 
+            }
         }
     }
 }
