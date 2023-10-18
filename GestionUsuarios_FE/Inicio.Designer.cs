@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Drawing;
 
-namespace GestionUsuarios_FE
+namespace Inicio
 {
-    partial class Form1
+    partial class Inicio
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -213,16 +213,16 @@ namespace GestionUsuarios_FE
             this.btnModo.BackColor = System.Drawing.Color.White;
             this.btnModo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModo.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnModo.Location = new System.Drawing.Point(27, 38);
+            this.btnModo.Location = new System.Drawing.Point(21, 25);
             this.btnModo.Name = "btnModo";
-            this.btnModo.Size = new System.Drawing.Size(182, 33);
+            this.btnModo.Size = new System.Drawing.Size(132, 33);
             this.btnModo.TabIndex = 31;
             this.btnModo.Text = "Modo Claro Activado";
             this.btnModo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnModo.UseVisualStyleBackColor = false;
             this.btnModo.Click += new System.EventHandler(this.buttonModo_Click);
             // 
-            // Form1
+            // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -243,7 +243,7 @@ namespace GestionUsuarios_FE
             this.Controls.Add(this.labelApellido);
             this.Controls.Add(this.labelNombre);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "Inicio";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.errorNombre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorApellido)).EndInit();
@@ -256,11 +256,6 @@ namespace GestionUsuarios_FE
 
         }
 
-        private void txtVerif_TextChanged(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         #endregion
 
         private System.Windows.Forms.Label label1;
@@ -269,7 +264,6 @@ namespace GestionUsuarios_FE
         private System.Windows.Forms.Label labelContraseña;
         private System.Windows.Forms.Label labelNombredeusuario;
         private System.Windows.Forms.Label labelCorreo;
-        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtNombredeusuario;
         private System.Windows.Forms.TextBox txtCorreo;
@@ -284,6 +278,7 @@ namespace GestionUsuarios_FE
         private System.Windows.Forms.TextBox txtVerificacion;
         private System.Windows.Forms.ErrorProvider errorVerificacion;
         private System.Windows.Forms.Button btnModo;
+        public System.Windows.Forms.TextBox txtNombre;
     }
 }
 

@@ -1,6 +1,8 @@
-﻿namespace SYO
+﻿using System.Drawing;
+
+namespace Calculadora
 {
-    partial class Form2
+    partial class Calculadora
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -51,7 +53,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.LightGray;
+            this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.textBox1.Location = new System.Drawing.Point(150, 121);
@@ -62,7 +64,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.LightGray;
+            this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button1.Location = new System.Drawing.Point(111, 183);
@@ -75,7 +77,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.LightGray;
+            this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button2.Location = new System.Drawing.Point(174, 183);
@@ -88,7 +90,7 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.LightGray;
+            this.button3.BackColor = System.Drawing.Color.White;
             this.button3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button3.Location = new System.Drawing.Point(238, 183);
@@ -101,7 +103,7 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.LightGray;
+            this.button4.BackColor = System.Drawing.Color.White;
             this.button4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button4.Location = new System.Drawing.Point(111, 238);
@@ -114,7 +116,7 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.LightGray;
+            this.button5.BackColor = System.Drawing.Color.White;
             this.button5.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button5.Location = new System.Drawing.Point(174, 238);
@@ -127,7 +129,7 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.LightGray;
+            this.button6.BackColor = System.Drawing.Color.White;
             this.button6.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button6.Location = new System.Drawing.Point(238, 238);
@@ -140,7 +142,7 @@
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.LightGray;
+            this.button7.BackColor = System.Drawing.Color.White;
             this.button7.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button7.Location = new System.Drawing.Point(111, 292);
@@ -153,7 +155,7 @@
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.Color.LightGray;
+            this.button8.BackColor = System.Drawing.Color.White;
             this.button8.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button8.Location = new System.Drawing.Point(174, 292);
@@ -166,7 +168,7 @@
             // 
             // button9
             // 
-            this.button9.BackColor = System.Drawing.Color.LightGray;
+            this.button9.BackColor = System.Drawing.Color.White;
             this.button9.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button9.Location = new System.Drawing.Point(238, 292);
@@ -179,7 +181,7 @@
             // 
             // button0
             // 
-            this.button0.BackColor = System.Drawing.Color.LightGray;
+            this.button0.BackColor = System.Drawing.Color.White;
             this.button0.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button0.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button0.Location = new System.Drawing.Point(111, 346);
@@ -192,7 +194,7 @@
             // 
             // buttonMas
             // 
-            this.buttonMas.BackColor = System.Drawing.Color.LightGray;
+            this.buttonMas.BackColor = System.Drawing.Color.White;
             this.buttonMas.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMas.ForeColor = System.Drawing.SystemColors.Desktop;
             this.buttonMas.Location = new System.Drawing.Point(302, 238);
@@ -205,7 +207,7 @@
             // 
             // buttonIgual
             // 
-            this.buttonIgual.BackColor = System.Drawing.Color.LightGray;
+            this.buttonIgual.BackColor = System.Drawing.Color.White;
             this.buttonIgual.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonIgual.ForeColor = System.Drawing.SystemColors.Desktop;
             this.buttonIgual.Location = new System.Drawing.Point(174, 346);
@@ -219,7 +221,7 @@
             // lblHistorial
             // 
             this.lblHistorial.AutoSize = true;
-            this.lblHistorial.BackColor = System.Drawing.Color.LightGray;
+            this.lblHistorial.BackColor = System.Drawing.Color.White;
             this.lblHistorial.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHistorial.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblHistorial.Location = new System.Drawing.Point(26, 433);
@@ -229,7 +231,7 @@
             // 
             // buttonMenos
             // 
-            this.buttonMenos.BackColor = System.Drawing.Color.LightGray;
+            this.buttonMenos.BackColor = System.Drawing.Color.White;
             this.buttonMenos.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMenos.ForeColor = System.Drawing.SystemColors.Desktop;
             this.buttonMenos.Location = new System.Drawing.Point(302, 183);
@@ -242,7 +244,7 @@
             // 
             // buttonMultiplicacion
             // 
-            this.buttonMultiplicacion.BackColor = System.Drawing.Color.LightGray;
+            this.buttonMultiplicacion.BackColor = System.Drawing.Color.White;
             this.buttonMultiplicacion.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMultiplicacion.ForeColor = System.Drawing.SystemColors.Desktop;
             this.buttonMultiplicacion.Location = new System.Drawing.Point(302, 292);
@@ -255,7 +257,7 @@
             // 
             // buttonDividir
             // 
-            this.buttonDividir.BackColor = System.Drawing.Color.LightGray;
+            this.buttonDividir.BackColor = System.Drawing.Color.White;
             this.buttonDividir.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDividir.ForeColor = System.Drawing.SystemColors.Desktop;
             this.buttonDividir.Location = new System.Drawing.Point(302, 346);
@@ -268,7 +270,7 @@
             // 
             // buttonBorrar
             // 
-            this.buttonBorrar.BackColor = System.Drawing.Color.LightGray;
+            this.buttonBorrar.BackColor = System.Drawing.Color.White;
             this.buttonBorrar.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBorrar.ForeColor = System.Drawing.SystemColors.Desktop;
             this.buttonBorrar.Location = new System.Drawing.Point(238, 346);
@@ -281,23 +283,23 @@
             // 
             // buttonModo
             // 
-            this.buttonModo.BackColor = System.Drawing.Color.LightGray;
+            this.buttonModo.BackColor = System.Drawing.Color.White;
             this.buttonModo.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonModo.ForeColor = System.Drawing.SystemColors.Desktop;
             this.buttonModo.Location = new System.Drawing.Point(30, 20);
             this.buttonModo.Name = "buttonModo";
-            this.buttonModo.Size = new System.Drawing.Size(201, 33);
+            this.buttonModo.Size = new System.Drawing.Size(145, 33);
             this.buttonModo.TabIndex = 30;
-            this.buttonModo.Text = "Modo Oscuro Activado";
+            this.buttonModo.Text = "Modo Claro Activado";
             this.buttonModo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.buttonModo.UseVisualStyleBackColor = false;
             this.buttonModo.Click += new System.EventHandler(this.buttonModo_Click);
             // 
-            // Form2
+            // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(73)))));
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(465, 516);
             this.Controls.Add(this.buttonModo);
             this.Controls.Add(this.buttonBorrar);
@@ -318,8 +320,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
-            this.Name = "Form2";
+            this.Name = "Calculadora";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Calculadora_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

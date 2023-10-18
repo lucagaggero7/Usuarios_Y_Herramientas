@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace SYO
+namespace Calculadora
 {
     public enum Operacion
     {
@@ -21,13 +21,13 @@ namespace SYO
         Multiplicacion = 4
 
     }
-    public partial class Form2 : Form
+    public partial class Calculadora : Form
     {
         double valor1 = 0;
         double valor2 = 0;
         Operacion operador = Operacion.NoDefinida;
-        int contador = 1;
-        public Form2()
+        public int contador = 0;
+        public Calculadora()
         {
             InitializeComponent();
         }
@@ -181,7 +181,7 @@ namespace SYO
             lblHistorial.Text = "";
         }
 
-        private void buttonModo_Click(object sender, EventArgs e)
+        public void buttonModo_Click(object sender, EventArgs e)
         {
             contador++;
             if ((contador % 2) == 0)
@@ -233,6 +233,11 @@ namespace SYO
                 lblHistorial.BackColor = Color.LightGray;
 
             }
+        }
+
+        private void Calculadora_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

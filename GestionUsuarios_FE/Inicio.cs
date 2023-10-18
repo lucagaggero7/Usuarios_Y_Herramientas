@@ -1,5 +1,4 @@
-﻿using SYO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,24 +9,28 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using GestionUsuarios_BE;
+using Gestion_UsuariosFE;
+using Menu;
 
 
-
-namespace GestionUsuarios_FE
+namespace Inicio
 {
-    public partial class Form1 : Form
+    public partial class Inicio : Form
     {
 
         Usuario myUsuario = new Usuario();
         int valor;
-        int contador = 0;
-        public Form1()
+        public int contador = 0;
+     
+        
+        public Inicio()
         {
             InitializeComponent();
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
+            
 
             if (txtNombre.Text == "")
             {
@@ -98,9 +101,23 @@ namespace GestionUsuarios_FE
                     myUsuario.Correo = txtCorreo.Text;
                     myUsuario.Contraseña = txtContraseña.Text;
                     MessageBox.Show("Registro Completado");
-                    Form2 formulario = new Form2();
-                    
-                    formulario.ShowDialog();
+                    Menu.Menu f2 = new Menu.Menu();
+
+                    if ((contador % 2) == 0)
+                    {
+
+                    }
+                    else
+                    {
+                        f2.btnModo_Click(this, null);
+                    }
+
+                    f2.labelMenuinicio.Text = "Bienvenido" + " " + txtNombre.Text.ToUpper() + " " + "porfavor seleccione la herramienta que desea utilizar";
+                    //f3.labelMenuinicio.Text = f3.labelMenuinicio.Text.ToUpper();
+                    this.Hide();
+                    f2.ShowDialog();
+                    this.Close();
+
                 }
                 else
                 {
@@ -112,9 +129,9 @@ namespace GestionUsuarios_FE
 
         }
 
-        private void buttonModo_Click(object sender, EventArgs e)
+        public void buttonModo_Click(object sender, EventArgs e)
         {
-            // FUNCIOM DE MODO OSCURO
+            // FUNCION DE MODO OSCURO
             contador++;
             if ((contador % 2) == 0)
             {
@@ -143,7 +160,6 @@ namespace GestionUsuarios_FE
                 txtCorreo.ForeColor = Color.Black;
                 txtContraseña.ForeColor = Color.Black;
                 txtVerificacion.ForeColor = Color.Black;
-
             }
             else
             {
@@ -172,7 +188,6 @@ namespace GestionUsuarios_FE
                 txtCorreo.ForeColor = Color.Black;
                 txtContraseña.ForeColor = Color.Black;
                 txtVerificacion.ForeColor = Color.Black;
-
             }
         }
     }

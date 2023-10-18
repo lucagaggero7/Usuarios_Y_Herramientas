@@ -8,12 +8,6 @@ namespace GestionUsuarios_BE
 {
     public class Usuario
     {
-        private string nombre;
-        private string apellido;
-        private string nombredeusuario;
-        private string correo;
-        private string contraseña;
-
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Nombredeusuario { get; set; }
