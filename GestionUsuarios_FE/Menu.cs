@@ -1,5 +1,4 @@
-﻿using Calculadora;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,12 +10,11 @@ using System.Windows.Forms;
 using GestionUsuarios_BE;
 using GestionUsuarios_FE;
 
-namespace Menu
+namespace GestionUsuarios_FE
 {
     public partial class Menu : Form
     {
         public int contador = 0;
-
         public Menu()
         {
             InitializeComponent();
@@ -25,17 +23,17 @@ namespace Menu
         private void btnCalculadora_Click(object sender, EventArgs e)
         {
            
-            Calculadora.Calculadora f3 = new Calculadora.Calculadora();
+            Calculadora f4 = new Calculadora();
             if ((contador % 2) == 0)
             {
                
             }
             else
             {
-                f3.buttonModo_Click(this, null);
+                f4.buttonModo_Click(this, null);
             }
 
-            f3.ShowDialog();
+            f4.ShowDialog();
 
 
         }
@@ -70,6 +68,35 @@ namespace Menu
                 labelMenuinicio.ForeColor = Color.White;
 
             }
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReloj_Click(object sender, EventArgs e)
+        {
+           Reloj f5 = new Reloj();
+            if ((contador % 2) == 0)
+            {
+
+            }
+            else
+            {
+                f5.btnModo_Click(this, null);
+            }
+            f5.Show();
+        }
+
+        private void btnAlarma_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Mas funciones muy pronto");
+        }
+
+        private void btnTemporizador_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Mas funciones muy pronto");
         }
     }
 }

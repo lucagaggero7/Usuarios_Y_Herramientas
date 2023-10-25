@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace Menu
+namespace GestionUsuarios_FE
 {
     partial class Menu
     {
@@ -56,6 +56,7 @@ namespace Menu
             this.btnReloj.TabIndex = 0;
             this.btnReloj.Text = "RELOJ";
             this.btnReloj.UseVisualStyleBackColor = true;
+            this.btnReloj.Click += new System.EventHandler(this.btnReloj_Click);
             // 
             // btnTemporizador
             // 
@@ -66,6 +67,7 @@ namespace Menu
             this.btnTemporizador.TabIndex = 1;
             this.btnTemporizador.Text = "TEMPORIZADOR";
             this.btnTemporizador.UseVisualStyleBackColor = true;
+            this.btnTemporizador.Click += new System.EventHandler(this.btnTemporizador_Click);
             // 
             // btnAlarma
             // 
@@ -76,6 +78,7 @@ namespace Menu
             this.btnAlarma.TabIndex = 2;
             this.btnAlarma.Text = "ALARMA";
             this.btnAlarma.UseVisualStyleBackColor = true;
+            this.btnAlarma.Click += new System.EventHandler(this.btnAlarma_Click);
             // 
             // btnCalculadora
             // 
@@ -156,7 +159,7 @@ namespace Menu
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(775, 326);
+            this.ClientSize = new System.Drawing.Size(790, 350);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -168,7 +171,8 @@ namespace Menu
             this.Controls.Add(this.btnTemporizador);
             this.Controls.Add(this.btnReloj);
             this.Name = "Menu";
-            this.Text = "Form3";
+            this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

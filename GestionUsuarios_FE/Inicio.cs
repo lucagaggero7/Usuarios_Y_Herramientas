@@ -10,126 +10,176 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using GestionUsuarios_BE;
 using Gestion_UsuariosFE;
-using Menu;
+using GestionUsuarios_FE;
 
 
-namespace Inicio
+namespace GestionUsuarios_FE
 {
     public partial class Inicio : Form
     {
-
+        
         Usuario myUsuario = new Usuario();
         int valor;
         public int contador = 0;
-     
-        
+       public Usuarios ListaUsuarios { get; set; } = new Usuarios();
+
         public Inicio()
         {
             InitializeComponent();
+            //mostrar valores de la datatable de usuarios en el datagrid
+            datagrid.DataSource = ListaUsuarios.ListaDT;
+            //mostrar o ocultar datagrid solo para pruebas de desarrollador
+            datagrid.Visible = false;
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            
 
             if (txtNombre.Text == "")
             {
                 errorNombre.SetError(txtNombre, "Debe ingresar un nombre");
                 txtNombre.Focus();
                 return;
-
             }
-            errorNombre.SetError(txtNombre, "");
-
-            if (txtApellido.Text == "")
+            else
             {
-                errorApellido.SetError(txtApellido, "Debe ingresar un apellido");
-                txtApellido.Focus();
-                return;
-            }
-            errorApellido.SetError(txtApellido, "");
-
-            if (txtNombredeusuario.Text == "")
-            {
-                errorNombredeusuario.SetError(txtNombredeusuario, "Debe ingresar un nombre de usuario");
-                txtNombredeusuario.Focus();
-                return;
-            }
-            errorNombredeusuario.SetError(txtNombredeusuario, "");
-
-            if (txtCorreo.Text == "")
-            {
-                errorCorreo.SetError(txtCorreo, "Debe ingresar un correo electronico");
-                txtCorreo.Focus();
-                return;
-            }
-            errorCorreo.SetError(txtCorreo, "");
-
-            if (txtContraseña.Text == "")
-            {
-                errorContraseña.SetError(txtContraseña, "Debe ingresar un contraseña");
-                txtContraseña.Focus();
-                return;
-            }
-            errorContraseña.SetError(txtContraseña, "");
-
-            if (txtVerificacion.Text == "")
-            {
-                errorVerificacion.SetError(txtVerificacion, "Debe ingresar el codigo de verificacion");
-                txtVerificacion.Focus();
-                return;
-            }
-            
-            do
-            {
-                decimal Verificacion;
-                if(!Decimal.TryParse(txtVerificacion.Text, out Verificacion))
-                
+                errorNombre.SetError(txtNombre, "");
+                if (txtApellido.Text == "")
                 {
-                    errorVerificacion.SetError(txtVerificacion,"Igrese un dato numerico");
+                    errorApellido.SetError(txtApellido, "Debe ingresar un apellido");
+                    txtApellido.Focus();
                     return;
-                }    
-                
-                valor = int.Parse(txtVerificacion.Text);
-                if (valor >= 10 && valor <= 15)
-                {
-                    MessageBox.Show("Verificacion de Humano Correcta");
-
-                    myUsuario.Nombre = txtNombre.Text;
-                    myUsuario.Apellido = txtApellido.Text;
-                    myUsuario.Nombredeusuario = txtNombredeusuario.Text;
-                    myUsuario.Correo = txtCorreo.Text;
-                    myUsuario.Contraseña = txtContraseña.Text;
-                    MessageBox.Show("Registro Completado");
-                    Menu.Menu f2 = new Menu.Menu();
-
-                    if ((contador % 2) == 0)
-                    {
-
-                    }
-                    else
-                    {
-                        f2.btnModo_Click(this, null);
-                    }
-
-                    f2.labelMenuinicio.Text = "Bienvenido" + " " + txtNombre.Text.ToUpper() + " " + "porfavor seleccione la herramienta que desea utilizar";
-                    //f3.labelMenuinicio.Text = f3.labelMenuinicio.Text.ToUpper();
-                    this.Hide();
-                    f2.ShowDialog();
-                    this.Close();
-
                 }
                 else
                 {
-                    MessageBox.Show("Verificacion de Humano Incorrecta");
-                    break;
-                }
+                    errorApellido.SetError(txtApellido, "");
+                    if (txtNombredeusuario.Text == "")
+                    {
+                        errorNombredeusuario.SetError(txtNombredeusuario, "Debe ingresar un nombre de usuario");
+                        txtNombredeusuario.Focus();
+                        return;
+                    }
+                    else
+                    {
+                        errorNombredeusuario.SetError(txtNombredeusuario, "");
+                        if (txtCorreo.Text == "")
+                        {
+                            errorCorreo.SetError(txtCorreo, "Debe ingresar un correo electronico");
+                            txtCorreo.Focus();
+                            return;
+                        }
+                        else
+                        {
+                            errorCorreo.SetError(txtCorreo, "");
+                            if (txtContraseña.Text == "")
+                            {
+                                errorContraseña.SetError(txtContraseña, "Debe ingresar un contraseña");
+                                txtContraseña.Focus();
+                                return;
+                            }
+                            else
+                            {
+                                errorContraseña.SetError(txtContraseña, "");
+                                if (txtVerificacion.Text == "")
+                                {
+                                    errorVerificacion.SetError(txtVerificacion, "Debe ingresar el codigo de verificacion");
+                                    txtVerificacion.Focus();
+                                    return;
+                                }
+                                else
+                                {
+                                    errorVerificacion.SetError(txtVerificacion, "");
+                                    do
+                                    {
+                                        decimal Verificacion;
+                                        if (!Decimal.TryParse(txtVerificacion.Text, out Verificacion))
 
-            } while (valor < 10 || valor > 15);
+                                        {
+                                            errorVerificacion.SetError(txtVerificacion, "Igrese un dato numerico");
+                                            return;
+                                        }
+                                        else
+                                        {
+                                            errorVerificacion.SetError(txtVerificacion, "");
+                                            valor = int.Parse(txtVerificacion.Text);
+                                            if (valor >= 10 && valor <= 15)
 
+                                            {
+                                                
+                                                Usuario user = new Usuario();
+                                                user.Agregar(txtNombre.Text,
+                                                            txtApellido.Text,
+                                                            txtNombredeusuario.Text,
+                                                            txtCorreo.Text,
+                                                            txtContraseña.Text);
+
+                                                ListaUsuarios.InsertUsuario(user);
+                                                //
+                                                myUsuario.Nombre = txtNombre.Text;
+                                                myUsuario.Apellido = txtApellido.Text;
+                                                myUsuario.Nombredeusuario = txtNombredeusuario.Text;
+                                                myUsuario.Correo = txtCorreo.Text;
+                                                myUsuario.Contraseña = txtContraseña.Text;
+                                                MessageBox.Show("Usuario Registrado");
+
+
+                                                Inicio1 f1 = Owner as Inicio1;
+                                                f1.datagrid.DataSource = ListaUsuarios.ListaDT;
+                                                f1.ListaUsuarios.ListaDT = ListaUsuarios.ListaDT;
+
+
+
+                                                this.Close();
+                                                Menu f2 = new Menu();
+                                               
+                                                
+
+                                                if ((contador % 2) == 0)
+                                                {
+
+                                                }
+                                                else
+                                                {
+                                                    f2.btnModo_Click(this, null);
+                                                }
+                                                f2.labelMenuinicio.Text = "Bienvenido" + " " + txtNombre.Text.ToUpper() + " " + "porfavor seleccione la herramienta que desea utilizar";
+                                                //f3.labelMenuinicio.Text = f3.labelMenuinicio.Text.ToUpper();
+
+                                                //this.Hide();
+                                                //f2.ShowDialog();
+                                                //this.Close();
+                                                errorVerificacion.SetError(txtVerificacion, "");
+                                            }
+                                            else
+                                            {
+                                                errorVerificacion.SetError(txtVerificacion, "Verificacion humano incorrecta");
+                                                return;
+                                            }
+                                               
+                                        }
+
+                                    } while (valor < 10 || valor > 15);
+
+                                 
+
+
+
+
+
+
+                                }
+                            }
+                        }
+                    }
+                }    
+            }
         }
 
-        public void buttonModo_Click(object sender, EventArgs e)
+           // errorContraseña.SetError(txtContraseña, "");
+
+          
+
+        public void btnModo_Click(object sender, EventArgs e)
         {
             // FUNCION DE MODO OSCURO
             contador++;
@@ -189,6 +239,11 @@ namespace Inicio
                 txtContraseña.ForeColor = Color.Black;
                 txtVerificacion.ForeColor = Color.Black;
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 
-namespace Inicio
+namespace GestionUsuarios_FE
 {
     partial class Inicio
     {
@@ -53,12 +53,14 @@ namespace Inicio
             this.labelVerificacion = new System.Windows.Forms.Label();
             this.errorVerificacion = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnModo = new System.Windows.Forms.Button();
+            this.datagrid = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.errorNombre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorApellido)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorNombredeusuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorCorreo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorContraseña)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorVerificacion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -220,14 +222,24 @@ namespace Inicio
             this.btnModo.Text = "Modo Claro Activado";
             this.btnModo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnModo.UseVisualStyleBackColor = false;
-            this.btnModo.Click += new System.EventHandler(this.buttonModo_Click);
+            this.btnModo.Click += new System.EventHandler(this.btnModo_Click);
+            // 
+            // datagrid
+            // 
+            this.datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datagrid.Location = new System.Drawing.Point(539, 32);
+            this.datagrid.Name = "datagrid";
+            this.datagrid.Size = new System.Drawing.Size(240, 150);
+            this.datagrid.TabIndex = 32;
+            this.datagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(791, 450);
+            this.Controls.Add(this.datagrid);
             this.Controls.Add(this.btnModo);
             this.Controls.Add(this.labelVerificacion);
             this.Controls.Add(this.txtVerificacion);
@@ -251,6 +263,7 @@ namespace Inicio
             ((System.ComponentModel.ISupportInitialize)(this.errorCorreo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorContraseña)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorVerificacion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,8 +290,9 @@ namespace Inicio
         private System.Windows.Forms.Label labelVerificacion;
         private System.Windows.Forms.TextBox txtVerificacion;
         private System.Windows.Forms.ErrorProvider errorVerificacion;
-        private System.Windows.Forms.Button btnModo;
         public System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.DataGridView datagrid;
+        public System.Windows.Forms.Button btnModo;
     }
 }
 

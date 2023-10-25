@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Inicio;
+using GestionUsuarios_FE;
+
 
 namespace GestionUsuarios_FE
 {
@@ -17,7 +18,7 @@ namespace GestionUsuarios_FE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Inicio.Inicio());
+            Application.Run(new GestionUsuarios_FE.Inicio1());
         }
     }
 }

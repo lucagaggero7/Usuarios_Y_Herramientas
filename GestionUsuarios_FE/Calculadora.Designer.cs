@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace Calculadora
+namespace GestionUsuarios_FE
 {
     partial class Calculadora
     {
