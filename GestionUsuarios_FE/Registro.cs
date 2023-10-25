@@ -15,7 +15,7 @@ using GestionUsuarios_FE;
 
 namespace GestionUsuarios_FE
 {
-    public partial class Inicio : Form
+    public partial class Registro : Form
     {
         
         Usuario myUsuario = new Usuario();
@@ -23,7 +23,7 @@ namespace GestionUsuarios_FE
         public int contador = 0;
        public Usuarios ListaUsuarios { get; set; } = new Usuarios();
 
-        public Inicio()
+        public Registro()
         {
             InitializeComponent();
             //mostrar valores de la datatable de usuarios en el datagrid
@@ -123,7 +123,7 @@ namespace GestionUsuarios_FE
                                                 MessageBox.Show("Usuario Registrado");
 
 
-                                                Inicio1 f1 = Owner as Inicio1;
+                                                Login f1 = Owner as Login;
                                                 f1.datagrid.DataSource = ListaUsuarios.ListaDT;
                                                 f1.ListaUsuarios.ListaDT = ListaUsuarios.ListaDT;
 
@@ -242,6 +242,11 @@ namespace GestionUsuarios_FE
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Inicio_Load(object sender, EventArgs e)
         {
 
         }

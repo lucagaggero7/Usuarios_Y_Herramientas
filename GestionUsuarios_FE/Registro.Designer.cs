@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace GestionUsuarios_FE
 {
-    partial class Inicio
+    partial class Registro
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -233,7 +233,7 @@ namespace GestionUsuarios_FE
             this.datagrid.TabIndex = 32;
             this.datagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // Inicio
+            // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -255,8 +255,9 @@ namespace GestionUsuarios_FE
             this.Controls.Add(this.labelApellido);
             this.Controls.Add(this.labelNombre);
             this.Controls.Add(this.label1);
-            this.Name = "Inicio";
-            this.Text = "Form1";
+            this.Name = "Registro";
+            this.Text = "Registro";
+            this.Load += new System.EventHandler(this.Inicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorNombre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorApellido)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorNombredeusuario)).EndInit();

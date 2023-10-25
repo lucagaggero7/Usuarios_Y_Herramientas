@@ -1,6 +1,6 @@
 ﻿namespace GestionUsuarios_FE
 {
-    partial class Inicio1
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -127,7 +127,7 @@
             this.datagrid.Size = new System.Drawing.Size(240, 150);
             this.datagrid.TabIndex = 41;
             // 
-            // Inicio1
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -141,8 +141,9 @@
             this.Controls.Add(this.btnIniciarSesion);
             this.Controls.Add(this.labelBienvenido);
             this.Controls.Add(this.btnModo);
-            this.Name = "Inicio1";
-            this.Text = "Inicio1";
+            this.Name = "Login";
+            this.Text = "Login";
+            this.Load += new System.EventHandler(this.Inicio1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

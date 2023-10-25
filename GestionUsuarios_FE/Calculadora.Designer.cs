@@ -321,7 +321,7 @@ namespace GestionUsuarios_FE
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Name = "Calculadora";
-            this.Text = "Form1";
+            this.Text = "Calculadora";
             this.Load += new System.EventHandler(this.Calculadora_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -13,9 +13,9 @@ using GestionUsuarios_BE;
 
 namespace GestionUsuarios_FE
 {
-    public partial class Inicio1 : Form
+    public partial class Login : Form
     {
-        Inicio f2 = new Inicio();
+        Registro f2 = new Registro();
         
         public Usuarios ListaUsuarios { get; set; } = new Usuarios();
         public DataTable ListaDT { get; set; } = new DataTable();
@@ -29,7 +29,7 @@ namespace GestionUsuarios_FE
 
         
 
-        public Inicio1()
+        public Login()
         {
             InitializeComponent();
             //mostrar valores de la datatable de usuarios en el datagrid
@@ -83,7 +83,7 @@ namespace GestionUsuarios_FE
 
         private void btnRegistrate_Click(object sender, EventArgs e)
         {
-            Inicio f2 = new Inicio();
+            Registro f2 = new Registro();
             AddOwnedForm(f2);
             
             if ((contador % 2) == 0)
@@ -203,6 +203,11 @@ namespace GestionUsuarios_FE
         private void txtContraseña_TextChanged(object sender, EventArgs e)
         {
             txtContraseña.PasswordChar = '*';
+        }
+
+        private void Inicio1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
