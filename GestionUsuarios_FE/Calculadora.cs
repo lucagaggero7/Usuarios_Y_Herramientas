@@ -32,6 +32,7 @@ namespace GestionUsuarios_FE
             InitializeComponent();
         }
 
+        //Lee el numero ingresado por el usuario en el textbox
         private void LeerNumero(string numero)
         {
             if (textBox1.Text == "0" && textBox1.Text != null)
@@ -44,6 +45,7 @@ namespace GestionUsuarios_FE
             }
         }
 
+        //Ejecuta una operacion dependiendo del operador que el usuario selecciona y devuelve un resultado
         private double EjecutarOperacion()
         {
             double resultado = 0;
@@ -74,6 +76,8 @@ namespace GestionUsuarios_FE
 
 
         }
+
+        //Agrega el numero cero al textbox
         private void button0_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == "0")
@@ -86,64 +90,77 @@ namespace GestionUsuarios_FE
             }
         }
 
+        //Agrega el numero uno al textbox
         private void button1_Click(object sender, EventArgs e)
         {
             LeerNumero("1");
         }
 
-
+        //Agrega el numero dos al textbox
         private void button2_Click(object sender, EventArgs e)
         {
             LeerNumero("2");
         }
 
+        //Agrega el numero tres al textbox
         private void button3_Click(object sender, EventArgs e)
         {
             LeerNumero("3");
         }
 
+        //Agrega el numero cuatro al textbox
         private void button4_Click(object sender, EventArgs e)
         {
             LeerNumero("4");
         }
 
+        //Agrega el numero cinco al textbox
         private void button5_Click(object sender, EventArgs e)
         {
             LeerNumero("5");
         }
 
+        //Agrega el numero seis al textbox
         private void button6_Click(object sender, EventArgs e)
         {
             LeerNumero("6");
         }
 
+        //Agrega el numero siete al textbox
         private void button7_Click(object sender, EventArgs e)
         {
             LeerNumero("7");
         }
 
+        //Agrega el numero ocho al textbox
         private void button8_Click(object sender, EventArgs e)
         {
             LeerNumero("8");
         }
 
+        //Agrega el numero nueve al textbox
         private void button9_Click(object sender, EventArgs e)
         {
             LeerNumero("9");
         }
 
+        //Obtiene el valor de resultado en el textbox y escribe el historial en su respectivo label
         private void ObtenerValor(string operador)
         {
             valor1 = Convert.ToDouble(textBox1.Text);
             lblHistorial.Text = textBox1.Text + operador;
             textBox1.Text = "0";
         }
+
+        //convierte al operador en "+"
         private void buttonMas_Click(object sender, EventArgs e)
         {
             operador = Operacion.Suma;
             ObtenerValor("+");
 
         }
+
+        //Obtiene el resultado de la operacion, vuelve los dos valores a cero y escribe el resultado en el textbox
         private void buttonIgual_Click(object sender, EventArgs e)
         {
             if (valor2 == 0)
@@ -157,30 +174,35 @@ namespace GestionUsuarios_FE
             }
         }
 
+        //convierte al operador en "-"
         private void buttonMenos_Click(object sender, EventArgs e)
         {
             operador = Operacion.Resta;
             ObtenerValor("-");
         }
 
+        //convierte al operador en "x"
         private void buttonMultiplicacion_Click(object sender, EventArgs e)
         {
             operador = Operacion.Multiplicacion;
             ObtenerValor("x");
         }
 
+        //convierte al operador en "/"
         private void buttonDividir_Click(object sender, EventArgs e)
         {
             operador = Operacion.Division;
             ObtenerValor("/");
         }
 
+        //Borra todo el contenido del textbox y el historial
         private void buttonBorrar_Click(object sender, EventArgs e)
         {
             textBox1.Text = "0";
             lblHistorial.Text = "";
         }
 
+        // FUNCION DE MODO OSCURO
         public void buttonModo_Click(object sender, EventArgs e)
         {
             contador++;
@@ -233,11 +255,6 @@ namespace GestionUsuarios_FE
                 lblHistorial.BackColor = Color.LightGray;
 
             }
-        }
-
-        private void Calculadora_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

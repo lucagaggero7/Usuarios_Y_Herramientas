@@ -23,27 +23,16 @@ namespace GestionUsuarios_FE
             ti.Enabled = true;
         }
         
-        
-
-        private void Reloj_Load(object sender, EventArgs e)
-        {
-            
-           
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //escribe en el texto del label la hora actual
         private void eventoTimer(object ob, EventArgs evt)
         {
             label1.Text = DateTime.Now.ToString("hh:mm:ss tt");
         }
 
+        // FUNCION DE MODO OSCURO
         public void btnModo_Click(object sender, EventArgs e)
         {
-            // FUNCION DE MODO OSCURO
+           
             contador++;
 
             if ((contador % 2) == 0)

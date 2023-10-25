@@ -12,6 +12,8 @@ namespace GestionUsuarios_BE
     {
         public DataTable ListaDT { get; set; } = new DataTable();
         public int existe;
+
+        //Crea la Estructura de la Lista de usuarios
         public Usuarios()
         {
             ListaDT.TableName = "ListaUsuarios";
@@ -24,6 +26,7 @@ namespace GestionUsuarios_BE
             LeerArchivo();
         }
 
+        //Lee el archivo Usuarios.xml si es que existe
         public void LeerArchivo()
         {
             if (System.IO.File.Exists("Usuarios.xml"))
@@ -32,6 +35,7 @@ namespace GestionUsuarios_BE
             }
         }
 
+        // Inserta un nuevo usuario en la lista de usuarios y luego escribe esta lista en el archivo Usuarios.xml
         public void InsertUsuario(Usuario aUsuario)
         {
             ListaDT.Rows.Add(); //agrego renglon vacio

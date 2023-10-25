@@ -44,7 +44,6 @@ namespace GestionUsuarios_FE
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 45);
             this.label1.TabIndex = 0;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -92,7 +91,6 @@ namespace GestionUsuarios_FE
             this.Controls.Add(this.label1);
             this.Name = "Reloj";
             this.Text = "Reloj";
-            this.Load += new System.EventHandler(this.Reloj_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

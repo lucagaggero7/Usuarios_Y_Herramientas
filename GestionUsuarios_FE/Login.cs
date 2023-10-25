@@ -15,11 +15,7 @@ namespace GestionUsuarios_FE
 {
     public partial class Login : Form
     {
-        Registro f2 = new Registro();
-        
         public Usuarios ListaUsuarios { get; set; } = new Usuarios();
-        public DataTable ListaDT { get; set; } = new DataTable();
-
 
         int nombredeusuarioclick = 0;
         int contraseñaclick = 0;
@@ -27,29 +23,16 @@ namespace GestionUsuarios_FE
         public int contador = 0;
         public int actualizar = 0;
 
-        
-
         public Login()
         {
             InitializeComponent();
             //mostrar valores de la datatable de usuarios en el datagrid
             datagrid.DataSource = ListaUsuarios.ListaDT;
-            //mostrar o ocultar datagrid solo para pruebas de desarrollador
+            //ocultar datagrid solo para pruebas de desarrollador (solo mostrar para pruebas
             datagrid.Visible = false;
         }
-
-
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNombre_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+       
+        //Vaciar textbox de nombre de usuario (solo la primera vez que se hace click)
         private void txtNombredeusuario_Click(object sender, EventArgs e)
         {
             nombredeusuarioclick++;
@@ -57,15 +40,14 @@ namespace GestionUsuarios_FE
             if (nombredeusuarioclick == 1)
             {
                 txtNombredeusuario.Text = "";
-                
             }
             else
             {
                 return;
             }
-
         }
-
+        
+        //Vaciar textbox de contraseña (solo la primera vez que se hace click)
         private void txtContraseña_Click(object sender, EventArgs e)
         {
             contraseñaclick++;
@@ -81,6 +63,7 @@ namespace GestionUsuarios_FE
             }
         }
 
+        //Abrir formulario para registrar nuevo usuario
         private void btnRegistrate_Click(object sender, EventArgs e)
         {
             Registro f2 = new Registro();
@@ -88,7 +71,6 @@ namespace GestionUsuarios_FE
             
             if ((contador % 2) == 0)
             {
-
             }
             else
             {
@@ -98,20 +80,19 @@ namespace GestionUsuarios_FE
             f2.ShowDialog();
 
         }
-
+        // Intentar iniciar sesion tomando los datos de los textbox y verificando que esten en la lista de usuarios
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             foreach (DataRow row in ListaUsuarios.ListaDT.Rows)
             {
-
                 if (txtNombredeusuario.Text == (row["Nombredeusuario"].ToString()))
                 {
                    if(txtContraseña.Text == (row["Contraseña"].ToString()))
                     {
                         Menu f3 = new Menu();
+                        f3.labelMenuinicio.Text = "Bienvenido" + " " + txtNombredeusuario.Text + " " + "porfavor seleccione la herramienta que desea utilizar";
                         if ((contador % 2) == 0)
                         {
-
                         }
                         else
                         {
@@ -119,9 +100,8 @@ namespace GestionUsuarios_FE
                         }
 
                         f3.ShowDialog();
-                        
-                        //txtNombredeusuario.Text = "";
-                        //txtContraseña.Text = "";
+                        txtNombredeusuario.Text = "";
+                        txtContraseña.Text = "";
                         logear = 1;
                         break;
                     }
@@ -139,29 +119,11 @@ namespace GestionUsuarios_FE
                 MessageBox.Show("Error de Usuario y/o contraseña");
             }
 
-            
-
-
-            //intentos fallidos de recorrer el datatable
-            //if(ListaDT.Rows.Contains(txtNombredeusuario))
-            //{
-            //    Menu.Menu f3 = new Menu.Menu();
-            //    f3.ShowDialog();
-            //}
-
-
-            //ListaUsuarios.LeerArchivo();
-            //if(ListaDT.Rows.Contains(?))
-
-            //{
-            //    Menu.Menu f3 = new Menu.Menu();
-            //    f3.ShowDialog();
-            //}
         }
 
+            // FUNCION DE MODO OSCURO
         private void btnModo_Click(object sender, EventArgs e)
         {
-            // FUNCION DE MODO OSCURO
             contador++;
             if ((contador % 2) == 0)
             {
@@ -194,20 +156,17 @@ namespace GestionUsuarios_FE
                 txtContraseña.ForeColor = Color.Black;
             }
         }
-
+        //Ocultar caracteres contraseña
         private void txtContraseña_DoubleClick(object sender, EventArgs e)
         {
             txtContraseña.PasswordChar = '*';
         }
-
+       
+        //Ocultar caracteres contraseña
         private void txtContraseña_TextChanged(object sender, EventArgs e)
         {
             txtContraseña.PasswordChar = '*';
         }
 
-        private void Inicio1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

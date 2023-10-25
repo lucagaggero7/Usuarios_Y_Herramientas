@@ -94,7 +94,6 @@
             this.labelRegistrate.Size = new System.Drawing.Size(159, 17);
             this.labelRegistrate.TabIndex = 38;
             this.labelRegistrate.Text = "¿No tienes una cuenta?";
-            this.labelRegistrate.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtNombredeusuario
             // 
@@ -105,7 +104,6 @@
             this.txtNombredeusuario.TabIndex = 39;
             this.txtNombredeusuario.Text = "Nombre de usuario";
             this.txtNombredeusuario.Click += new System.EventHandler(this.txtNombredeusuario_Click);
-            this.txtNombredeusuario.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtContraseña
             // 
@@ -143,7 +141,6 @@
             this.Controls.Add(this.btnModo);
             this.Name = "Login";
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Inicio1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

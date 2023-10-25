@@ -31,7 +31,8 @@ namespace GestionUsuarios_FE
             //mostrar o ocultar datagrid solo para pruebas de desarrollador
             datagrid.Visible = false;
         }
-
+        
+        // Crear usuario nuevo verificando que todos los campos esten completos y que la verificacion cumpla con las condiciones
         private void btnCrear_Click(object sender, EventArgs e)
         {
 
@@ -88,19 +89,17 @@ namespace GestionUsuarios_FE
                                 }
                                 else
                                 {
-                                    errorVerificacion.SetError(txtVerificacion, "");
                                     do
                                     {
                                         decimal Verificacion;
                                         if (!Decimal.TryParse(txtVerificacion.Text, out Verificacion))
 
                                         {
-                                            errorVerificacion.SetError(txtVerificacion, "Igrese un dato numerico");
+                                            errorVerificacion.SetError(txtVerificacion, "Ingrese un dato numerico");
                                             return;
                                         }
                                         else
                                         {
-                                            errorVerificacion.SetError(txtVerificacion, "");
                                             valor = int.Parse(txtVerificacion.Text);
                                             if (valor >= 10 && valor <= 15)
 
@@ -126,28 +125,8 @@ namespace GestionUsuarios_FE
                                                 Login f1 = Owner as Login;
                                                 f1.datagrid.DataSource = ListaUsuarios.ListaDT;
                                                 f1.ListaUsuarios.ListaDT = ListaUsuarios.ListaDT;
-
-
-
                                                 this.Close();
-                                                Menu f2 = new Menu();
-                                               
-                                                
 
-                                                if ((contador % 2) == 0)
-                                                {
-
-                                                }
-                                                else
-                                                {
-                                                    f2.btnModo_Click(this, null);
-                                                }
-                                                f2.labelMenuinicio.Text = "Bienvenido" + " " + txtNombre.Text.ToUpper() + " " + "porfavor seleccione la herramienta que desea utilizar";
-                                                //f3.labelMenuinicio.Text = f3.labelMenuinicio.Text.ToUpper();
-
-                                                //this.Hide();
-                                                //f2.ShowDialog();
-                                                //this.Close();
                                                 errorVerificacion.SetError(txtVerificacion, "");
                                             }
                                             else
@@ -159,14 +138,6 @@ namespace GestionUsuarios_FE
                                         }
 
                                     } while (valor < 10 || valor > 15);
-
-                                 
-
-
-
-
-
-
                                 }
                             }
                         }
@@ -175,13 +146,10 @@ namespace GestionUsuarios_FE
             }
         }
 
-           // errorContraseña.SetError(txtContraseña, "");
-
-          
-
+            // FUNCION DE MODO OSCURO
         public void btnModo_Click(object sender, EventArgs e)
         {
-            // FUNCION DE MODO OSCURO
+            
             contador++;
             if ((contador % 2) == 0)
             {
@@ -239,16 +207,6 @@ namespace GestionUsuarios_FE
                 txtContraseña.ForeColor = Color.Black;
                 txtVerificacion.ForeColor = Color.Black;
             }
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void Inicio_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

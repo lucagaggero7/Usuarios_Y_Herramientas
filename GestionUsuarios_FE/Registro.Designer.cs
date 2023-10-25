@@ -231,7 +231,6 @@ namespace GestionUsuarios_FE
             this.datagrid.Name = "datagrid";
             this.datagrid.Size = new System.Drawing.Size(240, 150);
             this.datagrid.TabIndex = 32;
-            this.datagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Registro
             // 
@@ -257,7 +256,6 @@ namespace GestionUsuarios_FE
             this.Controls.Add(this.label1);
             this.Name = "Registro";
             this.Text = "Registro";
-            this.Load += new System.EventHandler(this.Inicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorNombre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorApellido)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorNombredeusuario)).EndInit();

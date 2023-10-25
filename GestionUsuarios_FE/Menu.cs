@@ -20,6 +20,8 @@ namespace GestionUsuarios_FE
             InitializeComponent();
         }
 
+        //Abre la herramienta calculadora y le da el valor del contador del formulario actual
+        //para que copie el estado del modo oscuro/claro actual
         private void btnCalculadora_Click(object sender, EventArgs e)
         {
            
@@ -38,13 +40,10 @@ namespace GestionUsuarios_FE
 
         }
 
+            // FUNCION DE MODO OSCURO
         public void btnModo_Click(object sender, EventArgs e)
         {
-            // FUNCION DE MODO OSCURO
             contador++;
-            //Inicio.Inicio f1 = new Inicio.Inicio();
-            //f1.contador = contador;
-
             if ((contador % 2) == 0)
             {
                 btnModo.Text = "Modo Claro Activado";
@@ -69,12 +68,8 @@ namespace GestionUsuarios_FE
 
             }
         }
-
-        private void Menu_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        //Abre la herramienta reloj y le da el valor del contador del formulario actual
+        //para que copie el estado del modo oscuro/claro actual
         private void btnReloj_Click(object sender, EventArgs e)
         {
            Reloj f5 = new Reloj();
@@ -89,11 +84,13 @@ namespace GestionUsuarios_FE
             f5.Show();
         }
 
+        //Herramienta de alarma en desarrollo...
         private void btnAlarma_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Mas funciones muy pronto");
         }
 
+        //Herramienta de temporizador en desarrollo...
         private void btnTemporizador_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Mas funciones muy pronto");
