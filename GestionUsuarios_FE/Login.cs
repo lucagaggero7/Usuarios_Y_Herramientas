@@ -19,7 +19,6 @@ namespace GestionUsuarios_FE
 
         int nombredeusuarioclick = 0;
         int contraseñaclick = 0;
-        int logear = 0;
         public int contador = 0;
         public int actualizar = 0;
 
@@ -28,10 +27,12 @@ namespace GestionUsuarios_FE
             InitializeComponent();
             //mostrar valores de la datatable de usuarios en el datagrid
             datagrid.DataSource = ListaUsuarios.ListaDT;
-            //ocultar datagrid solo para pruebas de desarrollador (solo mostrar para pruebas
             datagrid.Visible = false;
+            //mostrar o ocultar datagrid solo para pruebas de desarrollador
+            //en caso de ser usado, descomentar el siguiente codigo
+            //datagrid.Visible = true;
         }
-       
+
         //Vaciar textbox de nombre de usuario (solo la primera vez que se hace click)
         private void txtNombredeusuario_Click(object sender, EventArgs e)
         {
@@ -69,6 +70,8 @@ namespace GestionUsuarios_FE
             Registro f2 = new Registro();
             AddOwnedForm(f2);
             
+            //este if verifica el estado del modo oscuro/claro de este formulario
+            //para que el siguiente formulario inicie en el mismo modo que este
             if ((contador % 2) == 0)
             {
             }
@@ -80,47 +83,45 @@ namespace GestionUsuarios_FE
             f2.ShowDialog();
 
         }
-        // Intentar iniciar sesion tomando los datos de los textbox y verificando que esten en la lista de usuarios
+        // Iniciar sesion llamando al metodo que verifica si el usuario y la contraseña existen 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            foreach (DataRow row in ListaUsuarios.ListaDT.Rows)
-            {
-                if (txtNombredeusuario.Text == (row["Nombredeusuario"].ToString()))
-                {
-                   if(txtContraseña.Text == (row["Contraseña"].ToString()))
-                    {
-                        Menu f3 = new Menu();
-                        f3.labelMenuinicio.Text = "Bienvenido" + " " + txtNombredeusuario.Text + " " + "porfavor seleccione la herramienta que desea utilizar";
-                        if ((contador % 2) == 0)
-                        {
-                        }
-                        else
-                        {
-                            f3.btnModo_Click(this, null);
-                        }
+            bool existe;
 
-                        f3.ShowDialog();
-                        txtNombredeusuario.Text = "";
-                        txtContraseña.Text = "";
-                        logear = 1;
-                        break;
-                    }
-                   
+            Usuario usuario = new Usuario();
+            usuario.Nombredeusuario = txtNombredeusuario.Text;
+            usuario.Contraseña = txtContraseña.Text;
+
+            Usuarios usuarios = new Usuarios();
+            //llamamos al metodo que verifica si ya existe el usuario y la contraseña en la lista de usuarios
+            existe = usuarios.ExisteUsuarioYContraseña(ListaUsuarios, usuario);
+
+            //verificamos que el nombre de usuario y la contraseña existan en un usuario 
+            // para permitir el login y dar paso al siguiente formulario
+            if (existe)
+            {
+                Menu f3 = new Menu();
+                f3.labelMenuinicio.Text = "Bienvenido" + " " + txtNombredeusuario.Text + " " + "porfavor seleccione la herramienta que desea utilizar";
+
+                //este if verifica el estado del modo oscuro/claro de este formulario
+                //para que el siguiente formulario inicie en el mismo modo que este
+                if ((contador % 2) == 0)
+                {
                 }
                 else
                 {
-                    logear = 0;
-                }    
-
+                    f3.btnModo_Click(this, null);
+                }
+                f3.ShowDialog();
+                txtNombredeusuario.Text = "";
+                txtContraseña.Text = "";
             }
-
-            if( logear == 0)
+            else
             {
                 MessageBox.Show("Error de Usuario y/o contraseña");
             }
 
         }
-
             // FUNCION DE MODO OSCURO
         private void btnModo_Click(object sender, EventArgs e)
         {

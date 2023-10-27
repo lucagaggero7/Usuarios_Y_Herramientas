@@ -17,136 +17,187 @@ namespace GestionUsuarios_FE
 {
     public partial class Registro : Form
     {
-        
         Usuario myUsuario = new Usuario();
-        int valor;
         public int contador = 0;
-       public Usuarios ListaUsuarios { get; set; } = new Usuarios();
+        int Valorverif;
+        decimal Verificacion;
+        public Usuarios ListaUsuarios { get; set; } = new Usuarios();
 
         public Registro()
         {
             InitializeComponent();
             //mostrar valores de la datatable de usuarios en el datagrid
             datagrid.DataSource = ListaUsuarios.ListaDT;
-            //mostrar o ocultar datagrid solo para pruebas de desarrollador
             datagrid.Visible = false;
+            //mostrar o ocultar datagrid solo para pruebas de desarrollador
+            //en caso de ser usado, descomentar el siguiente codigo
+            //datagrid.Visible = true;
         }
-        
+
         // Crear usuario nuevo verificando que todos los campos esten completos y que la verificacion cumpla con las condiciones
+        // y el nombre de usuario ingresado no exista aun
         private void btnCrear_Click(object sender, EventArgs e)
         {
 
-            if (txtNombre.Text == "")
+
+
+            if (!(txtNombre.Text == ""))
+            {
+                //borro el error 
+                errorNombre.SetError(txtNombre, "");
+            }
+            else
             {
                 errorNombre.SetError(txtNombre, "Debe ingresar un nombre");
                 txtNombre.Focus();
                 return;
             }
+
+            if (!(txtApellido.Text == ""))
+            {
+                //borro el error 
+                errorApellido.SetError(txtApellido, "");
+            }
             else
             {
-                errorNombre.SetError(txtNombre, "");
-                if (txtApellido.Text == "")
+                errorApellido.SetError(txtApellido, "Debe ingresar un apellido");
+                txtApellido.Focus();
+                return;
+
+            }
+
+            if (!(txtNombredeusuario.Text == ""))
+            {
+                //borro el error 
+                errorNombredeusuario.SetError(txtNombredeusuario, "");
+            }
+            else
+            {
+                errorNombredeusuario.SetError(txtNombredeusuario, "Debe ingresar un nombre de usuario");
+                txtNombredeusuario.Focus();
+                return;
+            }
+
+            if (!(txtCorreo.Text == ""))
+            {
+                //borro el error 
+                errorCorreo.SetError(txtCorreo, "");
+            }
+            else
+            {
+                errorCorreo.SetError(txtCorreo, "Debe ingresar un correo electronico");
+                txtCorreo.Focus();
+                return;
+            }
+
+            if (!(txtContraseña.Text == ""))
+            {
+                //borro el error 
+                errorContraseña.SetError(txtContraseña, "");
+            }
+            else
+            {
+                errorContraseña.SetError(txtContraseña, "Debe ingresar una contraseña");
+                txtContraseña.Focus();
+                return;
+            }
+
+            if (!(txtVerificacion.Text == ""))
+            {
+                //borro el error 
+                errorVerificacion.SetError(txtVerificacion, "");
+            }
+            else
+            {
+                errorVerificacion.SetError(txtVerificacion, "Debe ingresar una verificacion");
+                txtVerificacion.Focus();
+                return;
+            }
+
+            do
+            {
+                if (Decimal.TryParse(txtVerificacion.Text, out Verificacion))
+
                 {
-                    errorApellido.SetError(txtApellido, "Debe ingresar un apellido");
-                    txtApellido.Focus();
-                    return;
+                    //borro el error 
+                    errorVerificacion.SetError(txtVerificacion, "");
+                    Valorverif = int.Parse(txtVerificacion.Text);
                 }
                 else
                 {
-                    errorApellido.SetError(txtApellido, "");
-                    if (txtNombredeusuario.Text == "")
-                    {
-                        errorNombredeusuario.SetError(txtNombredeusuario, "Debe ingresar un nombre de usuario");
-                        txtNombredeusuario.Focus();
-                        return;
-                    }
-                    else
-                    {
-                        errorNombredeusuario.SetError(txtNombredeusuario, "");
-                        if (txtCorreo.Text == "")
-                        {
-                            errorCorreo.SetError(txtCorreo, "Debe ingresar un correo electronico");
-                            txtCorreo.Focus();
-                            return;
-                        }
-                        else
-                        {
-                            errorCorreo.SetError(txtCorreo, "");
-                            if (txtContraseña.Text == "")
-                            {
-                                errorContraseña.SetError(txtContraseña, "Debe ingresar un contraseña");
-                                txtContraseña.Focus();
-                                return;
-                            }
-                            else
-                            {
-                                errorContraseña.SetError(txtContraseña, "");
-                                if (txtVerificacion.Text == "")
-                                {
-                                    errorVerificacion.SetError(txtVerificacion, "Debe ingresar el codigo de verificacion");
-                                    txtVerificacion.Focus();
-                                    return;
-                                }
-                                else
-                                {
-                                    do
-                                    {
-                                        decimal Verificacion;
-                                        if (!Decimal.TryParse(txtVerificacion.Text, out Verificacion))
+                    errorVerificacion.SetError(txtVerificacion, "Ingrese un dato numerico");
+                    return;
+                }
 
-                                        {
-                                            errorVerificacion.SetError(txtVerificacion, "Ingrese un dato numerico");
-                                            return;
-                                        }
-                                        else
-                                        {
-                                            valor = int.Parse(txtVerificacion.Text);
-                                            if (valor >= 10 && valor <= 15)
+                
+                if (Valorverif >= 10 && Valorverif <= 15)
 
-                                            {
-                                                
-                                                Usuario user = new Usuario();
-                                                user.Agregar(txtNombre.Text,
-                                                            txtApellido.Text,
-                                                            txtNombredeusuario.Text,
-                                                            txtCorreo.Text,
-                                                            txtContraseña.Text);
+                {
+                    //borro el error 
+                    errorVerificacion.SetError(txtVerificacion, "");
 
-                                                ListaUsuarios.InsertUsuario(user);
-                                                //
-                                                myUsuario.Nombre = txtNombre.Text;
-                                                myUsuario.Apellido = txtApellido.Text;
-                                                myUsuario.Nombredeusuario = txtNombredeusuario.Text;
-                                                myUsuario.Correo = txtCorreo.Text;
-                                                myUsuario.Contraseña = txtContraseña.Text;
-                                                MessageBox.Show("Usuario Registrado");
+                }
+                else
+                {
+                    errorVerificacion.SetError(txtVerificacion, "Ingrese un numero entre 10 y 15");
+                    return;
+                }
 
 
-                                                Login f1 = Owner as Login;
-                                                f1.datagrid.DataSource = ListaUsuarios.ListaDT;
-                                                f1.ListaUsuarios.ListaDT = ListaUsuarios.ListaDT;
-                                                this.Close();
 
-                                                errorVerificacion.SetError(txtVerificacion, "");
-                                            }
-                                            else
-                                            {
-                                                errorVerificacion.SetError(txtVerificacion, "Verificacion humano incorrecta");
-                                                return;
-                                            }
-                                               
-                                        }
+            } while (Valorverif < 10 || Valorverif > 15);
 
-                                    } while (valor < 10 || valor > 15);
-                                }
-                            }
-                        }
-                    }
-                }    
+
+            bool existe;
+
+            Usuario usuario = new Usuario();
+            usuario.Nombredeusuario = txtNombredeusuario.Text;
+            usuario.Contraseña = txtContraseña.Text;
+
+            Usuarios usuarios = new Usuarios();
+
+            //llamamos al metodo que verifica si ya existe el nombre de usuario en la lista de usuarios
+            existe = usuarios.ExisteNombredeusuario(ListaUsuarios, usuario);
+
+            //verificamos que el nombre de usuario ingresado aun no exista para poder registrar un nuevo usuario
+            if (existe == false)
+            {
+
+                Usuario user = new Usuario();
+                user.Agregar(txtNombre.Text,
+                            txtApellido.Text,
+                            txtNombredeusuario.Text,
+                            txtCorreo.Text,
+                            txtContraseña.Text);
+
+                ListaUsuarios.InsertUsuario(user);
+                myUsuario.Nombre = txtNombre.Text;
+                myUsuario.Apellido = txtApellido.Text;
+                myUsuario.Nombredeusuario = txtNombredeusuario.Text;
+                myUsuario.Correo = txtCorreo.Text;
+                myUsuario.Contraseña = txtContraseña.Text;
+                MessageBox.Show("Usuario Registrado");
+                this.Close();
+
+
+
+                //este codigo se utiliza para actualizar el datagrid view
+                // del login cuando se registra un nuevo usuario sin tener que reiniciar el programa
+                //(solo usado para pruebas de desarrollador)
+                //en caso de ser usado, descomentar el siguiente codigo
+                //Login f1 = Owner as Login;
+                //f1.datagrid.DataSource = ListaUsuarios.ListaDT;
+                //f1.ListaUsuarios.ListaDT = ListaUsuarios.ListaDT;
             }
+            else
+            {
+                MessageBox.Show("Ya existe ese nombre de usuario");
+                return;
+            }
+
         }
 
-            // FUNCION DE MODO OSCURO
+        // FUNCION DE MODO OSCURO
         public void btnModo_Click(object sender, EventArgs e)
         {
             

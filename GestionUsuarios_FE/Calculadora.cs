@@ -256,5 +256,10 @@ namespace GestionUsuarios_FE
 
             }
         }
+
+        private void Calculadora_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

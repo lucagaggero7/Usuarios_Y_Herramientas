@@ -49,11 +49,46 @@ namespace GestionUsuarios_BE
             ListaDT.WriteXml("Usuarios.xml");
         }
 
-       
-    
-         
+        //Nuevo metodo que verifica si existe el usuario y la contraseña en la lista de usuarios y devuelve al front un resultado
+        //(En colaboracion de Mauri Gaggero)
+        public bool ExisteUsuarioYContraseña(Usuarios listausuarios,
+                                    Usuario user)
+        {
+            bool existe = false;
+            foreach (DataRow row in listausuarios.ListaDT.Rows)
+            {
+                if (user.Nombredeusuario == (row["Nombredeusuario"].ToString()) && 
+                    user.Contraseña == row["Contraseña"].ToString())
+                {
+                    existe = true;
+                }
+            }
+            return existe;  
+        }
 
-        
+        //Nuevo metodo que verifica si existe el nombre de usuario y devuelve al front un resultado
+        public bool ExisteNombredeusuario(Usuarios listausuarios,
+                                    Usuario user)
+        {
+            bool existe = false;
+            foreach (DataRow row in listausuarios.ListaDT.Rows)
+            {
+                if (user.Nombredeusuario == (row["Nombredeusuario"].ToString()))
+                {
+                    existe = true;
+                }
+            }
+            return existe;
+        }
+
+
+
+
+
+
+
+
+
 
     }
 }

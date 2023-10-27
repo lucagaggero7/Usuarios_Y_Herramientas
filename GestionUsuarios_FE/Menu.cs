@@ -26,6 +26,9 @@ namespace GestionUsuarios_FE
         {
            
             Calculadora f4 = new Calculadora();
+
+            //este if verifica el estado del modo oscuro/claro de este formulario
+            //para que el siguiente formulario inicie en el mismo modo que este
             if ((contador % 2) == 0)
             {
                
@@ -73,6 +76,9 @@ namespace GestionUsuarios_FE
         private void btnReloj_Click(object sender, EventArgs e)
         {
            Reloj f5 = new Reloj();
+
+            //este if verifica el estado del modo oscuro/claro de este formulario
+            //para que el siguiente formulario inicie en el mismo modo que este
             if ((contador % 2) == 0)
             {
 
@@ -94,6 +100,11 @@ namespace GestionUsuarios_FE
         private void btnTemporizador_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Mas funciones muy pronto");
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
