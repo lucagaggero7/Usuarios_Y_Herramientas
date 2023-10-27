@@ -181,13 +181,21 @@ namespace GestionUsuarios_FE
 
 
 
+                //este codigo se utiliza para actualizar la lista de usuarios
+                //del formulario padre (login) cuando se registra un usuario 
+                //en el formulario de registro (hijo)
+                Login f1 = Owner as Login;
+                f1.ListaUsuarios.ListaDT = ListaUsuarios.ListaDT;
+
+
+
                 //este codigo se utiliza para actualizar el datagrid view
                 // del login cuando se registra un nuevo usuario sin tener que reiniciar el programa
                 //(solo usado para pruebas de desarrollador)
                 //en caso de ser usado, descomentar el siguiente codigo
-                //Login f1 = Owner as Login;
+
                 //f1.datagrid.DataSource = ListaUsuarios.ListaDT;
-                //f1.ListaUsuarios.ListaDT = ListaUsuarios.ListaDT;
+                
             }
             else
             {

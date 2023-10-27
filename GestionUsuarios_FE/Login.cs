@@ -30,7 +30,7 @@ namespace GestionUsuarios_FE
             datagrid.Visible = false;
             //mostrar o ocultar datagrid solo para pruebas de desarrollador
             //en caso de ser usado, descomentar el siguiente codigo
-            //datagrid.Visible = true;
+           //datagrid.Visible = true;
         }
 
         //Vaciar textbox de nombre de usuario (solo la primera vez que se hace click)
