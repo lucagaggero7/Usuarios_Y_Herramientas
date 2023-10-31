@@ -171,11 +171,12 @@ namespace GestionUsuarios_FE
                             txtContraseña.Text);
 
                 ListaUsuarios.InsertUsuario(user);
-                myUsuario.Nombre = txtNombre.Text;
-                myUsuario.Apellido = txtApellido.Text;
-                myUsuario.Nombredeusuario = txtNombredeusuario.Text;
-                myUsuario.Correo = txtCorreo.Text;
-                myUsuario.Contraseña = txtContraseña.Text;
+                // Codigo innecesario
+                //myUsuario.Nombre = txtNombre.Text;
+                //myUsuario.Apellido = txtApellido.Text;
+                //myUsuario.Nombredeusuario = txtNombredeusuario.Text;
+                //myUsuario.Correo = txtCorreo.Text;
+                //myUsuario.Contraseña = txtContraseña.Text;
                 MessageBox.Show("Usuario Registrado");
                 this.Close();
 
