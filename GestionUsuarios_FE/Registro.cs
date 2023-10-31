@@ -27,6 +27,7 @@ namespace GestionUsuarios_FE
         {
             InitializeComponent();
             //mostrar valores de la datatable de usuarios en el datagrid
+            //
             datagrid.DataSource = ListaUsuarios.ListaDT;
             datagrid.Visible = false;
             //mostrar o ocultar datagrid solo para pruebas de desarrollador

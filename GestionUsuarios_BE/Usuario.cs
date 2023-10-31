@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace GestionUsuarios_BE
 {
     //Esta clase tiene las propiedades de cada usuario
+       //
     public class Usuario
     {
         public string Nombre { get; set; }
