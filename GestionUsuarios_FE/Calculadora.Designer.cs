@@ -48,7 +48,13 @@ namespace GestionUsuarios_FE
             this.buttonMultiplicacion = new System.Windows.Forms.Button();
             this.buttonDividir = new System.Windows.Forms.Button();
             this.buttonBorrar = new System.Windows.Forms.Button();
-            this.buttonModo = new System.Windows.Forms.Button();
+            this.PanelContenedor = new System.Windows.Forms.Panel();
+            this.PanelBarraTitulo = new System.Windows.Forms.Panel();
+            this.btnMinimizar = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnModo = new System.Windows.Forms.Button();
+            this.PanelContenedor.SuspendLayout();
+            this.PanelBarraTitulo.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -56,7 +62,7 @@ namespace GestionUsuarios_FE
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.textBox1.Location = new System.Drawing.Point(150, 121);
+            this.textBox1.Location = new System.Drawing.Point(154, 157);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(178, 37);
@@ -67,7 +73,7 @@ namespace GestionUsuarios_FE
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button1.Location = new System.Drawing.Point(111, 183);
+            this.button1.Location = new System.Drawing.Point(115, 219);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(48, 42);
             this.button1.TabIndex = 13;
@@ -80,7 +86,7 @@ namespace GestionUsuarios_FE
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button2.Location = new System.Drawing.Point(174, 183);
+            this.button2.Location = new System.Drawing.Point(178, 219);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(48, 42);
             this.button2.TabIndex = 14;
@@ -93,7 +99,7 @@ namespace GestionUsuarios_FE
             this.button3.BackColor = System.Drawing.Color.White;
             this.button3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button3.Location = new System.Drawing.Point(238, 183);
+            this.button3.Location = new System.Drawing.Point(242, 219);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(48, 42);
             this.button3.TabIndex = 15;
@@ -106,7 +112,7 @@ namespace GestionUsuarios_FE
             this.button4.BackColor = System.Drawing.Color.White;
             this.button4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button4.Location = new System.Drawing.Point(111, 238);
+            this.button4.Location = new System.Drawing.Point(115, 274);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(48, 42);
             this.button4.TabIndex = 16;
@@ -119,7 +125,7 @@ namespace GestionUsuarios_FE
             this.button5.BackColor = System.Drawing.Color.White;
             this.button5.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button5.Location = new System.Drawing.Point(174, 238);
+            this.button5.Location = new System.Drawing.Point(178, 274);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(48, 42);
             this.button5.TabIndex = 17;
@@ -132,7 +138,7 @@ namespace GestionUsuarios_FE
             this.button6.BackColor = System.Drawing.Color.White;
             this.button6.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button6.Location = new System.Drawing.Point(238, 238);
+            this.button6.Location = new System.Drawing.Point(242, 274);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(48, 42);
             this.button6.TabIndex = 18;
@@ -145,7 +151,7 @@ namespace GestionUsuarios_FE
             this.button7.BackColor = System.Drawing.Color.White;
             this.button7.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button7.Location = new System.Drawing.Point(111, 292);
+            this.button7.Location = new System.Drawing.Point(115, 328);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(48, 42);
             this.button7.TabIndex = 19;
@@ -158,7 +164,7 @@ namespace GestionUsuarios_FE
             this.button8.BackColor = System.Drawing.Color.White;
             this.button8.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button8.Location = new System.Drawing.Point(174, 292);
+            this.button8.Location = new System.Drawing.Point(178, 328);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(48, 42);
             this.button8.TabIndex = 20;
@@ -171,7 +177,7 @@ namespace GestionUsuarios_FE
             this.button9.BackColor = System.Drawing.Color.White;
             this.button9.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button9.Location = new System.Drawing.Point(238, 292);
+            this.button9.Location = new System.Drawing.Point(242, 328);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(48, 42);
             this.button9.TabIndex = 21;
@@ -184,7 +190,7 @@ namespace GestionUsuarios_FE
             this.button0.BackColor = System.Drawing.Color.White;
             this.button0.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button0.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button0.Location = new System.Drawing.Point(111, 346);
+            this.button0.Location = new System.Drawing.Point(115, 382);
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(48, 42);
             this.button0.TabIndex = 22;
@@ -197,7 +203,7 @@ namespace GestionUsuarios_FE
             this.buttonMas.BackColor = System.Drawing.Color.White;
             this.buttonMas.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMas.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.buttonMas.Location = new System.Drawing.Point(302, 238);
+            this.buttonMas.Location = new System.Drawing.Point(306, 274);
             this.buttonMas.Name = "buttonMas";
             this.buttonMas.Size = new System.Drawing.Size(48, 42);
             this.buttonMas.TabIndex = 23;
@@ -210,7 +216,7 @@ namespace GestionUsuarios_FE
             this.buttonIgual.BackColor = System.Drawing.Color.White;
             this.buttonIgual.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonIgual.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.buttonIgual.Location = new System.Drawing.Point(174, 346);
+            this.buttonIgual.Location = new System.Drawing.Point(178, 382);
             this.buttonIgual.Name = "buttonIgual";
             this.buttonIgual.Size = new System.Drawing.Size(48, 42);
             this.buttonIgual.TabIndex = 24;
@@ -224,7 +230,7 @@ namespace GestionUsuarios_FE
             this.lblHistorial.BackColor = System.Drawing.Color.White;
             this.lblHistorial.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHistorial.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblHistorial.Location = new System.Drawing.Point(26, 433);
+            this.lblHistorial.Location = new System.Drawing.Point(30, 469);
             this.lblHistorial.Name = "lblHistorial";
             this.lblHistorial.Size = new System.Drawing.Size(0, 23);
             this.lblHistorial.TabIndex = 25;
@@ -234,7 +240,7 @@ namespace GestionUsuarios_FE
             this.buttonMenos.BackColor = System.Drawing.Color.White;
             this.buttonMenos.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMenos.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.buttonMenos.Location = new System.Drawing.Point(302, 183);
+            this.buttonMenos.Location = new System.Drawing.Point(306, 219);
             this.buttonMenos.Name = "buttonMenos";
             this.buttonMenos.Size = new System.Drawing.Size(48, 42);
             this.buttonMenos.TabIndex = 26;
@@ -247,7 +253,7 @@ namespace GestionUsuarios_FE
             this.buttonMultiplicacion.BackColor = System.Drawing.Color.White;
             this.buttonMultiplicacion.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMultiplicacion.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.buttonMultiplicacion.Location = new System.Drawing.Point(302, 292);
+            this.buttonMultiplicacion.Location = new System.Drawing.Point(306, 328);
             this.buttonMultiplicacion.Name = "buttonMultiplicacion";
             this.buttonMultiplicacion.Size = new System.Drawing.Size(48, 42);
             this.buttonMultiplicacion.TabIndex = 27;
@@ -260,7 +266,7 @@ namespace GestionUsuarios_FE
             this.buttonDividir.BackColor = System.Drawing.Color.White;
             this.buttonDividir.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDividir.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.buttonDividir.Location = new System.Drawing.Point(302, 346);
+            this.buttonDividir.Location = new System.Drawing.Point(306, 382);
             this.buttonDividir.Name = "buttonDividir";
             this.buttonDividir.Size = new System.Drawing.Size(48, 42);
             this.buttonDividir.TabIndex = 28;
@@ -273,7 +279,7 @@ namespace GestionUsuarios_FE
             this.buttonBorrar.BackColor = System.Drawing.Color.White;
             this.buttonBorrar.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBorrar.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.buttonBorrar.Location = new System.Drawing.Point(238, 346);
+            this.buttonBorrar.Location = new System.Drawing.Point(242, 382);
             this.buttonBorrar.Name = "buttonBorrar";
             this.buttonBorrar.Size = new System.Drawing.Size(48, 42);
             this.buttonBorrar.TabIndex = 29;
@@ -281,50 +287,109 @@ namespace GestionUsuarios_FE
             this.buttonBorrar.UseVisualStyleBackColor = false;
             this.buttonBorrar.Click += new System.EventHandler(this.buttonBorrar_Click);
             // 
-            // buttonModo
+            // PanelContenedor
             // 
-            this.buttonModo.BackColor = System.Drawing.Color.White;
-            this.buttonModo.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonModo.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.buttonModo.Location = new System.Drawing.Point(30, 20);
-            this.buttonModo.Name = "buttonModo";
-            this.buttonModo.Size = new System.Drawing.Size(145, 33);
-            this.buttonModo.TabIndex = 30;
-            this.buttonModo.Text = "Modo Claro Activado";
-            this.buttonModo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.buttonModo.UseVisualStyleBackColor = false;
-            this.buttonModo.Click += new System.EventHandler(this.buttonModo_Click);
+            this.PanelContenedor.Controls.Add(this.btnModo);
+            this.PanelContenedor.Controls.Add(this.PanelBarraTitulo);
+            this.PanelContenedor.Controls.Add(this.textBox1);
+            this.PanelContenedor.Controls.Add(this.buttonBorrar);
+            this.PanelContenedor.Controls.Add(this.button1);
+            this.PanelContenedor.Controls.Add(this.buttonDividir);
+            this.PanelContenedor.Controls.Add(this.button2);
+            this.PanelContenedor.Controls.Add(this.buttonMultiplicacion);
+            this.PanelContenedor.Controls.Add(this.button3);
+            this.PanelContenedor.Controls.Add(this.buttonMenos);
+            this.PanelContenedor.Controls.Add(this.button4);
+            this.PanelContenedor.Controls.Add(this.lblHistorial);
+            this.PanelContenedor.Controls.Add(this.button5);
+            this.PanelContenedor.Controls.Add(this.buttonIgual);
+            this.PanelContenedor.Controls.Add(this.button6);
+            this.PanelContenedor.Controls.Add(this.buttonMas);
+            this.PanelContenedor.Controls.Add(this.button7);
+            this.PanelContenedor.Controls.Add(this.button0);
+            this.PanelContenedor.Controls.Add(this.button8);
+            this.PanelContenedor.Controls.Add(this.button9);
+            this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelContenedor.Location = new System.Drawing.Point(0, 0);
+            this.PanelContenedor.Name = "PanelContenedor";
+            this.PanelContenedor.Size = new System.Drawing.Size(477, 516);
+            this.PanelContenedor.TabIndex = 31;
+            this.PanelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelContenedor_Paint_1);
+            // 
+            // PanelBarraTitulo
+            // 
+            this.PanelBarraTitulo.Controls.Add(this.btnMinimizar);
+            this.PanelBarraTitulo.Controls.Add(this.btnCerrar);
+            this.PanelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelBarraTitulo.Location = new System.Drawing.Point(0, 0);
+            this.PanelBarraTitulo.Name = "PanelBarraTitulo";
+            this.PanelBarraTitulo.Size = new System.Drawing.Size(477, 50);
+            this.PanelBarraTitulo.TabIndex = 31;
+            this.PanelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelBarraTitulo_MouseDown);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMinimizar.FlatAppearance.BorderSize = 0;
+            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizar.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimizar.ForeColor = System.Drawing.Color.White;
+            this.btnMinimizar.Location = new System.Drawing.Point(377, 0);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(50, 50);
+            this.btnMinimizar.TabIndex = 5;
+            this.btnMinimizar.Text = "_";
+            this.btnMinimizar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click_1);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.ForeColor = System.Drawing.Color.White;
+            this.btnCerrar.Location = new System.Drawing.Point(427, 0);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(50, 50);
+            this.btnCerrar.TabIndex = 4;
+            this.btnCerrar.Text = "X";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnModo
+            // 
+            this.btnModo.BackColor = System.Drawing.Color.White;
+            this.btnModo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModo.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnModo.Location = new System.Drawing.Point(12, 56);
+            this.btnModo.Name = "btnModo";
+            this.btnModo.Size = new System.Drawing.Size(132, 33);
+            this.btnModo.TabIndex = 33;
+            this.btnModo.Text = "Modo Claro Activado";
+            this.btnModo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnModo.UseVisualStyleBackColor = false;
+            this.btnModo.Click += new System.EventHandler(this.btnModo_Click);
             // 
             // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(465, 516);
-            this.Controls.Add(this.buttonModo);
-            this.Controls.Add(this.buttonBorrar);
-            this.Controls.Add(this.buttonDividir);
-            this.Controls.Add(this.buttonMultiplicacion);
-            this.Controls.Add(this.buttonMenos);
-            this.Controls.Add(this.lblHistorial);
-            this.Controls.Add(this.buttonIgual);
-            this.Controls.Add(this.buttonMas);
-            this.Controls.Add(this.button0);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(477, 516);
+            this.Controls.Add(this.PanelContenedor);
             this.Name = "Calculadora";
             this.Text = "Calculadora";
+            this.Activated += new System.EventHandler(this.Calculadora_Activated);
             this.Load += new System.EventHandler(this.Calculadora_Load);
+            this.ResizeEnd += new System.EventHandler(this.Calculadora_ResizeEnd);
+            this.SizeChanged += new System.EventHandler(this.Calculadora_SizeChanged);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Calculadora_Paint);
+            this.PanelContenedor.ResumeLayout(false);
+            this.PanelContenedor.PerformLayout();
+            this.PanelBarraTitulo.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -347,6 +412,10 @@ namespace GestionUsuarios_FE
         private System.Windows.Forms.Button buttonMultiplicacion;
         private System.Windows.Forms.Button buttonDividir;
         private System.Windows.Forms.Button buttonBorrar;
-        private System.Windows.Forms.Button buttonModo;
+        private System.Windows.Forms.Panel PanelContenedor;
+        private System.Windows.Forms.Panel PanelBarraTitulo;
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnMinimizar;
+        private System.Windows.Forms.Button btnModo;
     }
 }
