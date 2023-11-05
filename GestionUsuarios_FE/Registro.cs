@@ -31,6 +31,14 @@ namespace GestionUsuarios_FE
         decimal Verificacion;
         public Usuarios ListaUsuarios { get; set; } = new Usuarios();
 
+        //variables que cuentan los clicks de los textbox 
+        int nombreclick = 0;
+        int apellidoclick = 0;
+        int nombredeusuarioclick = 0;
+        int correoclick = 0;
+        int contraseñaclick = 0;
+
+
         public Registro()
         {
             InitializeComponent();
@@ -59,7 +67,7 @@ namespace GestionUsuarios_FE
 
             if ((contadormodo % 2) == 0)
             {
-                btnModo.Text = "Modo Claro Activado";
+                btnModo.Text = "Modo Claro";
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.Lavender;
                 borderColor = Color.Indigo;
@@ -72,11 +80,6 @@ namespace GestionUsuarios_FE
                 txtCorreo.BackColor = Color.White;
                 txtContraseña.BackColor = Color.White;
                 txtVerificacion.BackColor = Color.White;
-                labelNombre.ForeColor = Color.Black;
-                labelApellido.ForeColor = Color.Black;
-                labelNombredeusuario.ForeColor = Color.Black;
-                labelCorreo.ForeColor = Color.Black;
-                labelContraseña.ForeColor = Color.Black;
                 labelVerificacion.ForeColor = Color.Black;
                 btnModo.ForeColor = Color.Black;
                 labelTitulo.ForeColor = Color.Black;
@@ -90,7 +93,7 @@ namespace GestionUsuarios_FE
             }
             else
             {
-                btnModo.Text = "Modo Oscuro Activado";
+                btnModo.Text = "Modo Oscuro";
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);
                 borderColor = Color.Black;
@@ -103,11 +106,6 @@ namespace GestionUsuarios_FE
                 txtCorreo.BackColor = Color.LightGray;
                 txtContraseña.BackColor = Color.LightGray;
                 txtVerificacion.BackColor = Color.LightGray;
-                labelNombre.ForeColor = Color.White;
-                labelApellido.ForeColor = Color.White;
-                labelNombredeusuario.ForeColor = Color.White;
-                labelCorreo.ForeColor = Color.White;
-                labelContraseña.ForeColor = Color.White;
                 labelVerificacion.ForeColor = Color.White;
                 btnModo.ForeColor = Color.Black;
                 labelTitulo.ForeColor = Color.White;
@@ -129,7 +127,7 @@ namespace GestionUsuarios_FE
             //f1.contadormodo = contadormodo;
             if ((contadormodo % 2) == 0)
             {
-                btnModo.Text = "Modo Claro Activado";
+                btnModo.Text = "Modo Claro";
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.Lavender;
                 borderColor = Color.Indigo;
@@ -142,11 +140,6 @@ namespace GestionUsuarios_FE
                 txtCorreo.BackColor = Color.White;
                 txtContraseña.BackColor = Color.White;
                 txtVerificacion.BackColor = Color.White;
-                labelNombre.ForeColor = Color.Black;
-                labelApellido.ForeColor = Color.Black;
-                labelNombredeusuario.ForeColor = Color.Black;
-                labelCorreo.ForeColor = Color.Black;
-                labelContraseña.ForeColor = Color.Black;
                 labelVerificacion.ForeColor = Color.Black;
                 btnModo.ForeColor = Color.Black;
                 labelTitulo.ForeColor = Color.Black;
@@ -160,7 +153,7 @@ namespace GestionUsuarios_FE
             }
             else
             {
-                btnModo.Text = "Modo Oscuro Activado";
+                btnModo.Text = "Modo Oscuro";
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);
                 borderColor = Color.Black;
@@ -173,11 +166,6 @@ namespace GestionUsuarios_FE
                 txtCorreo.BackColor = Color.LightGray;
                 txtContraseña.BackColor = Color.LightGray;
                 txtVerificacion.BackColor = Color.LightGray;
-                labelNombre.ForeColor = Color.White;
-                labelApellido.ForeColor = Color.White;
-                labelNombredeusuario.ForeColor = Color.White;
-                labelCorreo.ForeColor = Color.White;
-                labelContraseña.ForeColor = Color.White;
                 labelVerificacion.ForeColor = Color.White;
                 btnModo.ForeColor = Color.Black;
                 labelTitulo.ForeColor = Color.White;
@@ -199,7 +187,7 @@ namespace GestionUsuarios_FE
 
 
 
-            if (!(txtNombre.Text == ""))
+            if (txtNombre.Text != "" && txtNombre.Text != "Nombre" )
             {
                 //borro el error 
                 errorNombre.SetError(txtNombre, "");
@@ -211,7 +199,7 @@ namespace GestionUsuarios_FE
                 return;
             }
 
-            if (!(txtApellido.Text == ""))
+            if (txtApellido.Text != "" && txtApellido.Text != "Apellido")
             {
                 //borro el error 
                 errorApellido.SetError(txtApellido, "");
@@ -224,7 +212,7 @@ namespace GestionUsuarios_FE
 
             }
 
-            if (!(txtNombredeusuario.Text == ""))
+            if (txtNombredeusuario.Text != "" && txtNombredeusuario.Text != "Nombre de usuario")
             {
                 //borro el error 
                 errorNombredeusuario.SetError(txtNombredeusuario, "");
@@ -236,7 +224,7 @@ namespace GestionUsuarios_FE
                 return;
             }
 
-            if (!(txtCorreo.Text == ""))
+            if (txtCorreo.Text != "" && txtCorreo.Text != "Correo")
             {
                 //borro el error 
                 errorCorreo.SetError(txtCorreo, "");
@@ -248,7 +236,7 @@ namespace GestionUsuarios_FE
                 return;
             }
 
-            if (!(txtContraseña.Text == ""))
+            if (txtContraseña.Text != "" && txtContraseña.Text != "Contraseña")
             {
                 //borro el error 
                 errorContraseña.SetError(txtContraseña, "");
@@ -332,15 +320,17 @@ namespace GestionUsuarios_FE
 
                 MessageBox.Show("Usuario Registrado");
 
+                Login form1 = new Login();
+                form1.contadormodo = contadormodo;
+                form1.Login_Load(this, null);
+                form1.Show();
                 this.Close();
-                Login f1 = Owner as Login;
-                f1.Show();
 
 
                 //este codigo se utiliza para actualizar la lista de usuarios
                 //del formulario padre (login) cuando se registra un usuario 
                 //en el formulario de registro (hijo)
-                f1.ListaUsuarios.ListaDT = ListaUsuarios.ListaDT;
+                form1.ListaUsuarios.ListaDT = ListaUsuarios.ListaDT;
 
 
                 //este codigo se utiliza para actualizar el datagrid view
@@ -570,6 +560,124 @@ namespace GestionUsuarios_FE
         private void btnMinimizar_Click_1(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void txtNombre_Click(object sender, EventArgs e)
+        {
+            nombreclick++;
+
+            if (nombreclick == 1)
+            {
+                txtNombre.Text = "";
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void txtNombre_DoubleClick(object sender, EventArgs e)
+        {
+            nombreclick++;
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            nombreclick++;
+        }
+
+        private void txtApellido_Click(object sender, EventArgs e)
+        {
+
+            apellidoclick++;
+            if (apellidoclick == 1)
+            {
+                txtApellido.Text = "";
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void txtApellido_DoubleClick(object sender, EventArgs e)
+        {
+            apellidoclick++;
+        }
+
+        private void txtApellido_TextChanged(object sender, EventArgs e)
+        {
+            apellidoclick++;
+        }
+
+        private void txtNombredeusuario_Click(object sender, EventArgs e)
+        {
+            nombredeusuarioclick++;
+            if (nombredeusuarioclick == 1)
+            {
+                txtNombredeusuario.Text = "";
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void txtNombredeusuario_DoubleClick(object sender, EventArgs e)
+        {
+            nombredeusuarioclick++;
+        }
+
+        private void txtNombredeusuario_TextChanged(object sender, EventArgs e)
+        {
+            nombredeusuarioclick++;
+
+        }
+
+        private void txtCorreo_Click(object sender, EventArgs e)
+        {
+            correoclick++;
+            if (correoclick == 1)
+            {
+                txtCorreo.Text = "";
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void txtCorreo_DoubleClick(object sender, EventArgs e)
+        {
+            correoclick++;
+        }
+
+        private void txtCorreo_TextChanged(object sender, EventArgs e)
+        {
+            correoclick++;
+        }
+
+        private void txtContraseña_Click(object sender, EventArgs e)
+        {
+            contraseñaclick++;
+            if (contraseñaclick == 1)
+            {
+                txtContraseña.Text = "";
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void txtContraseña_DoubleClick(object sender, EventArgs e)
+        {
+            contraseñaclick++;
+        }
+
+        private void txtContraseña_TextChanged(object sender, EventArgs e)
+        {
+            contraseñaclick++;
         }
         //
         //

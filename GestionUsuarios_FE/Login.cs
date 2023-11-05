@@ -50,7 +50,9 @@ namespace GestionUsuarios_FE
             //mostrar o ocultar datagrid solo para pruebas de desarrollador
             //en caso de ser usado, descomentar el siguiente codigo
             //datagrid.Visible = true;
-            label1.Text = contadormodo.ToString();
+
+            label1.Visible = false;
+            //label1.Text = contadormodo.ToString();
         }
 
 
@@ -59,7 +61,7 @@ namespace GestionUsuarios_FE
 
             if ((contadormodo % 2) == 0)
             {
-                btnModo.Text = "Modo Claro Activado";
+                btnModo.Text = "Modo Claro";
                 borderColor = Color.Indigo;
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.Lavender;
@@ -78,7 +80,7 @@ namespace GestionUsuarios_FE
             else
             {
 
-                btnModo.Text = "Modo Oscuro Activado";
+                btnModo.Text = "Modo Oscuro";
                 borderColor = Color.Black;
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);
@@ -121,7 +123,7 @@ namespace GestionUsuarios_FE
         {
             contraseñaclick++;
 
-            if (contraseñaclick == 1)
+            if (contraseñaclick == 1 )
             {
                 txtContraseña.Text = "";
                 txtContraseña.PasswordChar = '*';
@@ -188,10 +190,10 @@ namespace GestionUsuarios_FE
         public void btnModo_Click(object sender, EventArgs e)
         {
             contadormodo++;
-            label1.Text = contadormodo.ToString();
+            //label1.Text = contadormodo.ToString();
             if ((contadormodo % 2) == 0)
             {
-                btnModo.Text = "Modo Claro Activado";
+                btnModo.Text = "Modo Claro";
                 borderColor = Color.Indigo;
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.Lavender;
@@ -210,7 +212,7 @@ namespace GestionUsuarios_FE
             else
             {
             
-                btnModo.Text = "Modo Oscuro Activado";
+                btnModo.Text = "Modo Oscuro";
                 borderColor = Color.Black;
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);
@@ -239,6 +241,7 @@ namespace GestionUsuarios_FE
         //Ocultar caracteres contraseña
         private void txtContraseña_TextChanged(object sender, EventArgs e)
         {
+            contraseñaclick++;
             txtContraseña.PasswordChar = '*';
         }
 

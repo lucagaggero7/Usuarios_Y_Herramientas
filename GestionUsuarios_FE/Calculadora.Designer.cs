@@ -49,10 +49,10 @@ namespace GestionUsuarios_FE
             this.buttonDividir = new System.Windows.Forms.Button();
             this.buttonBorrar = new System.Windows.Forms.Button();
             this.PanelContenedor = new System.Windows.Forms.Panel();
+            this.btnModo = new System.Windows.Forms.Button();
             this.PanelBarraTitulo = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnModo = new System.Windows.Forms.Button();
             this.PanelContenedor.SuspendLayout();
             this.PanelBarraTitulo.SuspendLayout();
             this.SuspendLayout();
@@ -60,18 +60,18 @@ namespace GestionUsuarios_FE
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.textBox1.Location = new System.Drawing.Point(154, 157);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(178, 37);
+            this.textBox1.Size = new System.Drawing.Size(178, 32);
             this.textBox1.TabIndex = 12;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button1.Location = new System.Drawing.Point(115, 219);
             this.button1.Name = "button1";
@@ -84,7 +84,7 @@ namespace GestionUsuarios_FE
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button2.Location = new System.Drawing.Point(178, 219);
             this.button2.Name = "button2";
@@ -97,7 +97,7 @@ namespace GestionUsuarios_FE
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button3.Location = new System.Drawing.Point(242, 219);
             this.button3.Name = "button3";
@@ -110,7 +110,7 @@ namespace GestionUsuarios_FE
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button4.Location = new System.Drawing.Point(115, 274);
             this.button4.Name = "button4";
@@ -123,7 +123,7 @@ namespace GestionUsuarios_FE
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button5.Location = new System.Drawing.Point(178, 274);
             this.button5.Name = "button5";
@@ -136,7 +136,7 @@ namespace GestionUsuarios_FE
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.White;
-            this.button6.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button6.Location = new System.Drawing.Point(242, 274);
             this.button6.Name = "button6";
@@ -149,7 +149,7 @@ namespace GestionUsuarios_FE
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.White;
-            this.button7.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button7.Location = new System.Drawing.Point(115, 328);
             this.button7.Name = "button7";
@@ -162,7 +162,7 @@ namespace GestionUsuarios_FE
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.White;
-            this.button8.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button8.Location = new System.Drawing.Point(178, 328);
             this.button8.Name = "button8";
@@ -175,7 +175,7 @@ namespace GestionUsuarios_FE
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.White;
-            this.button9.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button9.Location = new System.Drawing.Point(242, 328);
             this.button9.Name = "button9";
@@ -188,7 +188,7 @@ namespace GestionUsuarios_FE
             // button0
             // 
             this.button0.BackColor = System.Drawing.Color.White;
-            this.button0.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button0.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button0.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button0.Location = new System.Drawing.Point(115, 382);
             this.button0.Name = "button0";
@@ -201,7 +201,7 @@ namespace GestionUsuarios_FE
             // buttonMas
             // 
             this.buttonMas.BackColor = System.Drawing.Color.White;
-            this.buttonMas.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMas.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMas.ForeColor = System.Drawing.SystemColors.Desktop;
             this.buttonMas.Location = new System.Drawing.Point(306, 274);
             this.buttonMas.Name = "buttonMas";
@@ -214,7 +214,7 @@ namespace GestionUsuarios_FE
             // buttonIgual
             // 
             this.buttonIgual.BackColor = System.Drawing.Color.White;
-            this.buttonIgual.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonIgual.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonIgual.ForeColor = System.Drawing.SystemColors.Desktop;
             this.buttonIgual.Location = new System.Drawing.Point(178, 382);
             this.buttonIgual.Name = "buttonIgual";
@@ -228,17 +228,17 @@ namespace GestionUsuarios_FE
             // 
             this.lblHistorial.AutoSize = true;
             this.lblHistorial.BackColor = System.Drawing.Color.White;
-            this.lblHistorial.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHistorial.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHistorial.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblHistorial.Location = new System.Drawing.Point(30, 469);
             this.lblHistorial.Name = "lblHistorial";
-            this.lblHistorial.Size = new System.Drawing.Size(0, 23);
+            this.lblHistorial.Size = new System.Drawing.Size(0, 18);
             this.lblHistorial.TabIndex = 25;
             // 
             // buttonMenos
             // 
             this.buttonMenos.BackColor = System.Drawing.Color.White;
-            this.buttonMenos.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenos.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMenos.ForeColor = System.Drawing.SystemColors.Desktop;
             this.buttonMenos.Location = new System.Drawing.Point(306, 219);
             this.buttonMenos.Name = "buttonMenos";
@@ -251,7 +251,7 @@ namespace GestionUsuarios_FE
             // buttonMultiplicacion
             // 
             this.buttonMultiplicacion.BackColor = System.Drawing.Color.White;
-            this.buttonMultiplicacion.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMultiplicacion.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMultiplicacion.ForeColor = System.Drawing.SystemColors.Desktop;
             this.buttonMultiplicacion.Location = new System.Drawing.Point(306, 328);
             this.buttonMultiplicacion.Name = "buttonMultiplicacion";
@@ -264,7 +264,7 @@ namespace GestionUsuarios_FE
             // buttonDividir
             // 
             this.buttonDividir.BackColor = System.Drawing.Color.White;
-            this.buttonDividir.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDividir.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDividir.ForeColor = System.Drawing.SystemColors.Desktop;
             this.buttonDividir.Location = new System.Drawing.Point(306, 382);
             this.buttonDividir.Name = "buttonDividir";
@@ -277,7 +277,7 @@ namespace GestionUsuarios_FE
             // buttonBorrar
             // 
             this.buttonBorrar.BackColor = System.Drawing.Color.White;
-            this.buttonBorrar.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBorrar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBorrar.ForeColor = System.Drawing.SystemColors.Desktop;
             this.buttonBorrar.Location = new System.Drawing.Point(242, 382);
             this.buttonBorrar.Name = "buttonBorrar";
@@ -289,6 +289,7 @@ namespace GestionUsuarios_FE
             // 
             // PanelContenedor
             // 
+            this.PanelContenedor.BackColor = System.Drawing.Color.Lavender;
             this.PanelContenedor.Controls.Add(this.btnModo);
             this.PanelContenedor.Controls.Add(this.PanelBarraTitulo);
             this.PanelContenedor.Controls.Add(this.textBox1);
@@ -316,8 +317,23 @@ namespace GestionUsuarios_FE
             this.PanelContenedor.TabIndex = 31;
             this.PanelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelContenedor_Paint_1);
             // 
+            // btnModo
+            // 
+            this.btnModo.BackColor = System.Drawing.Color.White;
+            this.btnModo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModo.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnModo.Location = new System.Drawing.Point(12, 56);
+            this.btnModo.Name = "btnModo";
+            this.btnModo.Size = new System.Drawing.Size(110, 33);
+            this.btnModo.TabIndex = 33;
+            this.btnModo.Text = "Modo Claro";
+            this.btnModo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnModo.UseVisualStyleBackColor = false;
+            this.btnModo.Click += new System.EventHandler(this.btnModo_Click);
+            // 
             // PanelBarraTitulo
             // 
+            this.PanelBarraTitulo.BackColor = System.Drawing.Color.Indigo;
             this.PanelBarraTitulo.Controls.Add(this.btnMinimizar);
             this.PanelBarraTitulo.Controls.Add(this.btnCerrar);
             this.PanelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
@@ -357,20 +373,6 @@ namespace GestionUsuarios_FE
             this.btnCerrar.Text = "X";
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // btnModo
-            // 
-            this.btnModo.BackColor = System.Drawing.Color.White;
-            this.btnModo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModo.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnModo.Location = new System.Drawing.Point(12, 56);
-            this.btnModo.Name = "btnModo";
-            this.btnModo.Size = new System.Drawing.Size(132, 33);
-            this.btnModo.TabIndex = 33;
-            this.btnModo.Text = "Modo Claro Activado";
-            this.btnModo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnModo.UseVisualStyleBackColor = false;
-            this.btnModo.Click += new System.EventHandler(this.btnModo_Click);
             // 
             // Calculadora
             // 

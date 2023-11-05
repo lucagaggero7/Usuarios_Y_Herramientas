@@ -18,7 +18,7 @@ namespace GestionUsuarios_FE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GestionUsuarios_FE.Menu());
+            Application.Run(new GestionUsuarios_FE.Login());
 
         }
     }

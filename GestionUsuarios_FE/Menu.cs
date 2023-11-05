@@ -44,7 +44,7 @@ namespace GestionUsuarios_FE
 
                 if ((contadormodo % 2) == 0)
                 {
-                    btnModo.Text = "Modo Claro Activado";
+                    btnModo.Text = "Modo Claro";
                     borderColor = Color.Indigo;
                     this.BackColor = borderColor;
                     PanelContenedor.BackColor = Color.Lavender;
@@ -58,7 +58,7 @@ namespace GestionUsuarios_FE
                 }
                 else
                 {
-                    btnModo.Text = "Modo Oscuro Activado";
+                    btnModo.Text = "Modo Oscuro";
                     borderColor = Color.Black;
                     this.BackColor = borderColor;
                     PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);
@@ -97,7 +97,7 @@ namespace GestionUsuarios_FE
             
             if ((contadormodo % 2) == 0)
             {
-                btnModo.Text = "Modo Claro Activado";
+                btnModo.Text = "Modo Claro";
                 borderColor = Color.Indigo;
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.Lavender;
@@ -111,7 +111,7 @@ namespace GestionUsuarios_FE
             }
             else
             {
-                btnModo.Text = "Modo Oscuro Activado";
+                btnModo.Text = "Modo Oscuro";
                 borderColor = Color.Black;
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);
@@ -129,19 +129,11 @@ namespace GestionUsuarios_FE
         //para que copie el estado del modo oscuro/claro actual
         private void btnReloj_Click(object sender, EventArgs e)
         {
-            Reloj f5 = new Reloj();
-
-            //este if verifica el estado del modo oscuro/claro de este formulario
-            //para que el siguiente formulario inicie en el mismo modo que este
-            if ((contadormodo % 2) == 0)
-            {
-
-            }
-            else
-            {
-                f5.btnModo_Click(this, null);
-            }
-            f5.Show();
+            Reloj form5 = new Reloj();
+            //AddOwnedForm(form5);
+            form5.contadormodo = contadormodo;
+            this.Hide();
+            form5.Show();
         }
 
         //Herramienta de alarma en desarrollo...

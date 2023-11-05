@@ -55,7 +55,7 @@ namespace GestionUsuarios_FE
             // 
             // btnReloj
             // 
-            this.btnReloj.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReloj.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReloj.Location = new System.Drawing.Point(43, 163);
             this.btnReloj.Name = "btnReloj";
             this.btnReloj.Size = new System.Drawing.Size(134, 55);
@@ -66,7 +66,7 @@ namespace GestionUsuarios_FE
             // 
             // btnTemporizador
             // 
-            this.btnTemporizador.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTemporizador.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTemporizador.Location = new System.Drawing.Point(223, 163);
             this.btnTemporizador.Name = "btnTemporizador";
             this.btnTemporizador.Size = new System.Drawing.Size(154, 55);
@@ -77,7 +77,7 @@ namespace GestionUsuarios_FE
             // 
             // btnAlarma
             // 
-            this.btnAlarma.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlarma.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlarma.Location = new System.Drawing.Point(418, 163);
             this.btnAlarma.Name = "btnAlarma";
             this.btnAlarma.Size = new System.Drawing.Size(134, 55);
@@ -88,7 +88,7 @@ namespace GestionUsuarios_FE
             // 
             // btnCalculadora
             // 
-            this.btnCalculadora.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalculadora.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalculadora.Location = new System.Drawing.Point(599, 163);
             this.btnCalculadora.Name = "btnCalculadora";
             this.btnCalculadora.Size = new System.Drawing.Size(146, 55);
@@ -100,10 +100,10 @@ namespace GestionUsuarios_FE
             // labelMenuinicio
             // 
             this.labelMenuinicio.AutoSize = true;
-            this.labelMenuinicio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMenuinicio.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMenuinicio.Location = new System.Drawing.Point(39, 120);
             this.labelMenuinicio.Name = "labelMenuinicio";
-            this.labelMenuinicio.Size = new System.Drawing.Size(0, 21);
+            this.labelMenuinicio.Size = new System.Drawing.Size(0, 16);
             this.labelMenuinicio.TabIndex = 4;
             // 
             // btnModo
@@ -113,9 +113,9 @@ namespace GestionUsuarios_FE
             this.btnModo.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnModo.Location = new System.Drawing.Point(23, 56);
             this.btnModo.Name = "btnModo";
-            this.btnModo.Size = new System.Drawing.Size(132, 33);
+            this.btnModo.Size = new System.Drawing.Size(110, 33);
             this.btnModo.TabIndex = 32;
-            this.btnModo.Text = "Modo Claro Activado";
+            this.btnModo.Text = "Modo Claro";
             this.btnModo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnModo.UseVisualStyleBackColor = false;
             this.btnModo.Click += new System.EventHandler(this.btnModo_Click);
