@@ -49,6 +49,7 @@ namespace GestionUsuarios_FE
             this.errorVerificacion = new System.Windows.Forms.ErrorProvider(this.components);
             this.datagrid = new System.Windows.Forms.DataGridView();
             this.PanelContenedor = new System.Windows.Forms.Panel();
+            this.checkOcultar = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnIniciarSesion = new System.Windows.Forms.Button();
             this.btnModo = new System.Windows.Forms.Button();
@@ -82,7 +83,7 @@ namespace GestionUsuarios_FE
             this.txtNombre.Location = new System.Drawing.Point(176, 129);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(218, 23);
-            this.txtNombre.TabIndex = 1;
+            this.txtNombre.TabIndex = 2;
             this.txtNombre.Text = "Nombre";
             this.txtNombre.Click += new System.EventHandler(this.txtNombre_Click);
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
@@ -94,7 +95,7 @@ namespace GestionUsuarios_FE
             this.txtApellido.Location = new System.Drawing.Point(176, 175);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(218, 23);
-            this.txtApellido.TabIndex = 2;
+            this.txtApellido.TabIndex = 3;
             this.txtApellido.Text = "Apellido";
             this.txtApellido.Click += new System.EventHandler(this.txtApellido_Click);
             this.txtApellido.TextChanged += new System.EventHandler(this.txtApellido_TextChanged);
@@ -106,7 +107,7 @@ namespace GestionUsuarios_FE
             this.txtNombredeusuario.Location = new System.Drawing.Point(176, 224);
             this.txtNombredeusuario.Name = "txtNombredeusuario";
             this.txtNombredeusuario.Size = new System.Drawing.Size(218, 23);
-            this.txtNombredeusuario.TabIndex = 3;
+            this.txtNombredeusuario.TabIndex = 4;
             this.txtNombredeusuario.Text = "Nombre de usuario";
             this.txtNombredeusuario.Click += new System.EventHandler(this.txtNombredeusuario_Click);
             this.txtNombredeusuario.TextChanged += new System.EventHandler(this.txtNombredeusuario_TextChanged);
@@ -118,7 +119,7 @@ namespace GestionUsuarios_FE
             this.txtCorreo.Location = new System.Drawing.Point(176, 275);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(218, 23);
-            this.txtCorreo.TabIndex = 4;
+            this.txtCorreo.TabIndex = 5;
             this.txtCorreo.Text = "Correo";
             this.txtCorreo.Click += new System.EventHandler(this.txtCorreo_Click);
             this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
@@ -130,7 +131,7 @@ namespace GestionUsuarios_FE
             this.txtContraseña.Location = new System.Drawing.Point(176, 326);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(218, 23);
-            this.txtContraseña.TabIndex = 5;
+            this.txtContraseña.TabIndex = 6;
             this.txtContraseña.Text = "Contraseña";
             this.txtContraseña.Click += new System.EventHandler(this.txtContraseña_Click);
             this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
@@ -142,7 +143,7 @@ namespace GestionUsuarios_FE
             this.btnCrear.Location = new System.Drawing.Point(176, 427);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(111, 36);
-            this.btnCrear.TabIndex = 7;
+            this.btnCrear.TabIndex = 9;
             this.btnCrear.Text = "REGISTRATE";
             this.btnCrear.UseVisualStyleBackColor = true;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
@@ -173,7 +174,7 @@ namespace GestionUsuarios_FE
             this.txtVerificacion.Location = new System.Drawing.Point(176, 398);
             this.txtVerificacion.Name = "txtVerificacion";
             this.txtVerificacion.Size = new System.Drawing.Size(46, 23);
-            this.txtVerificacion.TabIndex = 6;
+            this.txtVerificacion.TabIndex = 8;
             // 
             // labelVerificacion
             // 
@@ -200,6 +201,7 @@ namespace GestionUsuarios_FE
             // PanelContenedor
             // 
             this.PanelContenedor.BackColor = System.Drawing.Color.Lavender;
+            this.PanelContenedor.Controls.Add(this.checkOcultar);
             this.PanelContenedor.Controls.Add(this.label1);
             this.PanelContenedor.Controls.Add(this.btnIniciarSesion);
             this.PanelContenedor.Controls.Add(this.btnModo);
@@ -218,8 +220,21 @@ namespace GestionUsuarios_FE
             this.PanelContenedor.Location = new System.Drawing.Point(0, 0);
             this.PanelContenedor.Name = "PanelContenedor";
             this.PanelContenedor.Size = new System.Drawing.Size(769, 591);
-            this.PanelContenedor.TabIndex = 33;
+            this.PanelContenedor.TabIndex = 1;
             this.PanelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelContenedor_Paint_1);
+            // 
+            // checkOcultar
+            // 
+            this.checkOcultar.AutoSize = true;
+            this.checkOcultar.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkOcultar.Location = new System.Drawing.Point(405, 331);
+            this.checkOcultar.Name = "checkOcultar";
+            this.checkOcultar.Size = new System.Drawing.Size(120, 18);
+            this.checkOcultar.TabIndex = 7;
+            this.checkOcultar.TabStop = false;
+            this.checkOcultar.Text = "Ocultar Contraseña";
+            this.checkOcultar.UseVisualStyleBackColor = true;
+            this.checkOcultar.CheckedChanged += new System.EventHandler(this.checkOcultar_CheckedChanged);
             // 
             // label1
             // 
@@ -239,7 +254,7 @@ namespace GestionUsuarios_FE
             this.btnIniciarSesion.Location = new System.Drawing.Point(176, 527);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(131, 36);
-            this.btnIniciarSesion.TabIndex = 8;
+            this.btnIniciarSesion.TabIndex = 10;
             this.btnIniciarSesion.Text = "INICIAR SESION";
             this.btnIniciarSesion.UseVisualStyleBackColor = false;
             this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
@@ -252,7 +267,7 @@ namespace GestionUsuarios_FE
             this.btnModo.Location = new System.Drawing.Point(12, 56);
             this.btnModo.Name = "btnModo";
             this.btnModo.Size = new System.Drawing.Size(110, 33);
-            this.btnModo.TabIndex = 34;
+            this.btnModo.TabIndex = 11;
             this.btnModo.Text = "Modo Claro";
             this.btnModo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnModo.UseVisualStyleBackColor = false;
@@ -280,7 +295,8 @@ namespace GestionUsuarios_FE
             this.btnMinimizar.Location = new System.Drawing.Point(669, 0);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(50, 50);
-            this.btnMinimizar.TabIndex = 4;
+            this.btnMinimizar.TabIndex = 51;
+            this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Text = "_";
             this.btnMinimizar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMinimizar.UseVisualStyleBackColor = true;
@@ -296,7 +312,8 @@ namespace GestionUsuarios_FE
             this.btnCerrar.Location = new System.Drawing.Point(719, 0);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(50, 50);
-            this.btnCerrar.TabIndex = 3;
+            this.btnCerrar.TabIndex = 50;
+            this.btnCerrar.TabStop = false;
             this.btnCerrar.Text = "X";
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
@@ -309,6 +326,7 @@ namespace GestionUsuarios_FE
             this.ClientSize = new System.Drawing.Size(769, 591);
             this.Controls.Add(this.PanelContenedor);
             this.Name = "Registro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro";
             this.Activated += new System.EventHandler(this.Registro_Activated);
             this.Load += new System.EventHandler(this.Registro_Load);
@@ -355,6 +373,7 @@ namespace GestionUsuarios_FE
         private System.Windows.Forms.Button btnModo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnIniciarSesion;
+        private System.Windows.Forms.CheckBox checkOcultar;
     }
 }
 

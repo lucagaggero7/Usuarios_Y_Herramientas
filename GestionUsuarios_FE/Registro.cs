@@ -27,6 +27,7 @@ namespace GestionUsuarios_FE
         Usuario myUsuario = new Usuario();
 
         public int contadormodo = 0;
+        
         int Valorverif;
         decimal Verificacion;
         public Usuarios ListaUsuarios { get; set; } = new Usuarios();
@@ -57,6 +58,10 @@ namespace GestionUsuarios_FE
             //mostrar o ocultar datagrid solo para pruebas de desarrollador
             //en caso de ser usado, descomentar el siguiente codigo
             //datagrid.Visible = true;
+
+            this.ActiveControl = PanelContenedor;
+
+            checkOcultar.Checked = false;
         }
 
         //FUNCION MODO OSCURO
@@ -64,7 +69,7 @@ namespace GestionUsuarios_FE
         {
             //Login f1 = Owner as Login;
             //contadormodo = f1.contadormodo;
-
+           
             if ((contadormodo % 2) == 0)
             {
                 btnModo.Text = "Modo Claro";
@@ -686,6 +691,17 @@ namespace GestionUsuarios_FE
         private void txtContraseña_TextChanged(object sender, EventArgs e)
         {
             contraseñaclick++;
+
+            if (checkOcultar.Checked == true && txtContraseña.Text != "Contraseña")
+            {
+                txtContraseña.PasswordChar = '*';
+
+            }
+            else
+            {
+                txtContraseña.PasswordChar = '\0';
+            }
+
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
@@ -695,6 +711,21 @@ namespace GestionUsuarios_FE
             form1.Login_Load(this, null);
             form1.Show();
             this.Close();
+
+        }
+
+        private void checkOcultar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkOcultar.Checked == true && txtContraseña.Text != "Contraseña")
+            {
+                txtContraseña.PasswordChar = '*';
+                
+            }
+            else
+            {
+                txtContraseña.PasswordChar = '\0';
+            }
+
 
         }
         //

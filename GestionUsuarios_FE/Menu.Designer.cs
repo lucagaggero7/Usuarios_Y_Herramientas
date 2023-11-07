@@ -205,6 +205,7 @@ namespace GestionUsuarios_FE
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(50, 50);
             this.btnMinimizar.TabIndex = 4;
+            this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Text = "_";
             this.btnMinimizar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMinimizar.UseVisualStyleBackColor = true;
@@ -221,6 +222,7 @@ namespace GestionUsuarios_FE
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(50, 50);
             this.btnCerrar.TabIndex = 3;
+            this.btnCerrar.TabStop = false;
             this.btnCerrar.Text = "X";
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
@@ -233,6 +235,7 @@ namespace GestionUsuarios_FE
             this.ClientSize = new System.Drawing.Size(801, 350);
             this.Controls.Add(this.PanelContenedor);
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Activated += new System.EventHandler(this.Menu_Activated);
             this.Load += new System.EventHandler(this.Menu_Load);

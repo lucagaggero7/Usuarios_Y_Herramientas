@@ -52,6 +52,8 @@ namespace GestionUsuarios_FE
 
             label1.Visible = false;
             //label1.Text = contadormodo.ToString();
+
+            this.ActiveControl = PanelContenedor;
         }
 
 
@@ -142,6 +144,7 @@ namespace GestionUsuarios_FE
             //AddOwnedForm(form2);
             this.Hide();
             form2.Show();
+            
 
         }
      

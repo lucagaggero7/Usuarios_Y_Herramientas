@@ -59,7 +59,7 @@ namespace GestionUsuarios_FE
             this.btnModo.Location = new System.Drawing.Point(23, 65);
             this.btnModo.Name = "btnModo";
             this.btnModo.Size = new System.Drawing.Size(110, 33);
-            this.btnModo.TabIndex = 32;
+            this.btnModo.TabIndex = 6;
             this.btnModo.Text = "Modo Claro";
             this.btnModo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnModo.UseVisualStyleBackColor = false;
@@ -82,7 +82,7 @@ namespace GestionUsuarios_FE
             this.btnIniciarSesion.Location = new System.Drawing.Point(189, 249);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(156, 37);
-            this.btnIniciarSesion.TabIndex = 34;
+            this.btnIniciarSesion.TabIndex = 4;
             this.btnIniciarSesion.Text = "INICIAR SESION";
             this.btnIniciarSesion.UseVisualStyleBackColor = true;
             this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
@@ -93,7 +93,7 @@ namespace GestionUsuarios_FE
             this.btnRegistrate.Location = new System.Drawing.Point(189, 389);
             this.btnRegistrate.Name = "btnRegistrate";
             this.btnRegistrate.Size = new System.Drawing.Size(156, 36);
-            this.btnRegistrate.TabIndex = 36;
+            this.btnRegistrate.TabIndex = 5;
             this.btnRegistrate.Text = "CREAR CUENTA ";
             this.btnRegistrate.UseVisualStyleBackColor = true;
             this.btnRegistrate.Click += new System.EventHandler(this.btnRegistrate_Click);
@@ -115,7 +115,7 @@ namespace GestionUsuarios_FE
             this.txtNombredeusuario.Location = new System.Drawing.Point(188, 171);
             this.txtNombredeusuario.Name = "txtNombredeusuario";
             this.txtNombredeusuario.Size = new System.Drawing.Size(157, 21);
-            this.txtNombredeusuario.TabIndex = 39;
+            this.txtNombredeusuario.TabIndex = 2;
             this.txtNombredeusuario.Text = "Nombre de usuario";
             this.txtNombredeusuario.Click += new System.EventHandler(this.txtNombredeusuario_Click);
             // 
@@ -126,7 +126,7 @@ namespace GestionUsuarios_FE
             this.txtContraseña.Location = new System.Drawing.Point(188, 207);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(157, 21);
-            this.txtContraseña.TabIndex = 40;
+            this.txtContraseña.TabIndex = 3;
             this.txtContraseña.Text = "Contraseña";
             this.txtContraseña.Click += new System.EventHandler(this.txtContraseña_Click);
             this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
@@ -153,11 +153,12 @@ namespace GestionUsuarios_FE
             this.PanelContenedor.Controls.Add(this.txtContraseña);
             this.PanelContenedor.Controls.Add(this.labelBienvenido);
             this.PanelContenedor.Controls.Add(this.txtNombredeusuario);
+            this.PanelContenedor.Cursor = System.Windows.Forms.Cursors.Default;
             this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelContenedor.Location = new System.Drawing.Point(0, 0);
             this.PanelContenedor.Name = "PanelContenedor";
             this.PanelContenedor.Size = new System.Drawing.Size(549, 472);
-            this.PanelContenedor.TabIndex = 42;
+            this.PanelContenedor.TabIndex = 1;
             this.PanelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelContenedor_Paint);
             // 
             // label1
@@ -180,7 +181,8 @@ namespace GestionUsuarios_FE
             this.PanelBarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.PanelBarraTitulo.Name = "PanelBarraTitulo";
             this.PanelBarraTitulo.Size = new System.Drawing.Size(549, 50);
-            this.PanelBarraTitulo.TabIndex = 0;
+            this.PanelBarraTitulo.TabIndex = 53;
+            this.PanelBarraTitulo.TabStop = true;
             this.PanelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelBarraTitulo_MouseDown);
             // 
             // btnMinimizar
@@ -193,7 +195,8 @@ namespace GestionUsuarios_FE
             this.btnMinimizar.Location = new System.Drawing.Point(449, 0);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(50, 50);
-            this.btnMinimizar.TabIndex = 2;
+            this.btnMinimizar.TabIndex = 51;
+            this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Text = "_";
             this.btnMinimizar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMinimizar.UseVisualStyleBackColor = true;
@@ -209,7 +212,8 @@ namespace GestionUsuarios_FE
             this.btnCerrar.Location = new System.Drawing.Point(499, 0);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(50, 50);
-            this.btnCerrar.TabIndex = 1;
+            this.btnCerrar.TabIndex = 50;
+            this.btnCerrar.TabStop = false;
             this.btnCerrar.Text = "X";
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
@@ -221,7 +225,9 @@ namespace GestionUsuarios_FE
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(549, 472);
             this.Controls.Add(this.PanelContenedor);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Activated += new System.EventHandler(this.Login_Activated);
             this.Load += new System.EventHandler(this.Login_Load);

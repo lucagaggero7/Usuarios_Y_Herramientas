@@ -40,6 +40,8 @@ namespace GestionUsuarios_FE
             this.PanelBarraTitulo.BackColor = borderColor;
             this.BackColor = borderColor;
             this.PanelContenedor.BackColor = Color.Lavender;
+
+            this.ActiveControl = PanelContenedor;
         }
 
         public void Reloj_Load(object sender, EventArgs e)
@@ -292,7 +294,7 @@ namespace GestionUsuarios_FE
             RegionControlesYBordes(PanelContenedor, borderRadius - (borderSize / 2), e.Graphics, borderColor);
         }
 
-        //Metodos que anulan la posibilidad de cambiar el tamaño del formulario
+        //Metodos que redibujan el formulario cuando este se carga o se vuelve a activar
         private void Reloj_ResizeEnd(object sender, EventArgs e)
         {
             this.Invalidate();

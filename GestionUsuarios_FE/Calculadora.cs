@@ -45,6 +45,8 @@ namespace GestionUsuarios_FE
             this.PanelBarraTitulo.BackColor = borderColor;
             this.BackColor = borderColor;
             this.PanelContenedor.BackColor = Color.Lavender;
+
+            this.ActiveControl = PanelContenedor;
         }
 
         //Funcion de modo oscuro
