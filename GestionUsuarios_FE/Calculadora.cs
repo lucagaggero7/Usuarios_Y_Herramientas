@@ -522,7 +522,7 @@ namespace GestionUsuarios_FE
             RegionControlesYBordes(PanelContenedor, borderRadius - (borderSize / 2), e.Graphics, borderColor);
         }
 
-        //Metodos que anulan la posibilidad de cambiar el tamaño del formulario
+        //Metodos que redibujan el formulario cuando este se carga o se vuelve a activar
         private void Calculadora_ResizeEnd(object sender, EventArgs e)
         {
             this.Invalidate();
