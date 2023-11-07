@@ -54,7 +54,7 @@ namespace GestionUsuarios_FE
         {
             if ((contadormodo % 2) == 0)
             {
-                btnModo.Text = "Modo Claro";
+                btnModo.Text = "Modo Claro\r\nActivado\r\n";
                 borderColor = Color.Indigo;
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.Lavender;
@@ -81,7 +81,7 @@ namespace GestionUsuarios_FE
             }
             else
             {
-                btnModo.Text = "Modo Oscuro";
+                btnModo.Text = "Modo Oscuro\r\nActivado\r\n";
                 borderColor = Color.Black;
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);
@@ -115,7 +115,7 @@ namespace GestionUsuarios_FE
             contadormodo++;
             if ((contadormodo % 2) == 0)
             {
-                btnModo.Text = "Modo Claro";
+                btnModo.Text = "Modo Claro\r\nActivado\r\n";
                 borderColor = Color.Indigo;
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.Lavender;
@@ -142,7 +142,7 @@ namespace GestionUsuarios_FE
             }
             else
             {
-                btnModo.Text = "Modo Oscuro";
+                btnModo.Text = "Modo Oscuro\r\nActivado\r\n";
                 borderColor = Color.Black;
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);

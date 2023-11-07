@@ -324,9 +324,9 @@ namespace GestionUsuarios_FE
             this.btnModo.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnModo.Location = new System.Drawing.Point(12, 56);
             this.btnModo.Name = "btnModo";
-            this.btnModo.Size = new System.Drawing.Size(110, 33);
+            this.btnModo.Size = new System.Drawing.Size(133, 41);
             this.btnModo.TabIndex = 33;
-            this.btnModo.Text = "Modo Claro";
+            this.btnModo.Text = "Modo Claro\r\nActivado";
             this.btnModo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnModo.UseVisualStyleBackColor = false;
             this.btnModo.Click += new System.EventHandler(this.btnModo_Click);

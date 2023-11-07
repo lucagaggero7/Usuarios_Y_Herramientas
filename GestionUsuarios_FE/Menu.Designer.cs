@@ -109,13 +109,13 @@ namespace GestionUsuarios_FE
             // btnModo
             // 
             this.btnModo.BackColor = System.Drawing.Color.White;
-            this.btnModo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModo.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnModo.Location = new System.Drawing.Point(23, 56);
             this.btnModo.Name = "btnModo";
-            this.btnModo.Size = new System.Drawing.Size(110, 33);
+            this.btnModo.Size = new System.Drawing.Size(133, 41);
             this.btnModo.TabIndex = 32;
-            this.btnModo.Text = "Modo Claro";
+            this.btnModo.Text = "Modo Claro\r\nActivado\r\n";
             this.btnModo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnModo.UseVisualStyleBackColor = false;
             this.btnModo.Click += new System.EventHandler(this.btnModo_Click);

@@ -58,9 +58,9 @@ namespace GestionUsuarios_FE
             this.btnModo.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnModo.Location = new System.Drawing.Point(23, 65);
             this.btnModo.Name = "btnModo";
-            this.btnModo.Size = new System.Drawing.Size(110, 33);
+            this.btnModo.Size = new System.Drawing.Size(133, 41);
             this.btnModo.TabIndex = 6;
-            this.btnModo.Text = "Modo Claro";
+            this.btnModo.Text = "Modo Claro\r\nActivado\r\n";
             this.btnModo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnModo.UseVisualStyleBackColor = false;
             this.btnModo.Click += new System.EventHandler(this.btnModo_Click);
@@ -165,7 +165,7 @@ namespace GestionUsuarios_FE
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.label1.Location = new System.Drawing.Point(20, 101);
+            this.label1.Location = new System.Drawing.Point(20, 109);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 16);
             this.label1.TabIndex = 42;
