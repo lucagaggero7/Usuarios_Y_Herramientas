@@ -135,11 +135,10 @@ namespace GestionUsuarios_FE
             // datagrid
             // 
             this.datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datagrid.Location = new System.Drawing.Point(557, 133);
+            this.datagrid.Location = new System.Drawing.Point(433, 136);
             this.datagrid.Name = "datagrid";
             this.datagrid.Size = new System.Drawing.Size(240, 150);
             this.datagrid.TabIndex = 41;
-            this.datagrid.Visible = false;
             // 
             // PanelContenedor
             // 
@@ -157,7 +156,7 @@ namespace GestionUsuarios_FE
             this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelContenedor.Location = new System.Drawing.Point(0, 0);
             this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(523, 472);
+            this.PanelContenedor.Size = new System.Drawing.Size(549, 472);
             this.PanelContenedor.TabIndex = 42;
             this.PanelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelContenedor_Paint);
             // 
@@ -180,7 +179,7 @@ namespace GestionUsuarios_FE
             this.PanelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelBarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.PanelBarraTitulo.Name = "PanelBarraTitulo";
-            this.PanelBarraTitulo.Size = new System.Drawing.Size(523, 50);
+            this.PanelBarraTitulo.Size = new System.Drawing.Size(549, 50);
             this.PanelBarraTitulo.TabIndex = 0;
             this.PanelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelBarraTitulo_MouseDown);
             // 
@@ -191,7 +190,7 @@ namespace GestionUsuarios_FE
             this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimizar.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimizar.ForeColor = System.Drawing.Color.White;
-            this.btnMinimizar.Location = new System.Drawing.Point(423, 0);
+            this.btnMinimizar.Location = new System.Drawing.Point(449, 0);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(50, 50);
             this.btnMinimizar.TabIndex = 2;
@@ -207,7 +206,7 @@ namespace GestionUsuarios_FE
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.Color.White;
-            this.btnCerrar.Location = new System.Drawing.Point(473, 0);
+            this.btnCerrar.Location = new System.Drawing.Point(499, 0);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(50, 50);
             this.btnCerrar.TabIndex = 1;
@@ -220,7 +219,7 @@ namespace GestionUsuarios_FE
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(523, 472);
+            this.ClientSize = new System.Drawing.Size(549, 472);
             this.Controls.Add(this.PanelContenedor);
             this.Name = "Login";
             this.Text = "Login";

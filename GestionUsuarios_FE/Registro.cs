@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using GestionUsuarios_BE;
 using GestionUsuarios_FE;
-using System.Security.Cryptography.X509Certificates;
+
 
 namespace GestionUsuarios_FE
 {
@@ -68,12 +68,13 @@ namespace GestionUsuarios_FE
             if ((contadormodo % 2) == 0)
             {
                 btnModo.Text = "Modo Claro";
+                borderColor = Color.Indigo;
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.Lavender;
-                borderColor = Color.Indigo;
                 PanelBarraTitulo.BackColor = borderColor;
                 btnCrear.BackColor = Color.White;
                 btnModo.BackColor = Color.White;
+                btnIniciarSesion.BackColor = Color.White;
                 txtNombre.BackColor = Color.White;
                 txtApellido.BackColor = Color.White;
                 txtNombredeusuario.BackColor = Color.White;
@@ -82,6 +83,7 @@ namespace GestionUsuarios_FE
                 txtVerificacion.BackColor = Color.White;
                 labelVerificacion.ForeColor = Color.Black;
                 btnModo.ForeColor = Color.Black;
+                label1.ForeColor = Color.Black;
                 labelTitulo.ForeColor = Color.Black;
                 btnCrear.ForeColor = Color.Black;
                 txtNombre.ForeColor = Color.Black;
@@ -94,12 +96,13 @@ namespace GestionUsuarios_FE
             else
             {
                 btnModo.Text = "Modo Oscuro";
+                borderColor = Color.Black;
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);
-                borderColor = Color.Black;
                 PanelBarraTitulo.BackColor = borderColor;
                 btnCrear.BackColor = Color.LightGray;
                 btnModo.BackColor = Color.LightGray;
+                btnIniciarSesion.BackColor = Color.LightGray;
                 txtNombre.BackColor = Color.LightGray;
                 txtApellido.BackColor = Color.LightGray;
                 txtNombredeusuario.BackColor = Color.LightGray;
@@ -109,6 +112,7 @@ namespace GestionUsuarios_FE
                 labelVerificacion.ForeColor = Color.White;
                 btnModo.ForeColor = Color.Black;
                 labelTitulo.ForeColor = Color.White;
+                label1.ForeColor = Color.White;
                 btnCrear.ForeColor = Color.Black;
                 txtNombre.ForeColor = Color.Black;
                 txtApellido.ForeColor = Color.Black;
@@ -128,12 +132,13 @@ namespace GestionUsuarios_FE
             if ((contadormodo % 2) == 0)
             {
                 btnModo.Text = "Modo Claro";
+                borderColor = Color.Indigo;
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.Lavender;
-                borderColor = Color.Indigo;
                 PanelBarraTitulo.BackColor = borderColor;
                 btnCrear.BackColor = Color.White;
                 btnModo.BackColor = Color.White;
+                btnIniciarSesion.BackColor = Color.White;
                 txtNombre.BackColor = Color.White;
                 txtApellido.BackColor = Color.White;
                 txtNombredeusuario.BackColor = Color.White;
@@ -142,6 +147,7 @@ namespace GestionUsuarios_FE
                 txtVerificacion.BackColor = Color.White;
                 labelVerificacion.ForeColor = Color.Black;
                 btnModo.ForeColor = Color.Black;
+                label1.ForeColor = Color.Black;
                 labelTitulo.ForeColor = Color.Black;
                 btnCrear.ForeColor = Color.Black;
                 txtNombre.ForeColor = Color.Black;
@@ -154,12 +160,13 @@ namespace GestionUsuarios_FE
             else
             {
                 btnModo.Text = "Modo Oscuro";
+                borderColor = Color.Black;
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);
-                borderColor = Color.Black;
                 PanelBarraTitulo.BackColor = borderColor;
                 btnCrear.BackColor = Color.LightGray;
                 btnModo.BackColor = Color.LightGray;
+                btnIniciarSesion.BackColor = Color.LightGray;
                 txtNombre.BackColor = Color.LightGray;
                 txtApellido.BackColor = Color.LightGray;
                 txtNombredeusuario.BackColor = Color.LightGray;
@@ -169,6 +176,7 @@ namespace GestionUsuarios_FE
                 labelVerificacion.ForeColor = Color.White;
                 btnModo.ForeColor = Color.Black;
                 labelTitulo.ForeColor = Color.White;
+                label1.ForeColor = Color.White;
                 btnCrear.ForeColor = Color.Black;
                 txtNombre.ForeColor = Color.Black;
                 txtApellido.ForeColor = Color.Black;
@@ -678,6 +686,16 @@ namespace GestionUsuarios_FE
         private void txtContraseña_TextChanged(object sender, EventArgs e)
         {
             contraseñaclick++;
+        }
+
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
+        {
+            Login form1 = new Login();
+            form1.contadormodo = contadormodo;
+            form1.Login_Load(this, null);
+            form1.Show();
+            this.Close();
+
         }
         //
         //

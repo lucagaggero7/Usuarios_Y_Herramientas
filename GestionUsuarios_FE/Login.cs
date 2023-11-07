@@ -49,7 +49,6 @@ namespace GestionUsuarios_FE
             datagrid.Visible = false;
             //mostrar o ocultar datagrid solo para pruebas de desarrollador
             //en caso de ser usado, descomentar el siguiente codigo
-            //datagrid.Visible = true;
 
             label1.Visible = false;
             //label1.Text = contadormodo.ToString();
