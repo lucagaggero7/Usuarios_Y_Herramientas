@@ -91,12 +91,21 @@ namespace GestionUsuarios_FE
                 label1.ForeColor = Color.Black;
                 labelTitulo.ForeColor = Color.Black;
                 btnCrear.ForeColor = Color.Black;
-                txtNombre.ForeColor = Color.Black;
-                txtApellido.ForeColor = Color.Black;
-                txtNombredeusuario.ForeColor = Color.Black;
-                txtCorreo.ForeColor = Color.Black;
-                txtContraseña.ForeColor = Color.Black;
+                checkOcultar.ForeColor = Color.Black;
                 txtVerificacion.ForeColor = Color.Black;
+                if (txtNombre.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+
+
+                    txtNombre.ForeColor = Color.DarkGray;
+                    txtApellido.ForeColor = Color.DarkGray;
+                    txtNombredeusuario.ForeColor = Color.DarkGray;
+                    txtCorreo.ForeColor = Color.DarkGray;
+                    txtContraseña.ForeColor = Color.DarkGray;
+                }
             }
             else
             {
@@ -119,12 +128,21 @@ namespace GestionUsuarios_FE
                 labelTitulo.ForeColor = Color.White;
                 label1.ForeColor = Color.White;
                 btnCrear.ForeColor = Color.Black;
-                txtNombre.ForeColor = Color.Black;
-                txtApellido.ForeColor = Color.Black;
-                txtNombredeusuario.ForeColor = Color.Black;
-                txtCorreo.ForeColor = Color.Black;
-                txtContraseña.ForeColor = Color.Black;
+                checkOcultar.ForeColor = Color.White;
                 txtVerificacion.ForeColor = Color.Black;
+                if (txtNombre.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+
+
+                    txtNombre.ForeColor = Color.Gray;
+                    txtApellido.ForeColor = Color.Gray;
+                    txtNombredeusuario.ForeColor = Color.Gray;
+                    txtCorreo.ForeColor = Color.Gray;
+                    txtContraseña.ForeColor = Color.Gray;
+                }
             }
         }
 
@@ -155,12 +173,21 @@ namespace GestionUsuarios_FE
                 label1.ForeColor = Color.Black;
                 labelTitulo.ForeColor = Color.Black;
                 btnCrear.ForeColor = Color.Black;
-                txtNombre.ForeColor = Color.Black;
-                txtApellido.ForeColor = Color.Black;
-                txtNombredeusuario.ForeColor = Color.Black;
-                txtCorreo.ForeColor = Color.Black;
-                txtContraseña.ForeColor = Color.Black;
+                checkOcultar.ForeColor = Color.Black;
                 txtVerificacion.ForeColor = Color.Black;
+                if (txtNombre.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+
+
+                    txtNombre.ForeColor = Color.DarkGray;
+                    txtApellido.ForeColor = Color.DarkGray;
+                    txtNombredeusuario.ForeColor = Color.DarkGray;
+                    txtCorreo.ForeColor = Color.DarkGray;
+                    txtContraseña.ForeColor = Color.DarkGray;
+                }
             }
             else
             {
@@ -183,12 +210,21 @@ namespace GestionUsuarios_FE
                 labelTitulo.ForeColor = Color.White;
                 label1.ForeColor = Color.White;
                 btnCrear.ForeColor = Color.Black;
-                txtNombre.ForeColor = Color.Black;
-                txtApellido.ForeColor = Color.Black;
-                txtNombredeusuario.ForeColor = Color.Black;
-                txtCorreo.ForeColor = Color.Black;
-                txtContraseña.ForeColor = Color.Black;
+                checkOcultar.ForeColor = Color.White;
                 txtVerificacion.ForeColor = Color.Black;
+                if (txtNombre.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+
+
+                    txtNombre.ForeColor = Color.Gray;
+                    txtApellido.ForeColor = Color.Gray;
+                    txtNombredeusuario.ForeColor = Color.Gray;
+                    txtCorreo.ForeColor = Color.Gray;
+                    txtContraseña.ForeColor = Color.Gray;
+                }
             }
         }
 
@@ -597,6 +633,7 @@ namespace GestionUsuarios_FE
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
             nombreclick++;
+            txtNombre.ForeColor = Color.Black;
         }
 
         private void txtApellido_Click(object sender, EventArgs e)
@@ -621,6 +658,7 @@ namespace GestionUsuarios_FE
         private void txtApellido_TextChanged(object sender, EventArgs e)
         {
             apellidoclick++;
+            txtApellido.ForeColor = Color.Black;
         }
 
         private void txtNombredeusuario_Click(object sender, EventArgs e)
@@ -644,6 +682,7 @@ namespace GestionUsuarios_FE
         private void txtNombredeusuario_TextChanged(object sender, EventArgs e)
         {
             nombredeusuarioclick++;
+            txtNombredeusuario.ForeColor = Color.Black;
 
         }
 
@@ -668,6 +707,7 @@ namespace GestionUsuarios_FE
         private void txtCorreo_TextChanged(object sender, EventArgs e)
         {
             correoclick++;
+            txtCorreo.ForeColor = Color.Black;
         }
 
         private void txtContraseña_Click(object sender, EventArgs e)
@@ -691,6 +731,7 @@ namespace GestionUsuarios_FE
         private void txtContraseña_TextChanged(object sender, EventArgs e)
         {
             contraseñaclick++;
+            txtContraseña.ForeColor = Color.Black;
 
             if (checkOcultar.Checked == true && txtContraseña.Text != "Contraseña")
             {

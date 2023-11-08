@@ -75,8 +75,8 @@ namespace GestionUsuarios_FE
                 labelBienvenido.ForeColor = Color.Black;
                 labelRegistrate.ForeColor = Color.Black;
                 btnModo.ForeColor = Color.Black;
-                txtNombredeusuario.ForeColor = Color.Black;
-                txtContraseña.ForeColor = Color.Black;
+                txtNombredeusuario.ForeColor = Color.DarkGray;
+                txtContraseña.ForeColor = Color.DarkGray;
             }
             else
             {
@@ -94,8 +94,16 @@ namespace GestionUsuarios_FE
                 labelBienvenido.ForeColor = Color.White;
                 labelRegistrate.ForeColor = Color.White;
                 btnModo.ForeColor = Color.Black;
-                txtNombredeusuario.ForeColor = Color.Black;
-                txtContraseña.ForeColor = Color.Black;
+                if (txtNombredeusuario.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+
+
+                    txtNombredeusuario.ForeColor = Color.DarkGray;
+                    txtContraseña.ForeColor = Color.DarkGray;
+                }
             }
         }
 
@@ -208,8 +216,16 @@ namespace GestionUsuarios_FE
                 labelBienvenido.ForeColor = Color.Black;
                 labelRegistrate.ForeColor = Color.Black;
                 btnModo.ForeColor = Color.Black;
-                txtNombredeusuario.ForeColor = Color.Black;
-                txtContraseña.ForeColor = Color.Black;
+                if (txtNombredeusuario.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+
+
+                    txtNombredeusuario.ForeColor = Color.DarkGray;
+                    txtContraseña.ForeColor = Color.DarkGray;
+                }
             }
             else
             {
@@ -227,8 +243,16 @@ namespace GestionUsuarios_FE
                 labelBienvenido.ForeColor = Color.White;
                 labelRegistrate.ForeColor = Color.White;
                 btnModo.ForeColor = Color.Black;
-                txtNombredeusuario.ForeColor = Color.Black;
-                txtContraseña.ForeColor = Color.Black;
+                if (txtNombredeusuario.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+
+
+                    txtNombredeusuario.ForeColor = Color.Gray;
+                    txtContraseña.ForeColor = Color.Gray;
+                }
             }
         }
        
@@ -245,6 +269,7 @@ namespace GestionUsuarios_FE
         {
             contraseñaclick++;
             txtContraseña.PasswordChar = '*';
+            txtContraseña.ForeColor = Color.Black;
         }
 
 
@@ -455,7 +480,12 @@ namespace GestionUsuarios_FE
             this.WindowState = FormWindowState.Minimized;
         }
 
-        
+        private void txtNombredeusuario_TextChanged(object sender, EventArgs e)
+        {
+            txtNombredeusuario.ForeColor = Color.Black;
+        }
+
+
         //
     }
 

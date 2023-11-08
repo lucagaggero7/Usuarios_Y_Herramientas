@@ -80,6 +80,7 @@ namespace GestionUsuarios_FE
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.ForeColor = System.Drawing.Color.DarkGray;
             this.txtNombre.Location = new System.Drawing.Point(176, 129);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(218, 23);
@@ -92,6 +93,7 @@ namespace GestionUsuarios_FE
             // txtApellido
             // 
             this.txtApellido.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellido.ForeColor = System.Drawing.Color.DarkGray;
             this.txtApellido.Location = new System.Drawing.Point(176, 175);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(218, 23);
@@ -104,6 +106,7 @@ namespace GestionUsuarios_FE
             // txtNombredeusuario
             // 
             this.txtNombredeusuario.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombredeusuario.ForeColor = System.Drawing.Color.DarkGray;
             this.txtNombredeusuario.Location = new System.Drawing.Point(176, 224);
             this.txtNombredeusuario.Name = "txtNombredeusuario";
             this.txtNombredeusuario.Size = new System.Drawing.Size(218, 23);
@@ -116,6 +119,7 @@ namespace GestionUsuarios_FE
             // txtCorreo
             // 
             this.txtCorreo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCorreo.ForeColor = System.Drawing.Color.DarkGray;
             this.txtCorreo.Location = new System.Drawing.Point(176, 275);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(218, 23);
@@ -128,6 +132,7 @@ namespace GestionUsuarios_FE
             // txtContraseña
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.ForeColor = System.Drawing.Color.DarkGray;
             this.txtContraseña.Location = new System.Drawing.Point(176, 326);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(218, 23);

@@ -110,22 +110,23 @@ namespace GestionUsuarios_FE
             // 
             // txtNombredeusuario
             // 
-            this.txtNombredeusuario.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombredeusuario.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtNombredeusuario.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombredeusuario.ForeColor = System.Drawing.Color.DarkGray;
             this.txtNombredeusuario.Location = new System.Drawing.Point(188, 171);
             this.txtNombredeusuario.Name = "txtNombredeusuario";
-            this.txtNombredeusuario.Size = new System.Drawing.Size(157, 21);
+            this.txtNombredeusuario.Size = new System.Drawing.Size(157, 23);
             this.txtNombredeusuario.TabIndex = 2;
             this.txtNombredeusuario.Text = "Nombre de usuario";
             this.txtNombredeusuario.Click += new System.EventHandler(this.txtNombredeusuario_Click);
+            this.txtNombredeusuario.TextChanged += new System.EventHandler(this.txtNombredeusuario_TextChanged);
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtContraseña.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.ForeColor = System.Drawing.Color.DarkGray;
             this.txtContraseña.Location = new System.Drawing.Point(188, 207);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(157, 21);
+            this.txtContraseña.Size = new System.Drawing.Size(157, 23);
             this.txtContraseña.TabIndex = 3;
             this.txtContraseña.Text = "Contraseña";
             this.txtContraseña.Click += new System.EventHandler(this.txtContraseña_Click);
