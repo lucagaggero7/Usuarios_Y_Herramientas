@@ -21,6 +21,7 @@ namespace GestionUsuarios_FE
         public Menu()
         {
             InitializeComponent();
+            this.ActiveControl = PanelBarraTitulo;
         }
 
 
@@ -71,6 +72,7 @@ namespace GestionUsuarios_FE
         // FUNCION DE MODO OSCURO
         public void btnModo_Click(object sender, EventArgs e)
         {
+            this.ActiveControl = PanelBarraTitulo;
             contadormodo++;
             //Login f1 = Owner as Login;
             //f1.contadormodo = contadormodo;
@@ -114,12 +116,14 @@ namespace GestionUsuarios_FE
         //Herramienta de alarma en desarrollo...
         private void btnAlarma_Click(object sender, EventArgs e)
         {
+            this.ActiveControl = PanelBarraTitulo;
             MessageBox.Show("Mas funciones muy pronto");
         }
 
         //Herramienta de temporizador en desarrollo...
         private void btnTemporizador_Click(object sender, EventArgs e)
         {
+            this.ActiveControl = PanelBarraTitulo;
             MessageBox.Show("Mas funciones muy pronto");
         }
 

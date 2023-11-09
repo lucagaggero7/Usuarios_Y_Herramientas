@@ -91,7 +91,7 @@ namespace GestionUsuarios_FE
             // 
             // txtNombre
             // 
-            this.txtNombre.BackColor = System.Drawing.Color.Lavender;
+            this.txtNombre.BackColor = System.Drawing.Color.AliceBlue;
             this.txtNombre.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.Color.DarkGray;
             this.txtNombre.Location = new System.Drawing.Point(176, 129);
@@ -105,7 +105,7 @@ namespace GestionUsuarios_FE
             // 
             // txtApellido
             // 
-            this.txtApellido.BackColor = System.Drawing.Color.Lavender;
+            this.txtApellido.BackColor = System.Drawing.Color.AliceBlue;
             this.txtApellido.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellido.ForeColor = System.Drawing.Color.DarkGray;
             this.txtApellido.Location = new System.Drawing.Point(176, 175);
@@ -119,7 +119,7 @@ namespace GestionUsuarios_FE
             // 
             // txtNombredeusuario
             // 
-            this.txtNombredeusuario.BackColor = System.Drawing.Color.Lavender;
+            this.txtNombredeusuario.BackColor = System.Drawing.Color.AliceBlue;
             this.txtNombredeusuario.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombredeusuario.ForeColor = System.Drawing.Color.DarkGray;
             this.txtNombredeusuario.Location = new System.Drawing.Point(176, 224);
@@ -133,7 +133,7 @@ namespace GestionUsuarios_FE
             // 
             // txtCorreo
             // 
-            this.txtCorreo.BackColor = System.Drawing.Color.Lavender;
+            this.txtCorreo.BackColor = System.Drawing.Color.AliceBlue;
             this.txtCorreo.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreo.ForeColor = System.Drawing.Color.DarkGray;
             this.txtCorreo.Location = new System.Drawing.Point(176, 275);
@@ -147,7 +147,7 @@ namespace GestionUsuarios_FE
             // 
             // txtContraseña
             // 
-            this.txtContraseña.BackColor = System.Drawing.Color.Lavender;
+            this.txtContraseña.BackColor = System.Drawing.Color.AliceBlue;
             this.txtContraseña.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.Color.DarkGray;
             this.txtContraseña.Location = new System.Drawing.Point(176, 326);
@@ -161,7 +161,7 @@ namespace GestionUsuarios_FE
             // 
             // btnCrear
             // 
-            this.btnCrear.BackColor = System.Drawing.Color.Lavender;
+            this.btnCrear.BackColor = System.Drawing.Color.AliceBlue;
             this.btnCrear.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCrear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.btnCrear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
@@ -197,12 +197,16 @@ namespace GestionUsuarios_FE
             // 
             // txtVerificacion
             // 
-            this.txtVerificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(185)))), ((int)(((byte)(220)))));
+            this.txtVerificacion.BackColor = System.Drawing.Color.AliceBlue;
             this.txtVerificacion.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVerificacion.ForeColor = System.Drawing.Color.DarkGray;
             this.txtVerificacion.Location = new System.Drawing.Point(176, 398);
             this.txtVerificacion.Name = "txtVerificacion";
             this.txtVerificacion.Size = new System.Drawing.Size(46, 24);
             this.txtVerificacion.TabIndex = 8;
+            this.txtVerificacion.Text = "Num";
+            this.txtVerificacion.Click += new System.EventHandler(this.txtVerificacion_Click);
+            this.txtVerificacion.TextChanged += new System.EventHandler(this.txtVerificacion_TextChanged);
             // 
             // labelVerificacion
             // 
@@ -243,7 +247,7 @@ namespace GestionUsuarios_FE
             // 
             // btnIniciarSesion
             // 
-            this.btnIniciarSesion.BackColor = System.Drawing.Color.Lavender;
+            this.btnIniciarSesion.BackColor = System.Drawing.Color.AliceBlue;
             this.btnIniciarSesion.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
             this.btnIniciarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.btnIniciarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
@@ -260,7 +264,7 @@ namespace GestionUsuarios_FE
             // 
             // btnModo
             // 
-            this.btnModo.BackColor = System.Drawing.Color.Lavender;
+            this.btnModo.BackColor = System.Drawing.Color.AliceBlue;
             this.btnModo.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
             this.btnModo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.btnModo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
@@ -280,7 +284,7 @@ namespace GestionUsuarios_FE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Lavender;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(769, 591);
             this.Controls.Add(this.btnModo);
             this.Controls.Add(this.checkOcultar);

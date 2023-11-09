@@ -110,6 +110,7 @@ namespace GestionUsuarios_FE
         // Iniciar sesion llamando al metodo que verifica si el usuario y la contraseña existen 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
+            this.ActiveControl = PanelBarraTitulo;
             bool existe;
 
             Usuario usuario = new Usuario();
@@ -149,6 +150,7 @@ namespace GestionUsuarios_FE
         // FUNCION DE MODO OSCURO
         public void btnModo_Click(object sender, EventArgs e)
         {
+            this.ActiveControl = PanelBarraTitulo;
             contadormodo++;
             //label1.Text = contadormodo.ToString();
             if ((contadormodo % 2) == 0)

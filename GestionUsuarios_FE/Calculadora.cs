@@ -34,6 +34,7 @@ namespace GestionUsuarios_FE
         double valor2 = 0;
         Operacion operador = Operacion.NoDefinida;
         public int contadormodo = 0;
+        public bool clicknumeros;
         public Calculadora()
         {
             InitializeComponent();
@@ -148,6 +149,7 @@ namespace GestionUsuarios_FE
         //Agrega el numero cero al textbox
         private void button0_Click(object sender, EventArgs e)
         {
+            clicknumeros = true;
             if (textBox1.Text == "0")
             {
                 return;
@@ -161,54 +163,63 @@ namespace GestionUsuarios_FE
         //Agrega el numero uno al textbox
         private void button1_Click(object sender, EventArgs e)
         {
+            clicknumeros = true;
             LeerNumero("1");
         }
 
         //Agrega el numero dos al textbox
         private void button2_Click(object sender, EventArgs e)
         {
+            clicknumeros = true;
             LeerNumero("2");
         }
 
         //Agrega el numero tres al textbox
         private void button3_Click(object sender, EventArgs e)
         {
+            clicknumeros = true;
             LeerNumero("3");
         }
 
         //Agrega el numero cuatro al textbox
         private void button4_Click(object sender, EventArgs e)
         {
+            clicknumeros = true;
             LeerNumero("4");
         }
 
         //Agrega el numero cinco al textbox
         private void button5_Click(object sender, EventArgs e)
         {
+            clicknumeros = true;
             LeerNumero("5");
         }
 
         //Agrega el numero seis al textbox
         private void button6_Click(object sender, EventArgs e)
         {
+            clicknumeros = true;
             LeerNumero("6");
         }
 
         //Agrega el numero siete al textbox
         private void button7_Click(object sender, EventArgs e)
         {
+            clicknumeros = true;
             LeerNumero("7");
         }
 
         //Agrega el numero ocho al textbox
         private void button8_Click(object sender, EventArgs e)
         {
+            clicknumeros = true;
             LeerNumero("8");
         }
 
         //Agrega el numero nueve al textbox
         private void button9_Click(object sender, EventArgs e)
         {
+            clicknumeros = true;
             LeerNumero("9");
         }
 
@@ -223,51 +234,93 @@ namespace GestionUsuarios_FE
         //convierte al operador en "+"
         private void buttonMas_Click(object sender, EventArgs e)
         {
-            operador = Operacion.Suma;
-            ObtenerValor("+");
+            if (clicknumeros == true)
+            {
+                operador = Operacion.Suma;
+                ObtenerValor("+");
+            }
+            else
+            {
+                return;
+            }
 
         }
 
         //Obtiene el resultado de la operacion, vuelve los dos valores a cero y escribe el resultado en el textbox
         private void buttonIgual_Click(object sender, EventArgs e)
         {
-            if (valor2 == 0)
+            if (clicknumeros == true)
             {
-                valor2 = Convert.ToDouble(textBox1.Text);
-                lblHistorial.Text += valor2 + "=";
-                double resultado = EjecutarOperacion();
-                valor1 = 0;
-                valor2 = 0;
-                textBox1.Text = Convert.ToString(resultado);
+                if (valor2 == 0)
+                {
+                    valor2 = Convert.ToDouble(textBox1.Text);
+                    lblHistorial.Text += valor2 + "=";
+                    double resultado = EjecutarOperacion();
+                    valor1 = 0;
+                    valor2 = 0;
+                    textBox1.Text = Convert.ToString(resultado);
+                }
             }
+            else
+            {
+                return;
+            }    
         }
 
         //convierte al operador en "-"
         private void buttonMenos_Click(object sender, EventArgs e)
         {
-            operador = Operacion.Resta;
-            ObtenerValor("-");
+            if (clicknumeros == true)
+            {
+                operador = Operacion.Resta;
+                ObtenerValor("-");
+            }
+            else
+            {
+                return;
+            }
         }
 
         //convierte al operador en "x"
         private void buttonMultiplicacion_Click(object sender, EventArgs e)
         {
-            operador = Operacion.Multiplicacion;
-            ObtenerValor("x");
+            if (clicknumeros == true)
+            {
+                operador = Operacion.Multiplicacion;
+                ObtenerValor("x");
+            }
+            else
+            {
+                return;
+            }
         }
 
         //convierte al operador en "/"
         private void buttonDividir_Click(object sender, EventArgs e)
         {
-            operador = Operacion.Division;
-            ObtenerValor("/");
+            if (clicknumeros == true)
+            {
+                operador = Operacion.Division;
+                ObtenerValor("/");
+            }
+            else
+            {
+                return;
+            }
         }
 
         //Borra todo el contenido del textbox y el historial
         private void buttonBorrar_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "0";
-            lblHistorial.Text = "";
+            if (clicknumeros == true)
+            {
+                textBox1.Text = "0";
+                lblHistorial.Text = "";
+            }
+            else
+            {
+                return;
+            }
         }
 
         //Boton para cerrar la aplicacion en Barra Superior

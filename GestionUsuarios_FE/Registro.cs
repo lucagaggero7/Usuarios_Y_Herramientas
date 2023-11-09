@@ -32,12 +32,13 @@ namespace GestionUsuarios_FE
         int nombredeusuarioclick = 0;
         int correoclick = 0;
         int contraseñaclick = 0;
+        int verificacionclick = 0;
 
 
         public Registro()
         {
             InitializeComponent();
-            checkOcultar.Checked = false;
+            checkOcultar.Checked = true;
         }
 
         //FUNCION MODO OSCURO
@@ -49,11 +50,11 @@ namespace GestionUsuarios_FE
             if ((contadormodo % 2) == 0)
             {
                 btnModo.Text = "Modo Claro\r\nActivado\r\n";
-                this.BackColor = Color.Lavender;
+                this.BackColor = Color.AliceBlue;
                 PanelBarraTitulo.BackColor = Color.MediumSlateBlue;
-                btnCrear.BackColor = Color.Lavender;
-                btnModo.BackColor = Color.Lavender;
-                btnIniciarSesion.BackColor = Color.Lavender;
+                btnCrear.BackColor = Color.AliceBlue;
+                btnModo.BackColor = Color.AliceBlue;
+                btnIniciarSesion.BackColor = Color.AliceBlue;
                 btnCrear.FlatAppearance.BorderColor = Color.DarkGray;
                 btnModo.FlatAppearance.BorderColor = Color.DarkGray;
                 btnIniciarSesion.FlatAppearance.BorderColor = Color.DarkGray;
@@ -61,18 +62,18 @@ namespace GestionUsuarios_FE
                 btnCerrar.FlatAppearance.MouseOverBackColor = Color.Indigo;
                 btnMinimizar.FlatAppearance.MouseDownBackColor = Color.Indigo;
                 btnMinimizar.FlatAppearance.MouseOverBackColor = Color.Indigo;
-                txtNombre.BackColor = Color.Lavender;
-                txtApellido.BackColor = Color.Lavender;
-                txtNombredeusuario.BackColor = Color.Lavender;
-                txtCorreo.BackColor = Color.Lavender;
-                txtContraseña.BackColor = Color.Lavender;
+                txtNombre.BackColor = Color.AliceBlue;
+                txtApellido.BackColor = Color.AliceBlue;
+                txtNombredeusuario.BackColor = Color.AliceBlue;
+                txtCorreo.BackColor = Color.AliceBlue;
+                txtContraseña.BackColor = Color.AliceBlue;
+                txtVerificacion.BackColor = Color.AliceBlue;
                 labelVerificacion.ForeColor = Color.Black;
                 btnModo.ForeColor = Color.Black;
                 label1.ForeColor = Color.Black;
                 labelTitulo.ForeColor = Color.Black;
                 btnCrear.ForeColor = Color.Black;
                 checkOcultar.ForeColor = Color.Black;
-                txtVerificacion.ForeColor = Color.Black;
                 if (txtNombre.ForeColor == Color.Black)
                 {
                 }
@@ -107,6 +108,13 @@ namespace GestionUsuarios_FE
                 else
                 {
                     txtContraseña.ForeColor = Color.DarkGray;
+                }
+                if (txtVerificacion.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+                    txtVerificacion.ForeColor = Color.DarkGray;
                 }
             }
             else
@@ -122,13 +130,13 @@ namespace GestionUsuarios_FE
                 txtNombredeusuario.BackColor = Color.Lavender;
                 txtCorreo.BackColor = Color.Lavender;
                 txtContraseña.BackColor = Color.Lavender;
+                txtVerificacion.BackColor = Color.Lavender;
                 labelVerificacion.ForeColor = Color.White;
                 btnModo.ForeColor = Color.Black;
                 labelTitulo.ForeColor = Color.White;
                 label1.ForeColor = Color.White;
                 btnCrear.ForeColor = Color.Black;
                 checkOcultar.ForeColor = Color.White;
-                txtVerificacion.ForeColor = Color.Black;
                 if (txtNombre.ForeColor == Color.Black)
                 {
                 }
@@ -163,6 +171,13 @@ namespace GestionUsuarios_FE
                 else
                 {
                     txtContraseña.ForeColor = Color.DarkGray;
+                }
+                if (txtVerificacion.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+                    txtVerificacion.ForeColor = Color.DarkGray;
                 }
             }
         }
@@ -170,17 +185,18 @@ namespace GestionUsuarios_FE
         //FUNCION MODO OSCURO
         public void btnModo_Click(object sender, EventArgs e)
         {
+            this.ActiveControl = PanelBarraTitulo;
             contadormodo++;
             //Login f1 = Owner as Login;
             //f1.contadormodo = contadormodo;
             if ((contadormodo % 2) == 0)
             {
                 btnModo.Text = "Modo Claro\r\nActivado\r\n";
-                this.BackColor = Color.Lavender;
+                this.BackColor = Color.AliceBlue;
                 PanelBarraTitulo.BackColor = Color.MediumSlateBlue;
-                btnCrear.BackColor = Color.Lavender;
-                btnModo.BackColor = Color.Lavender;
-                btnIniciarSesion.BackColor = Color.Lavender;
+                btnCrear.BackColor = Color.AliceBlue;
+                btnModo.BackColor = Color.AliceBlue;
+                btnIniciarSesion.BackColor = Color.AliceBlue;
                 btnCrear.FlatAppearance.BorderColor = Color.DarkGray;
                 btnModo.FlatAppearance.BorderColor = Color.DarkGray;
                 btnIniciarSesion.FlatAppearance.BorderColor = Color.DarkGray;
@@ -188,18 +204,18 @@ namespace GestionUsuarios_FE
                 btnCerrar.FlatAppearance.MouseOverBackColor = Color.Indigo;
                 btnMinimizar.FlatAppearance.MouseDownBackColor = Color.Indigo;
                 btnMinimizar.FlatAppearance.MouseOverBackColor = Color.Indigo;
-                txtNombre.BackColor = Color.Lavender;
-                txtApellido.BackColor = Color.Lavender;
-                txtNombredeusuario.BackColor = Color.Lavender;
-                txtCorreo.BackColor = Color.Lavender;
-                txtContraseña.BackColor = Color.Lavender;
+                txtNombre.BackColor = Color.AliceBlue;
+                txtApellido.BackColor = Color.AliceBlue;
+                txtNombredeusuario.BackColor = Color.AliceBlue;
+                txtCorreo.BackColor = Color.AliceBlue;
+                txtContraseña.BackColor = Color.AliceBlue;
+                txtVerificacion.BackColor = Color.AliceBlue;
                 labelVerificacion.ForeColor = Color.Black;
                 btnModo.ForeColor = Color.Black;
                 label1.ForeColor = Color.Black;
                 labelTitulo.ForeColor = Color.Black;
                 btnCrear.ForeColor = Color.Black;
                 checkOcultar.ForeColor = Color.Black;
-                txtVerificacion.ForeColor = Color.Black;
                 if (txtNombre.ForeColor == Color.Black)
                 {
                 }
@@ -234,6 +250,13 @@ namespace GestionUsuarios_FE
                 else
                 {
                     txtContraseña.ForeColor = Color.DarkGray;
+                }
+                if (txtVerificacion.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+                    txtVerificacion.ForeColor = Color.DarkGray;
                 }
             }
             else
@@ -249,13 +272,13 @@ namespace GestionUsuarios_FE
                 txtNombredeusuario.BackColor = Color.Lavender;
                 txtCorreo.BackColor = Color.Lavender;
                 txtContraseña.BackColor = Color.Lavender;
+                txtVerificacion.BackColor = Color.Lavender;
                 labelVerificacion.ForeColor = Color.White;
                 btnModo.ForeColor = Color.Black;
                 labelTitulo.ForeColor = Color.White;
                 label1.ForeColor = Color.White;
                 btnCrear.ForeColor = Color.Black;
                 checkOcultar.ForeColor = Color.White;
-                txtVerificacion.ForeColor = Color.Black;
                 if (txtNombre.ForeColor == Color.Black)
                 {
                 }
@@ -290,6 +313,13 @@ namespace GestionUsuarios_FE
                 else
                 {
                     txtContraseña.ForeColor = Color.DarkGray;
+                }
+                if (txtVerificacion.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+                    txtVerificacion.ForeColor = Color.DarkGray;
                 }
             }
         }
@@ -367,6 +397,7 @@ namespace GestionUsuarios_FE
             {
                 //borro el error 
                 errorVerificacion.SetError(txtVerificacion, "");
+                this.ActiveControl = PanelBarraTitulo;
             }
             else
             {
@@ -458,7 +489,7 @@ namespace GestionUsuarios_FE
             }
             else
             {
-                MessageBox.Show("Ya existe ese nombre de usuario");
+                errorNombredeusuario.SetError(txtNombredeusuario, "El usuario ingresado ya esta en uso");
                 return;
             }
 
@@ -598,6 +629,24 @@ namespace GestionUsuarios_FE
 
         }
 
+        private void txtVerificacion_Click(object sender, EventArgs e)
+        {
+            verificacionclick++;
+            if (verificacionclick == 1)
+            {
+                txtVerificacion.Text = "";
+            }
+            else
+            {
+                return;
+            }
+        }
+        private void txtVerificacion_TextChanged(object sender, EventArgs e)
+        {
+            verificacionclick++;
+            txtVerificacion.ForeColor = Color.Black;
+        }
+
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             Login form1 = new Login();
@@ -631,6 +680,10 @@ namespace GestionUsuarios_FE
             form1.Show();
             this.Close();
         }
+
+       
+
+        
         //
         //
 
