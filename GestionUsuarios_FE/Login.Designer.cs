@@ -33,66 +33,92 @@ namespace GestionUsuarios_FE
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnModo = new System.Windows.Forms.Button();
+            this.txtNombredeusuario = new System.Windows.Forms.TextBox();
             this.labelBienvenido = new System.Windows.Forms.Label();
-            this.btnIniciarSesion = new System.Windows.Forms.Button();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.btnModo = new System.Windows.Forms.Button();
             this.btnRegistrate = new System.Windows.Forms.Button();
             this.labelRegistrate = new System.Windows.Forms.Label();
-            this.txtNombredeusuario = new System.Windows.Forms.TextBox();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.datagrid = new System.Windows.Forms.DataGridView();
-            this.PanelContenedor = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.PanelBarraTitulo = new System.Windows.Forms.Panel();
-            this.btnMinimizar = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
-            this.PanelContenedor.SuspendLayout();
-            this.PanelBarraTitulo.SuspendLayout();
+            this.btnIniciarSesion = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackgroundImage = null;
+            this.btnCerrar.Location = new System.Drawing.Point(507, 0);
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.BackgroundImage = null;
+            this.btnMinimizar.Location = new System.Drawing.Point(465, 0);
+            // 
+            // txtNombredeusuario
+            // 
+            this.txtNombredeusuario.BackColor = System.Drawing.Color.Lavender;
+            this.txtNombredeusuario.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombredeusuario.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtNombredeusuario.Location = new System.Drawing.Point(177, 162);
+            this.txtNombredeusuario.Name = "txtNombredeusuario";
+            this.txtNombredeusuario.Size = new System.Drawing.Size(157, 24);
+            this.txtNombredeusuario.TabIndex = 2;
+            this.txtNombredeusuario.Text = "Nombre de usuario";
+            this.txtNombredeusuario.Click += new System.EventHandler(this.txtNombredeusuario_Click);
+            this.txtNombredeusuario.TextChanged += new System.EventHandler(this.txtNombredeusuario_TextChanged);
+            // 
+            // labelBienvenido
+            // 
+            this.labelBienvenido.AutoSize = true;
+            this.labelBienvenido.Font = new System.Drawing.Font("Verdana", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBienvenido.Location = new System.Drawing.Point(173, 108);
+            this.labelBienvenido.Name = "labelBienvenido";
+            this.labelBienvenido.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelBienvenido.Size = new System.Drawing.Size(183, 28);
+            this.labelBienvenido.TabIndex = 33;
+            this.labelBienvenido.Text = "BIENVENIDO";
+            // 
+            // txtContraseña
+            // 
+            this.txtContraseña.BackColor = System.Drawing.Color.Lavender;
+            this.txtContraseña.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtContraseña.Location = new System.Drawing.Point(177, 198);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(157, 24);
+            this.txtContraseña.TabIndex = 3;
+            this.txtContraseña.Text = "Contraseña";
+            this.txtContraseña.Click += new System.EventHandler(this.txtContraseña_Click);
+            this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
+            this.txtContraseña.DoubleClick += new System.EventHandler(this.txtContraseña_DoubleClick);
             // 
             // btnModo
             // 
             this.btnModo.BackColor = System.Drawing.Color.Lavender;
-            this.btnModo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnModo.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnModo.Location = new System.Drawing.Point(23, 65);
+            this.btnModo.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnModo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.btnModo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.btnModo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModo.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModo.ForeColor = System.Drawing.Color.Black;
+            this.btnModo.Location = new System.Drawing.Point(12, 56);
             this.btnModo.Name = "btnModo";
-            this.btnModo.Size = new System.Drawing.Size(133, 41);
+            this.btnModo.Size = new System.Drawing.Size(127, 38);
             this.btnModo.TabIndex = 6;
             this.btnModo.Text = "Modo Claro\r\nActivado\r\n";
             this.btnModo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnModo.UseVisualStyleBackColor = false;
             this.btnModo.Click += new System.EventHandler(this.btnModo_Click);
             // 
-            // labelBienvenido
-            // 
-            this.labelBienvenido.AutoSize = true;
-            this.labelBienvenido.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBienvenido.Location = new System.Drawing.Point(184, 117);
-            this.labelBienvenido.Name = "labelBienvenido";
-            this.labelBienvenido.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelBienvenido.Size = new System.Drawing.Size(165, 25);
-            this.labelBienvenido.TabIndex = 33;
-            this.labelBienvenido.Text = "BIENVENIDO";
-            // 
-            // btnIniciarSesion
-            // 
-            this.btnIniciarSesion.BackColor = System.Drawing.Color.Lavender;
-            this.btnIniciarSesion.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciarSesion.Location = new System.Drawing.Point(189, 249);
-            this.btnIniciarSesion.Name = "btnIniciarSesion";
-            this.btnIniciarSesion.Size = new System.Drawing.Size(156, 37);
-            this.btnIniciarSesion.TabIndex = 4;
-            this.btnIniciarSesion.Text = "INICIAR SESION";
-            this.btnIniciarSesion.UseVisualStyleBackColor = false;
-            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
-            // 
             // btnRegistrate
             // 
             this.btnRegistrate.BackColor = System.Drawing.Color.Lavender;
+            this.btnRegistrate.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRegistrate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.btnRegistrate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.btnRegistrate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrate.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrate.Location = new System.Drawing.Point(189, 389);
+            this.btnRegistrate.ForeColor = System.Drawing.Color.Black;
+            this.btnRegistrate.Location = new System.Drawing.Point(178, 380);
             this.btnRegistrate.Name = "btnRegistrate";
             this.btnRegistrate.Size = new System.Drawing.Size(156, 36);
             this.btnRegistrate.TabIndex = 5;
@@ -104,165 +130,68 @@ namespace GestionUsuarios_FE
             // 
             this.labelRegistrate.AutoSize = true;
             this.labelRegistrate.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.labelRegistrate.Location = new System.Drawing.Point(185, 370);
+            this.labelRegistrate.Location = new System.Drawing.Point(174, 361);
             this.labelRegistrate.Name = "labelRegistrate";
             this.labelRegistrate.Size = new System.Drawing.Size(163, 16);
             this.labelRegistrate.TabIndex = 38;
             this.labelRegistrate.Text = "¿No tienes una cuenta?";
             // 
-            // txtNombredeusuario
+            // btnIniciarSesion
             // 
-            this.txtNombredeusuario.BackColor = System.Drawing.Color.Lavender;
-            this.txtNombredeusuario.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombredeusuario.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtNombredeusuario.Location = new System.Drawing.Point(188, 171);
-            this.txtNombredeusuario.Name = "txtNombredeusuario";
-            this.txtNombredeusuario.Size = new System.Drawing.Size(157, 23);
-            this.txtNombredeusuario.TabIndex = 2;
-            this.txtNombredeusuario.Text = "Nombre de usuario";
-            this.txtNombredeusuario.Click += new System.EventHandler(this.txtNombredeusuario_Click);
-            this.txtNombredeusuario.TextChanged += new System.EventHandler(this.txtNombredeusuario_TextChanged);
-            // 
-            // txtContraseña
-            // 
-            this.txtContraseña.BackColor = System.Drawing.Color.Lavender;
-            this.txtContraseña.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtContraseña.Location = new System.Drawing.Point(188, 207);
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(157, 23);
-            this.txtContraseña.TabIndex = 3;
-            this.txtContraseña.Text = "Contraseña";
-            this.txtContraseña.Click += new System.EventHandler(this.txtContraseña_Click);
-            this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
-            this.txtContraseña.DoubleClick += new System.EventHandler(this.txtContraseña_DoubleClick);
-            // 
-            // datagrid
-            // 
-            this.datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datagrid.Location = new System.Drawing.Point(433, 136);
-            this.datagrid.Name = "datagrid";
-            this.datagrid.Size = new System.Drawing.Size(240, 150);
-            this.datagrid.TabIndex = 41;
-            // 
-            // PanelContenedor
-            // 
-            this.PanelContenedor.BackColor = System.Drawing.Color.Lavender;
-            this.PanelContenedor.Controls.Add(this.label1);
-            this.PanelContenedor.Controls.Add(this.PanelBarraTitulo);
-            this.PanelContenedor.Controls.Add(this.btnIniciarSesion);
-            this.PanelContenedor.Controls.Add(this.labelRegistrate);
-            this.PanelContenedor.Controls.Add(this.datagrid);
-            this.PanelContenedor.Controls.Add(this.btnRegistrate);
-            this.PanelContenedor.Controls.Add(this.btnModo);
-            this.PanelContenedor.Controls.Add(this.txtContraseña);
-            this.PanelContenedor.Controls.Add(this.labelBienvenido);
-            this.PanelContenedor.Controls.Add(this.txtNombredeusuario);
-            this.PanelContenedor.Cursor = System.Windows.Forms.Cursors.Default;
-            this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContenedor.Location = new System.Drawing.Point(0, 0);
-            this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(549, 472);
-            this.PanelContenedor.TabIndex = 1;
-            this.PanelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelContenedor_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.label1.Location = new System.Drawing.Point(20, 109);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 16);
-            this.label1.TabIndex = 42;
-            this.label1.Text = "label1";
-            this.label1.Visible = false;
-            // 
-            // PanelBarraTitulo
-            // 
-            this.PanelBarraTitulo.BackColor = System.Drawing.Color.Indigo;
-            this.PanelBarraTitulo.Controls.Add(this.btnMinimizar);
-            this.PanelBarraTitulo.Controls.Add(this.btnCerrar);
-            this.PanelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelBarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.PanelBarraTitulo.Name = "PanelBarraTitulo";
-            this.PanelBarraTitulo.Size = new System.Drawing.Size(549, 50);
-            this.PanelBarraTitulo.TabIndex = 53;
-            this.PanelBarraTitulo.TabStop = true;
-            this.PanelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelBarraTitulo_MouseDown);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnMinimizar.FlatAppearance.BorderSize = 0;
-            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizar.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinimizar.ForeColor = System.Drawing.Color.White;
-            this.btnMinimizar.Location = new System.Drawing.Point(449, 0);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(50, 50);
-            this.btnMinimizar.TabIndex = 51;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Text = "_";
-            this.btnMinimizar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnMinimizar.UseVisualStyleBackColor = true;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.ForeColor = System.Drawing.Color.White;
-            this.btnCerrar.Location = new System.Drawing.Point(499, 0);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(50, 50);
-            this.btnCerrar.TabIndex = 50;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Text = "X";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.btnIniciarSesion.BackColor = System.Drawing.Color.Lavender;
+            this.btnIniciarSesion.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnIniciarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.btnIniciarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIniciarSesion.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarSesion.ForeColor = System.Drawing.Color.Black;
+            this.btnIniciarSesion.Location = new System.Drawing.Point(178, 240);
+            this.btnIniciarSesion.Name = "btnIniciarSesion";
+            this.btnIniciarSesion.Size = new System.Drawing.Size(156, 37);
+            this.btnIniciarSesion.TabIndex = 4;
+            this.btnIniciarSesion.Text = "INICIAR SESION";
+            this.btnIniciarSesion.UseVisualStyleBackColor = false;
+            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(549, 472);
-            this.Controls.Add(this.PanelContenedor);
+            this.Controls.Add(this.btnIniciarSesion);
+            this.Controls.Add(this.labelRegistrate);
+            this.Controls.Add(this.btnRegistrate);
+            this.Controls.Add(this.btnModo);
+            this.Controls.Add(this.txtContraseña);
+            this.Controls.Add(this.labelBienvenido);
+            this.Controls.Add(this.txtNombredeusuario);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.Activated += new System.EventHandler(this.Login_Activated);
             this.Load += new System.EventHandler(this.Login_Load);
-            this.ResizeEnd += new System.EventHandler(this.Login_ResizeEnd);
-            this.SizeChanged += new System.EventHandler(this.Login_SizeChanged);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Login_Paint);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_MouseDown);
-            ((System.ComponentModel.ISupportInitialize)(this.datagrid)).EndInit();
-            this.PanelContenedor.ResumeLayout(false);
-            this.PanelContenedor.PerformLayout();
-            this.PanelBarraTitulo.ResumeLayout(false);
+            this.Controls.SetChildIndex(this.txtNombredeusuario, 0);
+            this.Controls.SetChildIndex(this.labelBienvenido, 0);
+            this.Controls.SetChildIndex(this.txtContraseña, 0);
+            this.Controls.SetChildIndex(this.btnModo, 0);
+            this.Controls.SetChildIndex(this.btnRegistrate, 0);
+            this.Controls.SetChildIndex(this.labelRegistrate, 0);
+            this.Controls.SetChildIndex(this.btnIniciarSesion, 0);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnModo;
-        private System.Windows.Forms.Label labelBienvenido;
-        private System.Windows.Forms.Button btnIniciarSesion;
-        private System.Windows.Forms.Button btnRegistrate;
-        private System.Windows.Forms.Label labelRegistrate;
-        public System.Windows.Forms.TextBox txtNombredeusuario;
-        public System.Windows.Forms.TextBox txtContraseña;
-        public System.Windows.Forms.DataGridView datagrid;
-        private Panel PanelContenedor;
-        private Panel PanelBarraTitulo;
-        private Button btnMinimizar;
-        private Button btnCerrar;
-        public Label label1;
+        public TextBox txtNombredeusuario;
+        private Label labelBienvenido;
+        public TextBox txtContraseña;
+        private Button btnModo;
+        private Button btnRegistrate;
+        private Label labelRegistrate;
+        private Button btnIniciarSesion;
     }
 
 }

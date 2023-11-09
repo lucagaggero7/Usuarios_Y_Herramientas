@@ -36,65 +36,100 @@ namespace GestionUsuarios_FE
             this.btnAlarma = new System.Windows.Forms.Button();
             this.btnCalculadora = new System.Windows.Forms.Button();
             this.labelMenuinicio = new System.Windows.Forms.Label();
-            this.btnModo = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.PanelContenedor = new System.Windows.Forms.Panel();
-            this.PanelBarraTitulo = new System.Windows.Forms.Panel();
-            this.btnMinimizar = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnModo = new System.Windows.Forms.Button();
+            this.PanelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.PanelContenedor.SuspendLayout();
-            this.PanelBarraTitulo.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.btnCerrar.Location = new System.Drawing.Point(759, 0);
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.FlatAppearance.BorderSize = 0;
+            this.btnMinimizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.btnMinimizar.Location = new System.Drawing.Point(717, 0);
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // PanelBarraTitulo
+            // 
+            this.PanelBarraTitulo.Size = new System.Drawing.Size(801, 34);
             // 
             // btnReloj
             // 
+            this.btnReloj.BackColor = System.Drawing.Color.Lavender;
+            this.btnReloj.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReloj.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.btnReloj.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.btnReloj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReloj.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReloj.Location = new System.Drawing.Point(43, 163);
             this.btnReloj.Name = "btnReloj";
             this.btnReloj.Size = new System.Drawing.Size(134, 55);
             this.btnReloj.TabIndex = 0;
             this.btnReloj.Text = "RELOJ";
-            this.btnReloj.UseVisualStyleBackColor = true;
+            this.btnReloj.UseVisualStyleBackColor = false;
             this.btnReloj.Click += new System.EventHandler(this.btnReloj_Click);
             // 
             // btnTemporizador
             // 
+            this.btnTemporizador.BackColor = System.Drawing.Color.Lavender;
+            this.btnTemporizador.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTemporizador.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.btnTemporizador.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.btnTemporizador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTemporizador.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTemporizador.Location = new System.Drawing.Point(223, 163);
             this.btnTemporizador.Name = "btnTemporizador";
             this.btnTemporizador.Size = new System.Drawing.Size(154, 55);
             this.btnTemporizador.TabIndex = 1;
             this.btnTemporizador.Text = "TEMPORIZADOR";
-            this.btnTemporizador.UseVisualStyleBackColor = true;
+            this.btnTemporizador.UseVisualStyleBackColor = false;
             this.btnTemporizador.Click += new System.EventHandler(this.btnTemporizador_Click);
             // 
             // btnAlarma
             // 
+            this.btnAlarma.BackColor = System.Drawing.Color.Lavender;
+            this.btnAlarma.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAlarma.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.btnAlarma.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.btnAlarma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlarma.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlarma.Location = new System.Drawing.Point(418, 163);
             this.btnAlarma.Name = "btnAlarma";
             this.btnAlarma.Size = new System.Drawing.Size(134, 55);
             this.btnAlarma.TabIndex = 2;
             this.btnAlarma.Text = "ALARMA";
-            this.btnAlarma.UseVisualStyleBackColor = true;
+            this.btnAlarma.UseVisualStyleBackColor = false;
             this.btnAlarma.Click += new System.EventHandler(this.btnAlarma_Click);
             // 
             // btnCalculadora
             // 
+            this.btnCalculadora.BackColor = System.Drawing.Color.Lavender;
+            this.btnCalculadora.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCalculadora.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.btnCalculadora.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.btnCalculadora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalculadora.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalculadora.Location = new System.Drawing.Point(599, 163);
             this.btnCalculadora.Name = "btnCalculadora";
             this.btnCalculadora.Size = new System.Drawing.Size(146, 55);
             this.btnCalculadora.TabIndex = 3;
             this.btnCalculadora.Text = "CALCULADORA";
-            this.btnCalculadora.UseVisualStyleBackColor = true;
+            this.btnCalculadora.UseVisualStyleBackColor = false;
             this.btnCalculadora.Click += new System.EventHandler(this.btnCalculadora_Click);
             // 
             // labelMenuinicio
@@ -105,20 +140,6 @@ namespace GestionUsuarios_FE
             this.labelMenuinicio.Name = "labelMenuinicio";
             this.labelMenuinicio.Size = new System.Drawing.Size(0, 16);
             this.labelMenuinicio.TabIndex = 4;
-            // 
-            // btnModo
-            // 
-            this.btnModo.BackColor = System.Drawing.Color.White;
-            this.btnModo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModo.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnModo.Location = new System.Drawing.Point(23, 56);
-            this.btnModo.Name = "btnModo";
-            this.btnModo.Size = new System.Drawing.Size(133, 41);
-            this.btnModo.TabIndex = 32;
-            this.btnModo.Text = "Modo Claro\r\nActivado\r\n";
-            this.btnModo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnModo.UseVisualStyleBackColor = false;
-            this.btnModo.Click += new System.EventHandler(this.btnModo_Click);
             // 
             // pictureBox1
             // 
@@ -160,97 +181,62 @@ namespace GestionUsuarios_FE
             this.pictureBox4.TabIndex = 36;
             this.pictureBox4.TabStop = false;
             // 
-            // PanelContenedor
+            // btnModo
             // 
-            this.PanelContenedor.BackColor = System.Drawing.Color.Lavender;
-            this.PanelContenedor.Controls.Add(this.PanelBarraTitulo);
-            this.PanelContenedor.Controls.Add(this.btnModo);
-            this.PanelContenedor.Controls.Add(this.labelMenuinicio);
-            this.PanelContenedor.Controls.Add(this.pictureBox4);
-            this.PanelContenedor.Controls.Add(this.btnReloj);
-            this.PanelContenedor.Controls.Add(this.pictureBox3);
-            this.PanelContenedor.Controls.Add(this.btnTemporizador);
-            this.PanelContenedor.Controls.Add(this.pictureBox2);
-            this.PanelContenedor.Controls.Add(this.btnAlarma);
-            this.PanelContenedor.Controls.Add(this.pictureBox1);
-            this.PanelContenedor.Controls.Add(this.btnCalculadora);
-            this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContenedor.Location = new System.Drawing.Point(0, 0);
-            this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(801, 350);
-            this.PanelContenedor.TabIndex = 37;
-            this.PanelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelContenedor_Paint_1);
-            // 
-            // PanelBarraTitulo
-            // 
-            this.PanelBarraTitulo.BackColor = System.Drawing.Color.Indigo;
-            this.PanelBarraTitulo.Controls.Add(this.btnMinimizar);
-            this.PanelBarraTitulo.Controls.Add(this.btnCerrar);
-            this.PanelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelBarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.PanelBarraTitulo.Name = "PanelBarraTitulo";
-            this.PanelBarraTitulo.Size = new System.Drawing.Size(801, 50);
-            this.PanelBarraTitulo.TabIndex = 37;
-            this.PanelBarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelBarraTitulo_Paint);
-            this.PanelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelBarraTitulo_MouseDown_1);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnMinimizar.FlatAppearance.BorderSize = 0;
-            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizar.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinimizar.ForeColor = System.Drawing.Color.White;
-            this.btnMinimizar.Location = new System.Drawing.Point(701, 0);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(50, 50);
-            this.btnMinimizar.TabIndex = 4;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Text = "_";
-            this.btnMinimizar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnMinimizar.UseVisualStyleBackColor = true;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.ForeColor = System.Drawing.Color.White;
-            this.btnCerrar.Location = new System.Drawing.Point(751, 0);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(50, 50);
-            this.btnCerrar.TabIndex = 3;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Text = "X";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.btnModo.BackColor = System.Drawing.Color.Lavender;
+            this.btnModo.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnModo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.btnModo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.btnModo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModo.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModo.ForeColor = System.Drawing.Color.Black;
+            this.btnModo.Location = new System.Drawing.Point(23, 56);
+            this.btnModo.Name = "btnModo";
+            this.btnModo.Size = new System.Drawing.Size(127, 38);
+            this.btnModo.TabIndex = 38;
+            this.btnModo.Text = "Modo Claro\r\nActivado\r\n";
+            this.btnModo.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnModo.UseVisualStyleBackColor = false;
+            this.btnModo.Click += new System.EventHandler(this.btnModo_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(801, 350);
-            this.Controls.Add(this.PanelContenedor);
+            this.Controls.Add(this.btnModo);
+            this.Controls.Add(this.labelMenuinicio);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.btnReloj);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.btnTemporizador);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.btnAlarma);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnCalculadora);
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
-            this.Activated += new System.EventHandler(this.Menu_Activated);
             this.Load += new System.EventHandler(this.Menu_Load);
-            this.ResizeEnd += new System.EventHandler(this.Menu_ResizeEnd);
-            this.SizeChanged += new System.EventHandler(this.Menu_SizeChanged);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Menu_Paint);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Menu_MouseDown);
+            this.Controls.SetChildIndex(this.PanelBarraTitulo, 0);
+            this.Controls.SetChildIndex(this.btnCalculadora, 0);
+            this.Controls.SetChildIndex(this.pictureBox1, 0);
+            this.Controls.SetChildIndex(this.btnAlarma, 0);
+            this.Controls.SetChildIndex(this.pictureBox2, 0);
+            this.Controls.SetChildIndex(this.btnTemporizador, 0);
+            this.Controls.SetChildIndex(this.pictureBox3, 0);
+            this.Controls.SetChildIndex(this.btnReloj, 0);
+            this.Controls.SetChildIndex(this.pictureBox4, 0);
+            this.Controls.SetChildIndex(this.labelMenuinicio, 0);
+            this.Controls.SetChildIndex(this.btnModo, 0);
+            this.PanelBarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.PanelContenedor.ResumeLayout(false);
-            this.PanelContenedor.PerformLayout();
-            this.PanelBarraTitulo.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -261,14 +247,10 @@ namespace GestionUsuarios_FE
         private System.Windows.Forms.Button btnAlarma;
         private System.Windows.Forms.Button btnCalculadora;
         public System.Windows.Forms.Label labelMenuinicio;
-        public System.Windows.Forms.Button btnModo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Panel PanelContenedor;
-        private System.Windows.Forms.Panel PanelBarraTitulo;
-        private System.Windows.Forms.Button btnMinimizar;
-        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnModo;
     }
 }

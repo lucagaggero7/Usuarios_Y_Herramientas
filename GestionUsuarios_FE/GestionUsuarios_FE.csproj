@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBase.Designer.cs">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reloj.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBase.resx">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reloj.resx">
       <DependentUpon>Reloj.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +130,21 @@
       <Project>{1fbb0c91-3c55-4d7e-9ebf-07f858b6c78a}</Project>
       <Name>GestionUsuarios_BE</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-8-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-x-png-7-png-image-black-x-png-1600_1600.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-x-png-7-png-image-black-x-png-1600_16001.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
