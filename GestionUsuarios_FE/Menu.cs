@@ -51,11 +51,11 @@ namespace GestionUsuarios_FE
                     this.BackColor = borderColor;
                     PanelContenedor.BackColor = Color.Lavender;
                     PanelBarraTitulo.BackColor = borderColor;
-                    btnModo.BackColor = Color.White;
-                    btnAlarma.BackColor = Color.White;
-                    btnCalculadora.BackColor = Color.White;
-                    btnReloj.BackColor = Color.White;
-                    btnTemporizador.BackColor = Color.White;
+                    btnModo.BackColor = Color.Lavender;
+                    btnAlarma.BackColor = Color.Lavender;
+                    btnCalculadora.BackColor = Color.Lavender;
+                    btnReloj.BackColor = Color.Lavender;
+                    btnTemporizador.BackColor = Color.Lavender;
                     labelMenuinicio.ForeColor = Color.Black;
                 }
                 else
@@ -65,11 +65,11 @@ namespace GestionUsuarios_FE
                     this.BackColor = borderColor;
                     PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);
                     PanelBarraTitulo.BackColor = borderColor;
-                    btnModo.BackColor = Color.LightGray;
-                    btnAlarma.BackColor = Color.LightGray;
-                    btnCalculadora.BackColor = Color.LightGray;
-                    btnReloj.BackColor = Color.LightGray;
-                    btnTemporizador.BackColor = Color.LightGray;
+                    btnModo.BackColor = Color.Lavender;
+                    btnAlarma.BackColor = Color.Lavender;
+                    btnCalculadora.BackColor = Color.Lavender;
+                    btnReloj.BackColor = Color.Lavender;
+                    btnTemporizador.BackColor = Color.Lavender;
                     labelMenuinicio.ForeColor = Color.White;
                 }
         }
@@ -104,11 +104,11 @@ namespace GestionUsuarios_FE
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.Lavender;
                 PanelBarraTitulo.BackColor = borderColor;
-                btnModo.BackColor = Color.White;
-                btnAlarma.BackColor = Color.White;
-                btnCalculadora.BackColor = Color.White;
-                btnReloj.BackColor = Color.White;
-                btnTemporizador.BackColor = Color.White;
+                btnModo.BackColor = Color.Lavender;
+                btnAlarma.BackColor = Color.Lavender;
+                btnCalculadora.BackColor = Color.Lavender;
+                btnReloj.BackColor = Color.Lavender;
+                btnTemporizador.BackColor = Color.Lavender;
                 labelMenuinicio.ForeColor = Color.Black;
             }
             else
@@ -118,11 +118,11 @@ namespace GestionUsuarios_FE
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);
                 PanelBarraTitulo.BackColor = borderColor;
-                btnModo.BackColor = Color.LightGray;
-                btnAlarma.BackColor = Color.LightGray;
-                btnCalculadora.BackColor = Color.LightGray;
-                btnReloj.BackColor = Color.LightGray;
-                btnTemporizador.BackColor = Color.LightGray;
+                btnModo.BackColor = Color.Lavender;
+                btnAlarma.BackColor = Color.Lavender;
+                btnCalculadora.BackColor = Color.Lavender;
+                btnReloj.BackColor = Color.Lavender;
+                btnTemporizador.BackColor = Color.Lavender;
                 labelMenuinicio.ForeColor = Color.White;
 
             }

@@ -77,15 +77,15 @@ namespace GestionUsuarios_FE
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.Lavender;
                 PanelBarraTitulo.BackColor = borderColor;
-                btnCrear.BackColor = Color.White;
-                btnModo.BackColor = Color.White;
-                btnIniciarSesion.BackColor = Color.White;
-                txtNombre.BackColor = Color.White;
-                txtApellido.BackColor = Color.White;
-                txtNombredeusuario.BackColor = Color.White;
-                txtCorreo.BackColor = Color.White;
-                txtContraseña.BackColor = Color.White;
-                txtVerificacion.BackColor = Color.White;
+                btnCrear.BackColor = Color.Lavender;
+                btnModo.BackColor = Color.Lavender;
+                btnIniciarSesion.BackColor = Color.Lavender;
+                txtNombre.BackColor = Color.Lavender;
+                txtApellido.BackColor = Color.Lavender;
+                txtNombredeusuario.BackColor = Color.Lavender;
+                txtCorreo.BackColor = Color.Lavender;
+                txtContraseña.BackColor = Color.Lavender;
+                txtVerificacion.BackColor = Color.Lavender;
                 labelVerificacion.ForeColor = Color.Black;
                 btnModo.ForeColor = Color.Black;
                 label1.ForeColor = Color.Black;
@@ -98,12 +98,34 @@ namespace GestionUsuarios_FE
                 }
                 else
                 {
-
-
                     txtNombre.ForeColor = Color.DarkGray;
+                }
+                if (txtApellido.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
                     txtApellido.ForeColor = Color.DarkGray;
+                }
+                if (txtNombredeusuario.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
                     txtNombredeusuario.ForeColor = Color.DarkGray;
+                }
+                if (txtCorreo.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
                     txtCorreo.ForeColor = Color.DarkGray;
+                }
+                if (txtContraseña.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
                     txtContraseña.ForeColor = Color.DarkGray;
                 }
             }
@@ -114,15 +136,15 @@ namespace GestionUsuarios_FE
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);
                 PanelBarraTitulo.BackColor = borderColor;
-                btnCrear.BackColor = Color.LightGray;
-                btnModo.BackColor = Color.LightGray;
-                btnIniciarSesion.BackColor = Color.LightGray;
-                txtNombre.BackColor = Color.LightGray;
-                txtApellido.BackColor = Color.LightGray;
-                txtNombredeusuario.BackColor = Color.LightGray;
-                txtCorreo.BackColor = Color.LightGray;
-                txtContraseña.BackColor = Color.LightGray;
-                txtVerificacion.BackColor = Color.LightGray;
+                btnCrear.BackColor = Color.Lavender;
+                btnModo.BackColor = Color.Lavender;
+                btnIniciarSesion.BackColor = Color.Lavender;
+                txtNombre.BackColor = Color.Lavender;
+                txtApellido.BackColor = Color.Lavender;
+                txtNombredeusuario.BackColor = Color.Lavender;
+                txtCorreo.BackColor = Color.Lavender;
+                txtContraseña.BackColor = Color.Lavender;
+                txtVerificacion.BackColor = Color.Lavender;
                 labelVerificacion.ForeColor = Color.White;
                 btnModo.ForeColor = Color.Black;
                 labelTitulo.ForeColor = Color.White;
@@ -135,13 +157,35 @@ namespace GestionUsuarios_FE
                 }
                 else
                 {
-
-
-                    txtNombre.ForeColor = Color.Gray;
-                    txtApellido.ForeColor = Color.Gray;
-                    txtNombredeusuario.ForeColor = Color.Gray;
-                    txtCorreo.ForeColor = Color.Gray;
-                    txtContraseña.ForeColor = Color.Gray;
+                    txtNombre.ForeColor = Color.DarkGray;
+                }
+                if (txtApellido.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+                    txtApellido.ForeColor = Color.DarkGray;
+                }
+                if (txtNombredeusuario.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+                    txtNombredeusuario.ForeColor = Color.DarkGray;
+                }
+                if (txtCorreo.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+                    txtCorreo.ForeColor = Color.DarkGray;
+                }
+                if (txtContraseña.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+                    txtContraseña.ForeColor = Color.DarkGray;
                 }
             }
         }
@@ -159,15 +203,15 @@ namespace GestionUsuarios_FE
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.Lavender;
                 PanelBarraTitulo.BackColor = borderColor;
-                btnCrear.BackColor = Color.White;
-                btnModo.BackColor = Color.White;
-                btnIniciarSesion.BackColor = Color.White;
-                txtNombre.BackColor = Color.White;
-                txtApellido.BackColor = Color.White;
-                txtNombredeusuario.BackColor = Color.White;
-                txtCorreo.BackColor = Color.White;
-                txtContraseña.BackColor = Color.White;
-                txtVerificacion.BackColor = Color.White;
+                btnCrear.BackColor = Color.Lavender;
+                btnModo.BackColor = Color.Lavender;
+                btnIniciarSesion.BackColor = Color.Lavender;
+                txtNombre.BackColor = Color.Lavender;
+                txtApellido.BackColor = Color.Lavender;
+                txtNombredeusuario.BackColor = Color.Lavender;
+                txtCorreo.BackColor = Color.Lavender;
+                txtContraseña.BackColor = Color.Lavender;
+                txtVerificacion.BackColor = Color.Lavender;
                 labelVerificacion.ForeColor = Color.Black;
                 btnModo.ForeColor = Color.Black;
                 label1.ForeColor = Color.Black;
@@ -180,12 +224,34 @@ namespace GestionUsuarios_FE
                 }
                 else
                 {
-
-
                     txtNombre.ForeColor = Color.DarkGray;
+                }
+                if (txtApellido.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
                     txtApellido.ForeColor = Color.DarkGray;
+                }
+                if (txtNombredeusuario.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
                     txtNombredeusuario.ForeColor = Color.DarkGray;
+                }
+                if (txtCorreo.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
                     txtCorreo.ForeColor = Color.DarkGray;
+                }
+                if (txtContraseña.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
                     txtContraseña.ForeColor = Color.DarkGray;
                 }
             }
@@ -196,15 +262,15 @@ namespace GestionUsuarios_FE
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);
                 PanelBarraTitulo.BackColor = borderColor;
-                btnCrear.BackColor = Color.LightGray;
-                btnModo.BackColor = Color.LightGray;
-                btnIniciarSesion.BackColor = Color.LightGray;
-                txtNombre.BackColor = Color.LightGray;
-                txtApellido.BackColor = Color.LightGray;
-                txtNombredeusuario.BackColor = Color.LightGray;
-                txtCorreo.BackColor = Color.LightGray;
-                txtContraseña.BackColor = Color.LightGray;
-                txtVerificacion.BackColor = Color.LightGray;
+                btnCrear.BackColor = Color.Lavender;
+                btnModo.BackColor = Color.Lavender;
+                btnIniciarSesion.BackColor = Color.Lavender;
+                txtNombre.BackColor = Color.Lavender;
+                txtApellido.BackColor = Color.Lavender;
+                txtNombredeusuario.BackColor = Color.Lavender;
+                txtCorreo.BackColor = Color.Lavender;
+                txtContraseña.BackColor = Color.Lavender;
+                txtVerificacion.BackColor = Color.Lavender;
                 labelVerificacion.ForeColor = Color.White;
                 btnModo.ForeColor = Color.Black;
                 labelTitulo.ForeColor = Color.White;
@@ -217,13 +283,35 @@ namespace GestionUsuarios_FE
                 }
                 else
                 {
-
-
-                    txtNombre.ForeColor = Color.Gray;
-                    txtApellido.ForeColor = Color.Gray;
-                    txtNombredeusuario.ForeColor = Color.Gray;
-                    txtCorreo.ForeColor = Color.Gray;
-                    txtContraseña.ForeColor = Color.Gray;
+                    txtNombre.ForeColor = Color.DarkGray;
+                }
+                if (txtApellido.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+                    txtApellido.ForeColor = Color.DarkGray;
+                }
+                if (txtNombredeusuario.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+                    txtNombredeusuario.ForeColor = Color.DarkGray;
+                }
+                if (txtCorreo.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+                    txtCorreo.ForeColor = Color.DarkGray;
+                }
+                if (txtContraseña.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+                    txtContraseña.ForeColor = Color.DarkGray;
                 }
             }
         }

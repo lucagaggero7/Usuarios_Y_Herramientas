@@ -53,7 +53,7 @@ namespace GestionUsuarios_FE
             // 
             // btnModo
             // 
-            this.btnModo.BackColor = System.Drawing.Color.White;
+            this.btnModo.BackColor = System.Drawing.Color.Lavender;
             this.btnModo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnModo.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnModo.Location = new System.Drawing.Point(23, 65);
@@ -78,24 +78,26 @@ namespace GestionUsuarios_FE
             // 
             // btnIniciarSesion
             // 
+            this.btnIniciarSesion.BackColor = System.Drawing.Color.Lavender;
             this.btnIniciarSesion.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciarSesion.Location = new System.Drawing.Point(189, 249);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(156, 37);
             this.btnIniciarSesion.TabIndex = 4;
             this.btnIniciarSesion.Text = "INICIAR SESION";
-            this.btnIniciarSesion.UseVisualStyleBackColor = true;
+            this.btnIniciarSesion.UseVisualStyleBackColor = false;
             this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
             // 
             // btnRegistrate
             // 
+            this.btnRegistrate.BackColor = System.Drawing.Color.Lavender;
             this.btnRegistrate.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrate.Location = new System.Drawing.Point(189, 389);
             this.btnRegistrate.Name = "btnRegistrate";
             this.btnRegistrate.Size = new System.Drawing.Size(156, 36);
             this.btnRegistrate.TabIndex = 5;
             this.btnRegistrate.Text = "CREAR CUENTA ";
-            this.btnRegistrate.UseVisualStyleBackColor = true;
+            this.btnRegistrate.UseVisualStyleBackColor = false;
             this.btnRegistrate.Click += new System.EventHandler(this.btnRegistrate_Click);
             // 
             // labelRegistrate
@@ -110,6 +112,7 @@ namespace GestionUsuarios_FE
             // 
             // txtNombredeusuario
             // 
+            this.txtNombredeusuario.BackColor = System.Drawing.Color.Lavender;
             this.txtNombredeusuario.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombredeusuario.ForeColor = System.Drawing.Color.DarkGray;
             this.txtNombredeusuario.Location = new System.Drawing.Point(188, 171);
@@ -122,6 +125,7 @@ namespace GestionUsuarios_FE
             // 
             // txtContraseña
             // 
+            this.txtContraseña.BackColor = System.Drawing.Color.Lavender;
             this.txtContraseña.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.Color.DarkGray;
             this.txtContraseña.Location = new System.Drawing.Point(188, 207);

@@ -67,16 +67,17 @@ namespace GestionUsuarios_FE
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.Lavender;
                 PanelBarraTitulo.BackColor = borderColor;
-                btnRegistrate.BackColor = Color.White;
-                btnModo.BackColor = Color.White;
-                btnIniciarSesion.BackColor = Color.White;
-                txtNombredeusuario.BackColor = Color.White;
-                txtContraseña.BackColor = Color.White;
+                btnRegistrate.BackColor = Color.Lavender;
+                btnModo.BackColor = Color.Lavender;
+                btnIniciarSesion.BackColor = Color.Lavender;
+                txtNombredeusuario.BackColor = Color.Lavender;
+                txtContraseña.BackColor = Color.Lavender;
                 labelBienvenido.ForeColor = Color.Black;
                 labelRegistrate.ForeColor = Color.Black;
                 btnModo.ForeColor = Color.Black;
                 txtNombredeusuario.ForeColor = Color.DarkGray;
                 txtContraseña.ForeColor = Color.DarkGray;
+
             }
             else
             {
@@ -86,11 +87,11 @@ namespace GestionUsuarios_FE
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);
                 PanelBarraTitulo.BackColor = borderColor;
-                btnRegistrate.BackColor = Color.LightGray;
-                btnModo.BackColor = Color.LightGray;
-                btnIniciarSesion.BackColor = Color.LightGray;
-                txtNombredeusuario.BackColor = Color.LightGray;
-                txtContraseña.BackColor = Color.LightGray;
+                btnRegistrate.BackColor = Color.Lavender;
+                btnModo.BackColor = Color.Lavender;
+                btnIniciarSesion.BackColor = Color.Lavender;
+                txtNombredeusuario.BackColor = Color.Lavender;
+                txtContraseña.BackColor = Color.Lavender;
                 labelBienvenido.ForeColor = Color.White;
                 labelRegistrate.ForeColor = Color.White;
                 btnModo.ForeColor = Color.Black;
@@ -99,9 +100,14 @@ namespace GestionUsuarios_FE
                 }
                 else
                 {
-
-
                     txtNombredeusuario.ForeColor = Color.DarkGray;
+                }
+
+                if (txtContraseña.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
                     txtContraseña.ForeColor = Color.DarkGray;
                 }
             }
@@ -208,11 +214,11 @@ namespace GestionUsuarios_FE
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.Lavender;
                 PanelBarraTitulo.BackColor = borderColor;
-                btnRegistrate.BackColor = Color.White;
-                btnModo.BackColor = Color.White;
-                btnIniciarSesion.BackColor = Color.White;
-                txtNombredeusuario.BackColor = Color.White;
-                txtContraseña.BackColor = Color.White;
+                btnRegistrate.BackColor = Color.Lavender;
+                btnModo.BackColor = Color.Lavender;
+                btnIniciarSesion.BackColor = Color.Lavender;
+                txtNombredeusuario.BackColor = Color.Lavender;
+                txtContraseña.BackColor = Color.Lavender;
                 labelBienvenido.ForeColor = Color.Black;
                 labelRegistrate.ForeColor = Color.Black;
                 btnModo.ForeColor = Color.Black;
@@ -221,9 +227,14 @@ namespace GestionUsuarios_FE
                 }
                 else
                 {
-
-
                     txtNombredeusuario.ForeColor = Color.DarkGray;
+                }
+
+                if (txtContraseña.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
                     txtContraseña.ForeColor = Color.DarkGray;
                 }
             }
@@ -235,11 +246,11 @@ namespace GestionUsuarios_FE
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);
                 PanelBarraTitulo.BackColor = borderColor;
-                btnRegistrate.BackColor = Color.LightGray;
-                btnModo.BackColor = Color.LightGray;
-                btnIniciarSesion.BackColor = Color.LightGray;
-                txtNombredeusuario.BackColor = Color.LightGray;
-                txtContraseña.BackColor = Color.LightGray;
+                btnRegistrate.BackColor = Color.Lavender;
+                btnModo.BackColor = Color.Lavender;
+                btnIniciarSesion.BackColor = Color.Lavender;
+                txtNombredeusuario.BackColor = Color.Lavender;
+                txtContraseña.BackColor = Color.Lavender;
                 labelBienvenido.ForeColor = Color.White;
                 labelRegistrate.ForeColor = Color.White;
                 btnModo.ForeColor = Color.Black;
@@ -248,10 +259,15 @@ namespace GestionUsuarios_FE
                 }
                 else
                 {
+                    txtNombredeusuario.ForeColor = Color.DarkGray;
+                }
 
-
-                    txtNombredeusuario.ForeColor = Color.Gray;
-                    txtContraseña.ForeColor = Color.Gray;
+                if (txtContraseña.ForeColor == Color.Black)
+                {
+                }
+                else
+                {
+                    txtContraseña.ForeColor = Color.DarkGray;
                 }
             }
         }

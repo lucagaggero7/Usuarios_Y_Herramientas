@@ -53,7 +53,7 @@ namespace GestionUsuarios_FE
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.Lavender;
                 PanelBarraTitulo.BackColor = borderColor;
-                btnModo.BackColor = Color.White;
+                btnModo.BackColor = Color.Lavender;
                 label1.ForeColor = Color.Black;
                 label2.ForeColor = Color.Black;
                 label3.ForeColor = Color.Black;
@@ -66,7 +66,7 @@ namespace GestionUsuarios_FE
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);
                 PanelBarraTitulo.BackColor = borderColor;
-                btnModo.BackColor = Color.LightGray;
+                btnModo.BackColor = Color.Lavender;
                 label1.ForeColor = Color.White;
                 label2.ForeColor = Color.White;
                 label3.ForeColor = Color.White;
@@ -94,7 +94,7 @@ namespace GestionUsuarios_FE
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.Lavender;
                 PanelBarraTitulo.BackColor = borderColor;
-                btnModo.BackColor = Color.White;
+                btnModo.BackColor = Color.Lavender;
                 label1.ForeColor = Color.Black;
                 label2.ForeColor = Color.Black;
                 label3.ForeColor = Color.Black;
@@ -107,7 +107,7 @@ namespace GestionUsuarios_FE
                 this.BackColor = borderColor;
                 PanelContenedor.BackColor = Color.FromArgb(25, 25, 25);
                 PanelBarraTitulo.BackColor = borderColor;
-                btnModo.BackColor = Color.LightGray;
+                btnModo.BackColor = Color.Lavender;
                 label1.ForeColor = Color.White;
                 label2.ForeColor = Color.White;
                 label3.ForeColor = Color.White;
