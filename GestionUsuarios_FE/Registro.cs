@@ -369,7 +369,7 @@ namespace GestionUsuarios_FE
                 return;
             }
 
-            if (txtCorreo.Text != "" && txtCorreo.Text != "Correo")
+            if (txtCorreo.Text != "" && txtCorreo.Text != "Correo" && txtCorreo.Text.Contains("@") && txtCorreo.Text.Contains("com"))
             {
                 //borro el error 
                 errorCorreo.SetError(txtCorreo, "");
